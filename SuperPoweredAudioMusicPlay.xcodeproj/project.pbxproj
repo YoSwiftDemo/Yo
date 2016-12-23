@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
 		9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */; };
+		9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5D1E0D43C100783B06 /* CoreMedia.framework */; };
+		9E733E601E0D43CF00783B06 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */; };
+		9E733E621E0D43D900783B06 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E611E0D43D900783B06 /* Accelerate.framework */; };
+		9E733E641E0D43E100783B06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E631E0D43E100783B06 /* AVFoundation.framework */; };
+		9E733E661E0D43ED00783B06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E651E0D43ED00783B06 /* CoreGraphics.framework */; };
+		9E733E681E0D43FA00783B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E671E0D43FA00783B06 /* Foundation.framework */; };
+		9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E691E0D440400783B06 /* MediaPlayer.framework */; };
+		9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6B1E0D440D00783B06 /* QuartzCore.framework */; };
+		9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6D1E0D441600783B06 /* UIKit.framework */; };
+		9E733E731E0D4D0F00783B06 /* MusicSuperPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */; };
+		9E733E771E0D4DFA00783B06 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E761E0D4DFA00783B06 /* AlertManager.m */; };
+		9E733E961E0D533B00783B06 /* MusicPlayerPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */; };
+		9E733E971E0D533B00783B06 /* MusicPlayerPlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */; };
+		9E733E9C1E0D538B00783B06 /* MusicPlayUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */; };
+		9E733E9D1E0D538B00783B06 /* MusicPlayUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */; };
+		9E733EA71E0D54D000783B06 /* MusicPlayLogicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */; };
+		9E733EA81E0D54D000783B06 /* MusicPlayLogicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */; };
 		9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20191E0D12A500C5A0B3 /* main.m */; };
 		9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */; };
 		9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201F1E0D12A500C5A0B3 /* ViewController.m */; };
@@ -50,6 +67,29 @@
 		9E733E551E0D1C1E00783B06 /* SuperpoweredReverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredReverb.h; sourceTree = "<group>"; };
 		9E733E561E0D1C1E00783B06 /* SuperpoweredRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredRoll.h; sourceTree = "<group>"; };
 		9E733E571E0D1C1E00783B06 /* SuperpoweredSimple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredSimple.h; sourceTree = "<group>"; };
+		9E733E5B1E0D403000783B06 /* TotalHeaderFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalHeaderFile.pch; sourceTree = "<group>"; };
+		9E733E5D1E0D43C100783B06 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9E733E611E0D43D900783B06 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9E733E631E0D43E100783B06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E733E651E0D43ED00783B06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E733E671E0D43FA00783B06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E733E691E0D440400783B06 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9E733E6B1E0D440D00783B06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9E733E6D1E0D441600783B06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E733E711E0D4D0F00783B06 /* MusicSuperPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicSuperPlayer.h; sourceTree = "<group>"; };
+		9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MusicSuperPlayer.mm; sourceTree = "<group>"; };
+		9E733E751E0D4DFA00783B06 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		9E733E761E0D4DFA00783B06 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
+		9E733E931E0D533B00783B06 /* MusicPlayerPlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerPlayVC.h; sourceTree = "<group>"; };
+		9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerPlayVC.m; sourceTree = "<group>"; };
+		9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayerPlayVC.xib; sourceTree = "<group>"; };
+		9E733E991E0D538B00783B06 /* MusicPlayUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayUIViewController.h; sourceTree = "<group>"; };
+		9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayUIViewController.m; sourceTree = "<group>"; };
+		9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayUIViewController.xib; sourceTree = "<group>"; };
+		9E733EA41E0D54D000783B06 /* MusicPlayLogicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayLogicViewController.h; sourceTree = "<group>"; };
+		9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayLogicViewController.m; sourceTree = "<group>"; };
+		9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayLogicViewController.xib; sourceTree = "<group>"; };
 		9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredAudioMusicPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF20191E0D12A500C5A0B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +113,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */,
+				9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */,
+				9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */,
+				9E733E681E0D43FA00783B06 /* Foundation.framework in Frameworks */,
+				9E733E661E0D43ED00783B06 /* CoreGraphics.framework in Frameworks */,
+				9E733E641E0D43E100783B06 /* AVFoundation.framework in Frameworks */,
+				9E733E621E0D43D900783B06 /* Accelerate.framework in Frameworks */,
+				9E733E601E0D43CF00783B06 /* AudioToolbox.framework in Frameworks */,
+				9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */,
 				9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +163,104 @@
 			path = "C++PlayerLib";
 			sourceTree = "<group>";
 		};
+		9E733E5A1E0D400000783B06 /* TotalHeaderFile */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E5B1E0D403000783B06 /* TotalHeaderFile.pch */,
+			);
+			path = TotalHeaderFile;
+			sourceTree = "<group>";
+		};
+		9E733E5C1E0D43C100783B06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E6D1E0D441600783B06 /* UIKit.framework */,
+				9E733E6B1E0D440D00783B06 /* QuartzCore.framework */,
+				9E733E691E0D440400783B06 /* MediaPlayer.framework */,
+				9E733E671E0D43FA00783B06 /* Foundation.framework */,
+				9E733E651E0D43ED00783B06 /* CoreGraphics.framework */,
+				9E733E631E0D43E100783B06 /* AVFoundation.framework */,
+				9E733E611E0D43D900783B06 /* Accelerate.framework */,
+				9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */,
+				9E733E5D1E0D43C100783B06 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E733E6F1E0D4CBE00783B06 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */,
+				9E733E701E0D4CD600783B06 /* PlayerOfC++ */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9E733E701E0D4CD600783B06 /* PlayerOfC++ */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E711E0D4D0F00783B06 /* MusicSuperPlayer.h */,
+				9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */,
+			);
+			path = "PlayerOfC++";
+			sourceTree = "<group>";
+		};
+		9E733E741E0D4DD500783B06 /* AlertC */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E751E0D4DFA00783B06 /* AlertManager.h */,
+				9E733E761E0D4DFA00783B06 /* AlertManager.m */,
+			);
+			path = AlertC;
+			sourceTree = "<group>";
+		};
+		9E733E781E0D4E8A00783B06 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */,
+				9E733E981E0D538000783B06 /* MusicPlayUIViewController */,
+				9E733E921E0D533B00783B06 /* MusicPlayerPlayViewController */,
+			);
+			path = MusicPlayerPlayVC;
+			sourceTree = "<group>";
+		};
+		9E733E921E0D533B00783B06 /* MusicPlayerPlayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E931E0D533B00783B06 /* MusicPlayerPlayVC.h */,
+				9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */,
+				9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */,
+			);
+			path = MusicPlayerPlayViewController;
+			sourceTree = "<group>";
+		};
+		9E733E981E0D538000783B06 /* MusicPlayUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E733E991E0D538B00783B06 /* MusicPlayUIViewController.h */,
+				9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */,
+				9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */,
+			);
+			path = MusicPlayUIViewController;
+			sourceTree = "<group>";
+		};
+		9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E733EA41E0D54D000783B06 /* MusicPlayLogicViewController.h */,
+				9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */,
+				9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */,
+			);
+			path = MusicPlayLogicViewController;
+			sourceTree = "<group>";
+		};
 		9EBF200C1E0D12A500C5A0B3 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +268,7 @@
 				9EBF20311E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests */,
 				9EBF203C1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests */,
 				9EBF20161E0D12A500C5A0B3 /* Products */,
+				9E733E5C1E0D43C100783B06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +289,10 @@
 				9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */,
 				9EBF201E1E0D12A500C5A0B3 /* ViewController.h */,
 				9EBF201F1E0D12A500C5A0B3 /* ViewController.m */,
+				9E733E781E0D4E8A00783B06 /* Resource */,
+				9E733E741E0D4DD500783B06 /* AlertC */,
+				9E733E6F1E0D4CBE00783B06 /* UI */,
+				9E733E5A1E0D400000783B06 /* TotalHeaderFile */,
 				9E4DBEF21E0D1623003E9BC5 /* C++PlayerLib */,
 				9EBF20211E0D12A500C5A0B3 /* Main.storyboard */,
 				9EBF20241E0D12A500C5A0B3 /* Assets.xcassets */,
@@ -287,8 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */,
+				9E733E9D1E0D538B00783B06 /* MusicPlayUIViewController.xib in Resources */,
+				9E733EA81E0D54D000783B06 /* MusicPlayLogicViewController.xib in Resources */,
 				9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */,
 				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
+				9E733E971E0D533B00783B06 /* MusicPlayerPlayVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,9 +468,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E733E771E0D4DFA00783B06 /* AlertManager.m in Sources */,
+				9E733E731E0D4D0F00783B06 /* MusicSuperPlayer.mm in Sources */,
+				9E733E9C1E0D538B00783B06 /* MusicPlayUIViewController.m in Sources */,
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
+				9E733EA71E0D54D000783B06 /* MusicPlayLogicViewController.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
+				9E733E961E0D533B00783B06 /* MusicPlayerPlayVC.m in Sources */,
 				9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +624,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BKME25WU4F;
+				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,7 +642,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BKME25WU4F;
+				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

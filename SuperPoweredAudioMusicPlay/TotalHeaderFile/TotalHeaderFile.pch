@@ -1,0 +1,34 @@
+//
+//  TotalHeaderFile.pch
+//  SuperPoweredAudioMusicPlay
+//
+//  Created by 岳克奎 on 16/12/23.
+//  Copyright © 2016年 岳克奎. All rights reserved.
+//
+
+#ifndef TotalHeaderFile_pch
+#define TotalHeaderFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "MusicSuperPlayer.h"
+#import "AlertManager.h"
+#import <UIKit/UIKit.h>
+#import "MusicPlayerPlayVC.h"                     // 音乐播放VC  展示播放功能
+#import "MusicPlayUIViewController.h"             //
+#import "MusicPlayLogicViewController.h"          // 
+#define LRC_RENDER_COLOR   [UIColor greenColor]   //LrcLabel 歌词渲染的颜色(绿色)
+#define SUPER_PLAYER_UIVC_FRAME_HEIGHT  120       //承载播放器的VC frame的高度
+#define SUPER_PLAYER_UIVC_FRAME_Y       100       //承载播放器的VC frame 的Y
+#define MUSIC_SAMPLERATE                44100     //采样率（默认这个吧）
+// 音效的宏定义
+#define NUMFXUNITS 8
+#define TIMEPITCHINDEX 0
+#define PITCHSHIFTINDEX 1
+#define ROLLINDEX 2
+#define FILTERINDEX 3
+#define EQINDEX 4
+#define FLANGERINDEX 5
+#define DELAYINDEX 6
+#define REVERBINDEX 7
+#endif /* TotalHeaderFile_pch */

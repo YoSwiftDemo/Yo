@@ -24,6 +24,42 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -life cycle ------------------------------ 生 命 周 期 管 控 区 域 ------------------------------------------
+-(void)showMusicPlayerPlayVCOnSuperViewController:(UIViewController *)superViewController
+                                      inSuperView:(UIView *)superView
+                               musicPlayerVCFrame:(CGRect)musicPlayerVCFrame
+                                         complete:(void(^)(BOOL finished,MusicPlayerPlayVC *musicPlayerPlayViewController))block{
+    if(superViewController){
+        for (UIViewController *oneViewController in superViewController.childViewControllers) {
+            if ([oneViewController isKindOfClass:[MusicPlayerPlayVC class]]) {
+                //移除
+                [oneViewController removeFromParentViewController];
+                [oneViewController.view removeFromSuperview];
+            }
+        }
+    }
+    //创建新的musicPlayerPlayViewController
+    MusicPlayerPlayVC *musicPlayerPlayViewController = [[MusicPlayerPlayVC alloc]initWithNibName:@"MusicPlayerPlayVC"
+                                                                                          bundle:nil];
+    //frame
+    musicPlayerPlayViewController.view.frame =musicPlayerVCFrame;
+    //加载到superViewController
+    if (superViewController) {
+        [superViewController addChildViewController:musicPlayerPlayViewController];
+    };
+    //加载到superView
+    if (superView) {
+        [superView addSubview:musicPlayerPlayViewController.view];
+    }
+    //如果作为单独一块容器
+    if (!superViewController&&!superView) {
+        AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        delegate.window.rootViewController =  [[UINavigationController alloc]initWithRootViewController:musicPlayerPlayViewController];
+    }
+    // 加载子VC   logic  和 UI
+    
+}
+
 /*
 #pragma mark - Navigation
 

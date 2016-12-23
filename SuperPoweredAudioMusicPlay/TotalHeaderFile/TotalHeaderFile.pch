@@ -16,11 +16,18 @@
 #import <UIKit/UIKit.h>
 #import "MusicPlayerPlayVC.h"                     // 音乐播放VC  展示播放功能
 #import "MusicPlayUIViewController.h"             //
-#import "MusicPlayLogicViewController.h"          // 
+#import "MusicPlayLogicViewController.h"          //
+#import "MusicCenterManager.h"                    //  音乐控制中心
+#import "MusicDataManager.h"                      //音乐数据层
+#import "AppDelegate.h"
+#import <XXNibBridge.h>                           //xib动态桥接库
 #define LRC_RENDER_COLOR   [UIColor greenColor]   //LrcLabel 歌词渲染的颜色(绿色)
 #define SUPER_PLAYER_UIVC_FRAME_HEIGHT  120       //承载播放器的VC frame的高度
 #define SUPER_PLAYER_UIVC_FRAME_Y       100       //承载播放器的VC frame 的Y
 #define MUSIC_SAMPLERATE                44100     //采样率（默认这个吧）
+#define SCREEN_WIDTH            [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT           [[UIScreen mainScreen] bounds].size.height
+#define APP_DELEGATE            (AppDelegate *)[UIApplication sharedApplication].delegate
 // 音效的宏定义
 #define NUMFXUNITS 8
 #define TIMEPITCHINDEX 0

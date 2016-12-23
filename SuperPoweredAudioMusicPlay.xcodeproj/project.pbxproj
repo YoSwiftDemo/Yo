@@ -1,750 +1,2013 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
-		9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */; };
-		9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5D1E0D43C100783B06 /* CoreMedia.framework */; };
-		9E733E601E0D43CF00783B06 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */; };
-		9E733E621E0D43D900783B06 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E611E0D43D900783B06 /* Accelerate.framework */; };
-		9E733E641E0D43E100783B06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E631E0D43E100783B06 /* AVFoundation.framework */; };
-		9E733E661E0D43ED00783B06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E651E0D43ED00783B06 /* CoreGraphics.framework */; };
-		9E733E681E0D43FA00783B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E671E0D43FA00783B06 /* Foundation.framework */; };
-		9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E691E0D440400783B06 /* MediaPlayer.framework */; };
-		9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6B1E0D440D00783B06 /* QuartzCore.framework */; };
-		9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6D1E0D441600783B06 /* UIKit.framework */; };
-		9E733E731E0D4D0F00783B06 /* MusicSuperPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */; };
-		9E733E771E0D4DFA00783B06 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E761E0D4DFA00783B06 /* AlertManager.m */; };
-		9E733E961E0D533B00783B06 /* MusicPlayerPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */; };
-		9E733E971E0D533B00783B06 /* MusicPlayerPlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */; };
-		9E733E9C1E0D538B00783B06 /* MusicPlayUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */; };
-		9E733E9D1E0D538B00783B06 /* MusicPlayUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */; };
-		9E733EA71E0D54D000783B06 /* MusicPlayLogicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */; };
-		9E733EA81E0D54D000783B06 /* MusicPlayLogicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */; };
-		9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20191E0D12A500C5A0B3 /* main.m */; };
-		9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */; };
-		9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201F1E0D12A500C5A0B3 /* ViewController.m */; };
-		9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF20211E0D12A500C5A0B3 /* Main.storyboard */; };
-		9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF20241E0D12A500C5A0B3 /* Assets.xcassets */; };
-		9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF20261E0D12A500C5A0B3 /* LaunchScreen.storyboard */; };
-		9EBF20331E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20321E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m */; };
-		9EBF203E1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF203D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9EBF202F1E0D12A500C5A0B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9EBF200D1E0D12A500C5A0B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9EBF20141E0D12A500C5A0B3;
-			remoteInfo = SuperPoweredAudioMusicPlay;
-		};
-		9EBF203A1E0D12A500C5A0B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9EBF200D1E0D12A500C5A0B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9EBF20141E0D12A500C5A0B3;
-			remoteInfo = SuperPoweredAudioMusicPlay;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioIOS.a; sourceTree = "<group>"; };
-		9E733E4C1E0D1C1E00783B06 /* Superpowered3BandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpowered3BandEQ.h; sourceTree = "<group>"; };
-		9E733E4D1E0D1C1E00783B06 /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
-		9E733E4E1E0D1C1E00783B06 /* SuperpoweredEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredEcho.h; sourceTree = "<group>"; };
-		9E733E4F1E0D1C1E00783B06 /* SuperpoweredFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFFT.h; sourceTree = "<group>"; };
-		9E733E501E0D1C1E00783B06 /* SuperpoweredFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFilter.h; sourceTree = "<group>"; };
-		9E733E511E0D1C1E00783B06 /* SuperpoweredFlanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFlanger.h; sourceTree = "<group>"; };
-		9E733E521E0D1C1E00783B06 /* SuperpoweredFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredFX.h; sourceTree = "<group>"; };
-		9E733E531E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredIOSAudioIO.h; sourceTree = "<group>"; };
-		9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperpoweredIOSAudioIO.mm; sourceTree = "<group>"; };
-		9E733E551E0D1C1E00783B06 /* SuperpoweredReverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredReverb.h; sourceTree = "<group>"; };
-		9E733E561E0D1C1E00783B06 /* SuperpoweredRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredRoll.h; sourceTree = "<group>"; };
-		9E733E571E0D1C1E00783B06 /* SuperpoweredSimple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredSimple.h; sourceTree = "<group>"; };
-		9E733E5B1E0D403000783B06 /* TotalHeaderFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalHeaderFile.pch; sourceTree = "<group>"; };
-		9E733E5D1E0D43C100783B06 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		9E733E611E0D43D900783B06 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		9E733E631E0D43E100783B06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9E733E651E0D43ED00783B06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9E733E671E0D43FA00783B06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9E733E691E0D440400783B06 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		9E733E6B1E0D440D00783B06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9E733E6D1E0D441600783B06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9E733E711E0D4D0F00783B06 /* MusicSuperPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicSuperPlayer.h; sourceTree = "<group>"; };
-		9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MusicSuperPlayer.mm; sourceTree = "<group>"; };
-		9E733E751E0D4DFA00783B06 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
-		9E733E761E0D4DFA00783B06 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
-		9E733E931E0D533B00783B06 /* MusicPlayerPlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerPlayVC.h; sourceTree = "<group>"; };
-		9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerPlayVC.m; sourceTree = "<group>"; };
-		9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayerPlayVC.xib; sourceTree = "<group>"; };
-		9E733E991E0D538B00783B06 /* MusicPlayUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayUIViewController.h; sourceTree = "<group>"; };
-		9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayUIViewController.m; sourceTree = "<group>"; };
-		9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayUIViewController.xib; sourceTree = "<group>"; };
-		9E733EA41E0D54D000783B06 /* MusicPlayLogicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayLogicViewController.h; sourceTree = "<group>"; };
-		9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayLogicViewController.m; sourceTree = "<group>"; };
-		9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayLogicViewController.xib; sourceTree = "<group>"; };
-		9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredAudioMusicPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EBF20191E0D12A500C5A0B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9EBF201E1E0D12A500C5A0B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9EBF201F1E0D12A500C5A0B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9EBF20221E0D12A500C5A0B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9EBF20241E0D12A500C5A0B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9EBF20271E0D12A500C5A0B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9EBF20291E0D12A500C5A0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EBF202E1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPoweredAudioMusicPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EBF20321E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperPoweredAudioMusicPlayTests.m; sourceTree = "<group>"; };
-		9EBF20341E0D12A500C5A0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EBF20391E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPoweredAudioMusicPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EBF203D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperPoweredAudioMusicPlayUITests.m; sourceTree = "<group>"; };
-		9EBF203F1E0D12A500C5A0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9EBF20121E0D12A500C5A0B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */,
-				9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */,
-				9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */,
-				9E733E681E0D43FA00783B06 /* Foundation.framework in Frameworks */,
-				9E733E661E0D43ED00783B06 /* CoreGraphics.framework in Frameworks */,
-				9E733E641E0D43E100783B06 /* AVFoundation.framework in Frameworks */,
-				9E733E621E0D43D900783B06 /* Accelerate.framework in Frameworks */,
-				9E733E601E0D43CF00783B06 /* AudioToolbox.framework in Frameworks */,
-				9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */,
-				9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EBF202B1E0D12A500C5A0B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EBF20361E0D12A500C5A0B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		9E4DBEF21E0D1623003E9BC5 /* C++PlayerLib */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */,
-				9E733E4C1E0D1C1E00783B06 /* Superpowered3BandEQ.h */,
-				9E733E4D1E0D1C1E00783B06 /* SuperpoweredAdvancedAudioPlayer.h */,
-				9E733E4E1E0D1C1E00783B06 /* SuperpoweredEcho.h */,
-				9E733E4F1E0D1C1E00783B06 /* SuperpoweredFFT.h */,
-				9E733E501E0D1C1E00783B06 /* SuperpoweredFilter.h */,
-				9E733E511E0D1C1E00783B06 /* SuperpoweredFlanger.h */,
-				9E733E521E0D1C1E00783B06 /* SuperpoweredFX.h */,
-				9E733E531E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.h */,
-				9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */,
-				9E733E551E0D1C1E00783B06 /* SuperpoweredReverb.h */,
-				9E733E561E0D1C1E00783B06 /* SuperpoweredRoll.h */,
-				9E733E571E0D1C1E00783B06 /* SuperpoweredSimple.h */,
-			);
-			path = "C++PlayerLib";
-			sourceTree = "<group>";
-		};
-		9E733E5A1E0D400000783B06 /* TotalHeaderFile */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E5B1E0D403000783B06 /* TotalHeaderFile.pch */,
-			);
-			path = TotalHeaderFile;
-			sourceTree = "<group>";
-		};
-		9E733E5C1E0D43C100783B06 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E6D1E0D441600783B06 /* UIKit.framework */,
-				9E733E6B1E0D440D00783B06 /* QuartzCore.framework */,
-				9E733E691E0D440400783B06 /* MediaPlayer.framework */,
-				9E733E671E0D43FA00783B06 /* Foundation.framework */,
-				9E733E651E0D43ED00783B06 /* CoreGraphics.framework */,
-				9E733E631E0D43E100783B06 /* AVFoundation.framework */,
-				9E733E611E0D43D900783B06 /* Accelerate.framework */,
-				9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */,
-				9E733E5D1E0D43C100783B06 /* CoreMedia.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9E733E6F1E0D4CBE00783B06 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */,
-				9E733E701E0D4CD600783B06 /* PlayerOfC++ */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		9E733E701E0D4CD600783B06 /* PlayerOfC++ */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E711E0D4D0F00783B06 /* MusicSuperPlayer.h */,
-				9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */,
-			);
-			path = "PlayerOfC++";
-			sourceTree = "<group>";
-		};
-		9E733E741E0D4DD500783B06 /* AlertC */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E751E0D4DFA00783B06 /* AlertManager.h */,
-				9E733E761E0D4DFA00783B06 /* AlertManager.m */,
-			);
-			path = AlertC;
-			sourceTree = "<group>";
-		};
-		9E733E781E0D4E8A00783B06 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */,
-				9E733E981E0D538000783B06 /* MusicPlayUIViewController */,
-				9E733E921E0D533B00783B06 /* MusicPlayerPlayViewController */,
-			);
-			path = MusicPlayerPlayVC;
-			sourceTree = "<group>";
-		};
-		9E733E921E0D533B00783B06 /* MusicPlayerPlayViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E931E0D533B00783B06 /* MusicPlayerPlayVC.h */,
-				9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */,
-				9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */,
-			);
-			path = MusicPlayerPlayViewController;
-			sourceTree = "<group>";
-		};
-		9E733E981E0D538000783B06 /* MusicPlayUIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9E733E991E0D538B00783B06 /* MusicPlayUIViewController.h */,
-				9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */,
-				9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */,
-			);
-			path = MusicPlayUIViewController;
-			sourceTree = "<group>";
-		};
-		9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9E733EA41E0D54D000783B06 /* MusicPlayLogicViewController.h */,
-				9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */,
-				9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */,
-			);
-			path = MusicPlayLogicViewController;
-			sourceTree = "<group>";
-		};
-		9EBF200C1E0D12A500C5A0B3 = {
-			isa = PBXGroup;
-			children = (
-				9EBF20171E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */,
-				9EBF20311E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests */,
-				9EBF203C1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests */,
-				9EBF20161E0D12A500C5A0B3 /* Products */,
-				9E733E5C1E0D43C100783B06 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		9EBF20161E0D12A500C5A0B3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */,
-				9EBF202E1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.xctest */,
-				9EBF20391E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9EBF20171E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */ = {
-			isa = PBXGroup;
-			children = (
-				9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */,
-				9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */,
-				9EBF201E1E0D12A500C5A0B3 /* ViewController.h */,
-				9EBF201F1E0D12A500C5A0B3 /* ViewController.m */,
-				9E733E781E0D4E8A00783B06 /* Resource */,
-				9E733E741E0D4DD500783B06 /* AlertC */,
-				9E733E6F1E0D4CBE00783B06 /* UI */,
-				9E733E5A1E0D400000783B06 /* TotalHeaderFile */,
-				9E4DBEF21E0D1623003E9BC5 /* C++PlayerLib */,
-				9EBF20211E0D12A500C5A0B3 /* Main.storyboard */,
-				9EBF20241E0D12A500C5A0B3 /* Assets.xcassets */,
-				9EBF20261E0D12A500C5A0B3 /* LaunchScreen.storyboard */,
-				9EBF20291E0D12A500C5A0B3 /* Info.plist */,
-				9EBF20181E0D12A500C5A0B3 /* Supporting Files */,
-			);
-			path = SuperPoweredAudioMusicPlay;
-			sourceTree = "<group>";
-		};
-		9EBF20181E0D12A500C5A0B3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9EBF20191E0D12A500C5A0B3 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9EBF20311E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests */ = {
-			isa = PBXGroup;
-			children = (
-				9EBF20321E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m */,
-				9EBF20341E0D12A500C5A0B3 /* Info.plist */,
-			);
-			path = SuperPoweredAudioMusicPlayTests;
-			sourceTree = "<group>";
-		};
-		9EBF203C1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9EBF203D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m */,
-				9EBF203F1E0D12A500C5A0B3 /* Info.plist */,
-			);
-			path = SuperPoweredAudioMusicPlayUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		9EBF20141E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9EBF20421E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlay" */;
-			buildPhases = (
-				9EBF20111E0D12A500C5A0B3 /* Sources */,
-				9EBF20121E0D12A500C5A0B3 /* Frameworks */,
-				9EBF20131E0D12A500C5A0B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SuperPoweredAudioMusicPlay;
-			productName = SuperPoweredAudioMusicPlay;
-			productReference = 9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */;
-			productType = "com.apple.product-type.application";
-		};
-		9EBF202D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9EBF20451E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlayTests" */;
-			buildPhases = (
-				9EBF202A1E0D12A500C5A0B3 /* Sources */,
-				9EBF202B1E0D12A500C5A0B3 /* Frameworks */,
-				9EBF202C1E0D12A500C5A0B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9EBF20301E0D12A500C5A0B3 /* PBXTargetDependency */,
-			);
-			name = SuperPoweredAudioMusicPlayTests;
-			productName = SuperPoweredAudioMusicPlayTests;
-			productReference = 9EBF202E1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9EBF20381E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9EBF20481E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlayUITests" */;
-			buildPhases = (
-				9EBF20351E0D12A500C5A0B3 /* Sources */,
-				9EBF20361E0D12A500C5A0B3 /* Frameworks */,
-				9EBF20371E0D12A500C5A0B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9EBF203B1E0D12A500C5A0B3 /* PBXTargetDependency */,
-			);
-			name = SuperPoweredAudioMusicPlayUITests;
-			productName = SuperPoweredAudioMusicPlayUITests;
-			productReference = 9EBF20391E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		9EBF200D1E0D12A500C5A0B3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "岳克奎";
-				TargetAttributes = {
-					9EBF20141E0D12A500C5A0B3 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BKME25WU4F;
-						ProvisioningStyle = Automatic;
-					};
-					9EBF202D1E0D12A500C5A0B3 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BKME25WU4F;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 9EBF20141E0D12A500C5A0B3;
-					};
-					9EBF20381E0D12A500C5A0B3 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BKME25WU4F;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 9EBF20141E0D12A500C5A0B3;
-					};
-				};
-			};
-			buildConfigurationList = 9EBF20101E0D12A500C5A0B3 /* Build configuration list for PBXProject "SuperPoweredAudioMusicPlay" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 9EBF200C1E0D12A500C5A0B3;
-			productRefGroup = 9EBF20161E0D12A500C5A0B3 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				9EBF20141E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */,
-				9EBF202D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests */,
-				9EBF20381E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		9EBF20131E0D12A500C5A0B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */,
-				9E733E9D1E0D538B00783B06 /* MusicPlayUIViewController.xib in Resources */,
-				9E733EA81E0D54D000783B06 /* MusicPlayLogicViewController.xib in Resources */,
-				9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */,
-				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
-				9E733E971E0D533B00783B06 /* MusicPlayerPlayVC.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EBF202C1E0D12A500C5A0B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EBF20371E0D12A500C5A0B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9EBF20111E0D12A500C5A0B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E733E771E0D4DFA00783B06 /* AlertManager.m in Sources */,
-				9E733E731E0D4D0F00783B06 /* MusicSuperPlayer.mm in Sources */,
-				9E733E9C1E0D538B00783B06 /* MusicPlayUIViewController.m in Sources */,
-				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
-				9E733EA71E0D54D000783B06 /* MusicPlayLogicViewController.m in Sources */,
-				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
-				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
-				9E733E961E0D533B00783B06 /* MusicPlayerPlayVC.m in Sources */,
-				9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EBF202A1E0D12A500C5A0B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EBF20331E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EBF20351E0D12A500C5A0B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EBF203E1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9EBF20301E0D12A500C5A0B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9EBF20141E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */;
-			targetProxy = 9EBF202F1E0D12A500C5A0B3 /* PBXContainerItemProxy */;
-		};
-		9EBF203B1E0D12A500C5A0B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9EBF20141E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */;
-			targetProxy = 9EBF203A1E0D12A500C5A0B3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9EBF20211E0D12A500C5A0B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EBF20221E0D12A500C5A0B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9EBF20261E0D12A500C5A0B3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EBF20271E0D12A500C5A0B3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		9EBF20401E0D12A500C5A0B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		9EBF20411E0D12A500C5A0B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9EBF20431E0D12A500C5A0B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BKME25WU4F;
-				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
-				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SuperPoweredAudioMusicPlay/C++PlayerLib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		9EBF20441E0D12A500C5A0B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BKME25WU4F;
-				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
-				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SuperPoweredAudioMusicPlay/C++PlayerLib",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		9EBF20461E0D12A500C5A0B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BKME25WU4F;
-				INFOPLIST_FILE = SuperPoweredAudioMusicPlayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperPoweredAudioMusicPlay.app/SuperPoweredAudioMusicPlay";
-			};
-			name = Debug;
-		};
-		9EBF20471E0D12A500C5A0B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BKME25WU4F;
-				INFOPLIST_FILE = SuperPoweredAudioMusicPlayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperPoweredAudioMusicPlay.app/SuperPoweredAudioMusicPlay";
-			};
-			name = Release;
-		};
-		9EBF20491E0D12A500C5A0B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = BKME25WU4F;
-				INFOPLIST_FILE = SuperPoweredAudioMusicPlayUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SuperPoweredAudioMusicPlay;
-			};
-			name = Debug;
-		};
-		9EBF204A1E0D12A500C5A0B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = BKME25WU4F;
-				INFOPLIST_FILE = SuperPoweredAudioMusicPlayUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SuperPoweredAudioMusicPlay;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		9EBF20101E0D12A500C5A0B3 /* Build configuration list for PBXProject "SuperPoweredAudioMusicPlay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EBF20401E0D12A500C5A0B3 /* Debug */,
-				9EBF20411E0D12A500C5A0B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9EBF20421E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EBF20431E0D12A500C5A0B3 /* Debug */,
-				9EBF20441E0D12A500C5A0B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9EBF20451E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlayTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EBF20461E0D12A500C5A0B3 /* Debug */,
-				9EBF20471E0D12A500C5A0B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9EBF20481E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlayUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EBF20491E0D12A500C5A0B3 /* Debug */,
-				9EBF204A1E0D12A500C5A0B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 9EBF200D1E0D12A500C5A0B3 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>02F9438AA207E380F6DD65DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5697A194E99D4E2CA263DC5</string>
+				<string>F9D11DA6036558DD962296B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13EE40B7770266BE2D80F343</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>18049BDD548B9A2E37FE0FEE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>20CD126053622FB4130456B2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>74890BB5AAF1ABA3B9574C51</key>
+		<dict>
+			<key>fileRef</key>
+			<string>13EE40B7770266BE2D80F343</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E4DBEF21E0D1623003E9BC5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E4B1E0D1C1E00783B06</string>
+				<string>9E733E4C1E0D1C1E00783B06</string>
+				<string>9E733E4D1E0D1C1E00783B06</string>
+				<string>9E733E4E1E0D1C1E00783B06</string>
+				<string>9E733E4F1E0D1C1E00783B06</string>
+				<string>9E733E501E0D1C1E00783B06</string>
+				<string>9E733E511E0D1C1E00783B06</string>
+				<string>9E733E521E0D1C1E00783B06</string>
+				<string>9E733E531E0D1C1E00783B06</string>
+				<string>9E733E541E0D1C1E00783B06</string>
+				<string>9E733E551E0D1C1E00783B06</string>
+				<string>9E733E561E0D1C1E00783B06</string>
+				<string>9E733E571E0D1C1E00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>C++PlayerLib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E4B1E0D1C1E00783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libSuperpoweredAudioIOS.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E4C1E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Superpowered3BandEQ.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E4D1E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredAdvancedAudioPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E4E1E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredEcho.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E4F1E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredFFT.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E501E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredFilter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E511E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredFlanger.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E521E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredFX.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E531E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredIOSAudioIO.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E541E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.objcpp</string>
+			<key>path</key>
+			<string>SuperpoweredIOSAudioIO.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E551E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredReverb.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E561E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredRoll.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E571E0D1C1E00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SuperpoweredSimple.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E581E0D1C1E00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E4B1E0D1C1E00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E591E0D1C1E00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E541E0D1C1E00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E5A1E0D400000783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E5B1E0D403000783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TotalHeaderFile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E5B1E0D403000783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TotalHeaderFile.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E5C1E0D43C100783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E6D1E0D441600783B06</string>
+				<string>9E733E6B1E0D440D00783B06</string>
+				<string>9E733E691E0D440400783B06</string>
+				<string>9E733E671E0D43FA00783B06</string>
+				<string>9E733E651E0D43ED00783B06</string>
+				<string>9E733E631E0D43E100783B06</string>
+				<string>9E733E611E0D43D900783B06</string>
+				<string>9E733E5F1E0D43CF00783B06</string>
+				<string>9E733E5D1E0D43C100783B06</string>
+				<string>13EE40B7770266BE2D80F343</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E5D1E0D43C100783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreMedia.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreMedia.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E5E1E0D43C100783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E5D1E0D43C100783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E5F1E0D43CF00783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AudioToolbox.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AudioToolbox.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E601E0D43CF00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E5F1E0D43CF00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E611E0D43D900783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Accelerate.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Accelerate.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E621E0D43D900783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E611E0D43D900783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E631E0D43E100783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E641E0D43E100783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E631E0D43E100783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E651E0D43ED00783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E661E0D43ED00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E651E0D43ED00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E671E0D43FA00783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E681E0D43FA00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E671E0D43FA00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E691E0D440400783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MediaPlayer.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MediaPlayer.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E6A1E0D440400783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E691E0D440400783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E6B1E0D440D00783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E6C1E0D440D00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E6B1E0D440D00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E6D1E0D441600783B06</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9E733E6E1E0D441600783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E6D1E0D441600783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E6F1E0D4CBE00783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E7D1E0D4F5C00783B06</string>
+				<string>9E733E701E0D4CD600783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>UI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E701E0D4CD600783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E711E0D4D0F00783B06</string>
+				<string>9E733E721E0D4D0F00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PlayerOfC++</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E711E0D4D0F00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MusicSuperPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E721E0D4D0F00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.objcpp</string>
+			<key>path</key>
+			<string>MusicSuperPlayer.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E731E0D4D0F00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E721E0D4D0F00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E741E0D4DD500783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E751E0D4DFA00783B06</string>
+				<string>9E733E761E0D4DFA00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AlertC</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E751E0D4DFA00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AlertManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E761E0D4DFA00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AlertManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E771E0D4DFA00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E761E0D4DFA00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E781E0D4E8A00783B06</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resource</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E7D1E0D4F5C00783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E9E1E0D548B00783B06</string>
+				<string>9E733E981E0D538000783B06</string>
+				<string>9E733E921E0D533B00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MusicPlayerPlayVC</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E921E0D533B00783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E931E0D533B00783B06</string>
+				<string>9E733E941E0D533B00783B06</string>
+				<string>9E733E951E0D533B00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MusicPlayerPlayViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E931E0D533B00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MusicPlayerPlayVC.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E941E0D533B00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MusicPlayerPlayVC.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E951E0D533B00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MusicPlayerPlayVC.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E961E0D533B00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E941E0D533B00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E971E0D533B00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E951E0D533B00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E981E0D538000783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733E991E0D538B00783B06</string>
+				<string>9E733E9A1E0D538B00783B06</string>
+				<string>9E733E9B1E0D538B00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MusicPlayUIViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E991E0D538B00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MusicPlayUIViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E9A1E0D538B00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MusicPlayUIViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E9B1E0D538B00783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MusicPlayUIViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733E9C1E0D538B00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E9A1E0D538B00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E9D1E0D538B00783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733E9B1E0D538B00783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733E9E1E0D548B00783B06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9E733EA41E0D54D000783B06</string>
+				<string>9E733EA51E0D54D000783B06</string>
+				<string>9E733EA61E0D54D000783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MusicPlayLogicViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733EA41E0D54D000783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MusicPlayLogicViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733EA51E0D54D000783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MusicPlayLogicViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733EA61E0D54D000783B06</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MusicPlayLogicViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E733EA71E0D54D000783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733EA51E0D54D000783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E733EA81E0D54D000783B06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E733EA61E0D54D000783B06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF200C1E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF20171E0D12A500C5A0B3</string>
+				<string>9EBF20311E0D12A500C5A0B3</string>
+				<string>9EBF203C1E0D12A500C5A0B3</string>
+				<string>9EBF20161E0D12A500C5A0B3</string>
+				<string>9E733E5C1E0D43C100783B06</string>
+				<string>02F9438AA207E380F6DD65DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF200D1E0D12A500C5A0B3</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0820</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>&#23731;&#20811;&#22862;</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>9EBF20141E0D12A500C5A0B3</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>BKME25WU4F</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>9EBF202D1E0D12A500C5A0B3</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>BKME25WU4F</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>9EBF20141E0D12A500C5A0B3</string>
+					</dict>
+					<key>9EBF20381E0D12A500C5A0B3</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>BKME25WU4F</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>9EBF20141E0D12A500C5A0B3</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>9EBF20101E0D12A500C5A0B3</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>9EBF200C1E0D12A500C5A0B3</string>
+			<key>productRefGroup</key>
+			<string>9EBF20161E0D12A500C5A0B3</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9EBF20141E0D12A500C5A0B3</string>
+				<string>9EBF202D1E0D12A500C5A0B3</string>
+				<string>9EBF20381E0D12A500C5A0B3</string>
+			</array>
+		</dict>
+		<key>9EBF20101E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9EBF20401E0D12A500C5A0B3</string>
+				<string>9EBF20411E0D12A500C5A0B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9EBF20111E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9E733E771E0D4DFA00783B06</string>
+				<string>9E733E731E0D4D0F00783B06</string>
+				<string>9E733E9C1E0D538B00783B06</string>
+				<string>9EBF20201E0D12A500C5A0B3</string>
+				<string>9E733EA71E0D54D000783B06</string>
+				<string>9EBF201D1E0D12A500C5A0B3</string>
+				<string>9EBF201A1E0D12A500C5A0B3</string>
+				<string>9E733E961E0D533B00783B06</string>
+				<string>9E733E591E0D1C1E00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF20121E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9E733E6E1E0D441600783B06</string>
+				<string>9E733E6C1E0D440D00783B06</string>
+				<string>9E733E6A1E0D440400783B06</string>
+				<string>9E733E681E0D43FA00783B06</string>
+				<string>9E733E661E0D43ED00783B06</string>
+				<string>9E733E641E0D43E100783B06</string>
+				<string>9E733E621E0D43D900783B06</string>
+				<string>9E733E601E0D43CF00783B06</string>
+				<string>9E733E5E1E0D43C100783B06</string>
+				<string>9E733E581E0D1C1E00783B06</string>
+				<string>74890BB5AAF1ABA3B9574C51</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF20131E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9EBF20281E0D12A500C5A0B3</string>
+				<string>9E733E9D1E0D538B00783B06</string>
+				<string>9E733EA81E0D54D000783B06</string>
+				<string>9EBF20251E0D12A500C5A0B3</string>
+				<string>9EBF20231E0D12A500C5A0B3</string>
+				<string>9E733E971E0D533B00783B06</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF20141E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9EBF20421E0D12A500C5A0B3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>20CD126053622FB4130456B2</string>
+				<string>9EBF20111E0D12A500C5A0B3</string>
+				<string>9EBF20121E0D12A500C5A0B3</string>
+				<string>9EBF20131E0D12A500C5A0B3</string>
+				<string>DF5B3A16AE0402CDBCFCABBF</string>
+				<string>18049BDD548B9A2E37FE0FEE</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SuperPoweredAudioMusicPlay</string>
+			<key>productName</key>
+			<string>SuperPoweredAudioMusicPlay</string>
+			<key>productReference</key>
+			<string>9EBF20151E0D12A500C5A0B3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>9EBF20151E0D12A500C5A0B3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlay.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9EBF20161E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF20151E0D12A500C5A0B3</string>
+				<string>9EBF202E1E0D12A500C5A0B3</string>
+				<string>9EBF20391E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20171E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF201B1E0D12A500C5A0B3</string>
+				<string>9EBF201C1E0D12A500C5A0B3</string>
+				<string>9EBF201E1E0D12A500C5A0B3</string>
+				<string>9EBF201F1E0D12A500C5A0B3</string>
+				<string>9E733E781E0D4E8A00783B06</string>
+				<string>9E733E741E0D4DD500783B06</string>
+				<string>9E733E6F1E0D4CBE00783B06</string>
+				<string>9E733E5A1E0D400000783B06</string>
+				<string>9E4DBEF21E0D1623003E9BC5</string>
+				<string>9EBF20211E0D12A500C5A0B3</string>
+				<string>9EBF20241E0D12A500C5A0B3</string>
+				<string>9EBF20261E0D12A500C5A0B3</string>
+				<string>9EBF20291E0D12A500C5A0B3</string>
+				<string>9EBF20181E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlay</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20181E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF20191E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20191E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF201A1E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF20191E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF201B1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF201C1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF201D1E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF201C1E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF201E1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF201F1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20201E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF201F1E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF20211E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF20221E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20221E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20231E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF20211E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF20241E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20251E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF20241E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF20261E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF20271E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20271E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20281E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF20261E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF20291E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF202A1E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9EBF20331E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF202B1E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF202C1E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF202D1E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9EBF20451E0D12A500C5A0B3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9EBF202A1E0D12A500C5A0B3</string>
+				<string>9EBF202B1E0D12A500C5A0B3</string>
+				<string>9EBF202C1E0D12A500C5A0B3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9EBF20301E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SuperPoweredAudioMusicPlayTests</string>
+			<key>productName</key>
+			<string>SuperPoweredAudioMusicPlayTests</string>
+			<key>productReference</key>
+			<string>9EBF202E1E0D12A500C5A0B3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>9EBF202E1E0D12A500C5A0B3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlayTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9EBF202F1E0D12A500C5A0B3</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>9EBF200D1E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9EBF20141E0D12A500C5A0B3</string>
+			<key>remoteInfo</key>
+			<string>SuperPoweredAudioMusicPlay</string>
+		</dict>
+		<key>9EBF20301E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>9EBF20141E0D12A500C5A0B3</string>
+			<key>targetProxy</key>
+			<string>9EBF202F1E0D12A500C5A0B3</string>
+		</dict>
+		<key>9EBF20311E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF20321E0D12A500C5A0B3</string>
+				<string>9EBF20341E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlayTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20321E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlayTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20331E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF20321E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF20341E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20351E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9EBF203E1E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF20361E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF20371E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EBF20381E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9EBF20481E0D12A500C5A0B3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9EBF20351E0D12A500C5A0B3</string>
+				<string>9EBF20361E0D12A500C5A0B3</string>
+				<string>9EBF20371E0D12A500C5A0B3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9EBF203B1E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SuperPoweredAudioMusicPlayUITests</string>
+			<key>productName</key>
+			<string>SuperPoweredAudioMusicPlayUITests</string>
+			<key>productReference</key>
+			<string>9EBF20391E0D12A500C5A0B3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>9EBF20391E0D12A500C5A0B3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlayUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9EBF203A1E0D12A500C5A0B3</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>9EBF200D1E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9EBF20141E0D12A500C5A0B3</string>
+			<key>remoteInfo</key>
+			<string>SuperPoweredAudioMusicPlay</string>
+		</dict>
+		<key>9EBF203B1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>9EBF20141E0D12A500C5A0B3</string>
+			<key>targetProxy</key>
+			<string>9EBF203A1E0D12A500C5A0B3</string>
+		</dict>
+		<key>9EBF203C1E0D12A500C5A0B3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EBF203D1E0D12A500C5A0B3</string>
+				<string>9EBF203F1E0D12A500C5A0B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlayUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF203D1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SuperPoweredAudioMusicPlayUITests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF203E1E0D12A500C5A0B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EBF203D1E0D12A500C5A0B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9EBF203F1E0D12A500C5A0B3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EBF20401E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9EBF20411E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9EBF20421E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9EBF20431E0D12A500C5A0B3</string>
+				<string>9EBF20441E0D12A500C5A0B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9EBF20431E0D12A500C5A0B3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E5697A194E99D4E2CA263DC5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>BKME25WU4F</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>/Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SuperPoweredAudioMusicPlay/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/SuperPoweredAudioMusicPlay/C++PlayerLib</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>QQ738816656.SuperPoweredAudioMusicPlay</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9EBF20441E0D12A500C5A0B3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F9D11DA6036558DD962296B3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>BKME25WU4F</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>/Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SuperPoweredAudioMusicPlay/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/SuperPoweredAudioMusicPlay/C++PlayerLib</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>QQ738816656.SuperPoweredAudioMusicPlay</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9EBF20451E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9EBF20461E0D12A500C5A0B3</string>
+				<string>9EBF20471E0D12A500C5A0B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9EBF20461E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>BKME25WU4F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SuperPoweredAudioMusicPlayTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>QQ738816656.SuperPoweredAudioMusicPlayTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/SuperPoweredAudioMusicPlay.app/SuperPoweredAudioMusicPlay</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9EBF20471E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>BKME25WU4F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SuperPoweredAudioMusicPlayTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>QQ738816656.SuperPoweredAudioMusicPlayTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/SuperPoweredAudioMusicPlay.app/SuperPoweredAudioMusicPlay</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9EBF20481E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9EBF20491E0D12A500C5A0B3</string>
+				<string>9EBF204A1E0D12A500C5A0B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9EBF20491E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>BKME25WU4F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SuperPoweredAudioMusicPlayUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>QQ738816656.SuperPoweredAudioMusicPlayUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>SuperPoweredAudioMusicPlay</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9EBF204A1E0D12A500C5A0B3</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>BKME25WU4F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SuperPoweredAudioMusicPlayUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>QQ738816656.SuperPoweredAudioMusicPlayUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>SuperPoweredAudioMusicPlay</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DF5B3A16AE0402CDBCFCABBF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E5697A194E99D4E2CA263DC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9D11DA6036558DD962296B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>9EBF200D1E0D12A500C5A0B3</string>
+</dict>
+</plist>

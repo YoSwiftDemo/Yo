@@ -41,16 +41,6 @@ static MusicDataManager *signleton = nil;
 {
     return signleton;
 }
-#pragma mark -MusicDataManager 单利
-/**
- *  @brief:MusicDataManager 单利
- *
- *  @use:找到brief:MusicDataManager
- */
--(void)showMusicPlayerPlayViewControllerOnSuperViewController:(UIViewController *)superViewController
-                                                  inSuperView:(UIView *)superView
-                                           musicPlayerVCFrame:(CGRect)musicPlayerVCFrame
-                                                     complete:(void(^)(BOOL finished,MusicPlayerPlayVC *musicPlayerPlayViewController))block{
 
-}
+
 @end

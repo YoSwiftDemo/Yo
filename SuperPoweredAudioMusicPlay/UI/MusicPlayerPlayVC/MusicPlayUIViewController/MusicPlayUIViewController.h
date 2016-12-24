@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MusicPlayUIViewController : UIViewController
+#pragma mark -life cycle ------------------------------------生 命 周 期 区 域 -----------------------------------
 
++(void)showMusicPlayUIViewControllerOnSuperViewController:(UIViewController *)superViewController
+                                 LogicViewControllerFrame:(CGRect)LogicViewControllerFrame
+                                                 complete:(void(^)(BOOL finished,MusicPlayUIViewController *musicPlayUIViewController))block;
 @end

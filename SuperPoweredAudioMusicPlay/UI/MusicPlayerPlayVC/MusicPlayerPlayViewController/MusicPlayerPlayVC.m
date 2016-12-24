@@ -25,10 +25,27 @@
 }
 
 #pragma mark -life cycle ------------------------------ 生 命 周 期 管 控 区 域 ------------------------------------------
--(void)showMusicPlayerPlayVCOnSuperViewController:(UIViewController *)superViewController
+#pragma mark -  创建新的音乐播放VC
+/**
+ * @brief: 创建新的音乐播放VC
+ *
+ * @prama: superViewController
+ * @prama: superView
+ * @prama: musicPlayerVCFrame
+ * @prama: blcok
+ *
+ * @discussion: 1. superViewController == nil     superView == nil         --》rootVC
+ *             2. superViewController ！= nil     superView == nil         -->子VC 子View 归属于同一个父VC
+ *             3.  2. superViewController ！= nil superView ！= nil         --> 因为logic下的子VC是UI层，可以把View放到UI层VC，VC放到logic层VC
+ *
+ *
+ * @use: 控制中心需要加载音乐播放VC
+ */
++(void)showMusicPlayerPlayVCOnSuperViewController:(UIViewController *)superViewController
                                       inSuperView:(UIView *)superView
                                musicPlayerVCFrame:(CGRect)musicPlayerVCFrame
-                                         complete:(void(^)(BOOL finished,MusicPlayerPlayVC *musicPlayerPlayViewController))block{
+                                         complete:(void(^)(BOOL finished,
+                                                           MusicPlayerPlayVC *musicPlayerPlayViewController))block{
     if(superViewController){
         for (UIViewController *oneViewController in superViewController.childViewControllers) {
             if ([oneViewController isKindOfClass:[MusicPlayerPlayVC class]]) {
@@ -40,7 +57,7 @@
     }
     //创建新的musicPlayerPlayViewController
     MusicPlayerPlayVC *musicPlayerPlayViewController = [[MusicPlayerPlayVC alloc]initWithNibName:@"MusicPlayerPlayVC"
-                                                                                          bundle:nil];
+                                                                                                   bundle:nil];
     //frame
     musicPlayerPlayViewController.view.frame =musicPlayerVCFrame;
     //加载到superViewController
@@ -51,6 +68,20 @@
     if (superView) {
         [superView addSubview:musicPlayerPlayViewController.view];
     }
+    //加载逻辑层
+    __weak MusicPlayerPlayVC *weak_musicPlayerPlayViewController = musicPlayerPlayViewController;
+    [MusicPlayLogicViewController showMusicPlayLogicViewControllerOnSuperViewController:musicPlayerPlayViewController
+                                                               LogicViewControllerFrame:musicPlayerPlayViewController.view.frame
+                                                                               complete:^(BOOL finished,
+                                                                                          MusicPlayLogicViewController *musicPlayLogicViewController) {
+                                                                                     //记录逻辑层
+                                                                                   if (finished&&musicPlayLogicViewController) {
+                                                                                       weak_musicPlayerPlayViewController.recordMusicPlayLogicViewController = musicPlayLogicViewController;
+                                                                                
+                                                                                   }
+                                                                                   
+        
+    }];
     //如果作为单独一块容器
     if (!superViewController&&!superView) {
         AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;

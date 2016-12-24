@@ -9,7 +9,6 @@
 #import "MusicPlayLogicViewController.h"
 
 @interface MusicPlayLogicViewController ()
-
 @end
 
 @implementation MusicPlayLogicViewController
@@ -25,19 +24,44 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma mark -life cycle ------------------------------------生 命 周 期 区 域 -----------------------------------
+#pragma mark -  加载 承载音乐逻辑层的控制器  logic VC
+/**
+ * @brief: 加载 承载音乐逻辑层的控制器  logic VC
+ *
+ * @prama: superViewController                     音乐VC----->MusicPlayerPlayVC
+ * @prama: LogicViewControllerFrame
+ * @prama: finished
+ * @prama: musicPlayLogicViewController
+ *
+ * @discussion：父子关系 音乐VC>logic>UI
+ *
+ * @use:音乐播放器创建的同时，需要加载 承载音乐逻辑层的控制器
+ */
 +(void)showMusicPlayLogicViewControllerOnSuperViewController:(UIViewController *)superViewController
                                     LogicViewControllerFrame:(CGRect)LogicViewControllerFrame
-                                                    complete:(void(^)(BOOL finished,MusicPlayLogicViewController *musicPlayLogicViewController))block{
+                                                    complete:(void(^)(BOOL finished,
+                                                                      MusicPlayLogicViewController *musicPlayLogicViewController))block{
     if (!superViewController) {
         if (block) {
             block(NO,nil);
         }
+        return;
     }
     //创建新的逻辑层VC
     MusicPlayLogicViewController *musicPlayLogicViewController = [[MusicPlayLogicViewController alloc]initWithNibName:@"MusicPlayLogicViewController"
                                                                                                                bundle:nil];
     //添加到父视图上
     [superViewController addChildViewController:musicPlayLogicViewController];
+    [superViewController.view addSubview:musicPlayLogicViewController.view];
+    //加载UI层
+    __weak MusicPlayLogicViewController *weak_musicPlayLogicViewController = musicPlayLogicViewController;
+    [MusicPlayUIViewController showMusicPlayUIViewControllerOnSuperViewController:musicPlayLogicViewController
+                                                         LogicViewControllerFrame:musicPlayLogicViewController.view.frame
+                                                                         complete:^(BOOL finished,
+                                                                                    MusicPlayUIViewController *musicPlayUIViewController) {
+                                                                             //记录UI层
+                                                                             weak_musicPlayLogicViewController.recordMusicPlayUIViewController = musicPlayUIViewController;
+    }];
     //返回
     if (block) {
         block(YES,musicPlayLogicViewController);

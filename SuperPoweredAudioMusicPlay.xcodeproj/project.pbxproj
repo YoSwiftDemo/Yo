@@ -271,8 +271,6 @@
 		9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */ = {
 			isa = PBXGroup;
 			children = (
-				9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */,
-				9E733E981E0D538000783B06 /* MusicPlayUIViewController */,
 				9E733E921E0D533B00783B06 /* MusicPlayerPlayViewController */,
 			);
 			path = MusicPlayerPlayVC;
@@ -284,6 +282,7 @@
 				9E733E931E0D533B00783B06 /* MusicPlayerPlayVC.h */,
 				9E733E941E0D533B00783B06 /* MusicPlayerPlayVC.m */,
 				9E733E951E0D533B00783B06 /* MusicPlayerPlayVC.xib */,
+				9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */,
 			);
 			path = MusicPlayerPlayViewController;
 			sourceTree = "<group>";
@@ -295,7 +294,8 @@
 				9E733E9A1E0D538B00783B06 /* MusicPlayUIViewController.m */,
 				9E733E9B1E0D538B00783B06 /* MusicPlayUIViewController.xib */,
 			);
-			path = MusicPlayUIViewController;
+			name = MusicPlayUIViewController;
+			path = ../MusicPlayUIViewController;
 			sourceTree = "<group>";
 		};
 		9E733E9E1E0D548B00783B06 /* MusicPlayLogicViewController */ = {
@@ -304,8 +304,10 @@
 				9E733EA41E0D54D000783B06 /* MusicPlayLogicViewController.h */,
 				9E733EA51E0D54D000783B06 /* MusicPlayLogicViewController.m */,
 				9E733EA61E0D54D000783B06 /* MusicPlayLogicViewController.xib */,
+				9E733E981E0D538000783B06 /* MusicPlayUIViewController */,
 			);
-			path = MusicPlayLogicViewController;
+			name = MusicPlayLogicViewController;
+			path = ../MusicPlayLogicViewController;
 			sourceTree = "<group>";
 		};
 		9E733EA91E0D5C9100783B06 /* MusicPlayEffectVC */ = {

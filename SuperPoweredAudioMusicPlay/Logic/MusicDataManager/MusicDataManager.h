@@ -18,16 +18,6 @@
  */
 + (MusicDataManager *)shareManager;
 
-#pragma mark -MusicPlayerPlayVC 音乐播放界面
-/**
- *  @brief:MusicPlayerPlayVC 音乐播放界面
- *
- *  @use:展示音乐播放界面
- */
--(void)showMusicPlayerPlayViewControllerOnSuperViewController:(UIViewController *)superViewController
-                                                  inSuperView:(UIView *)superView
-                                           musicPlayerVCFrame:(CGRect)musicPlayerVCFrame
-                                                     complete:(void(^)(BOOL finished,MusicPlayerPlayVC *musicPlayerPlayViewController))block;
 
 
 

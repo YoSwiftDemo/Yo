@@ -819,6 +819,7 @@
 			baseConfigurationReference = E5697A194E99D4E2CA263DC5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
@@ -838,6 +839,7 @@
 			baseConfigurationReference = F9D11DA6036558DD962296B3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;

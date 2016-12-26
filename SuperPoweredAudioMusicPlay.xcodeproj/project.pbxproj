@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		74890BB5AAF1ABA3B9574C51 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EE40B7770266BE2D80F343 /* libPods.a */; };
+		9E1911681E11529C00A1B073 /* NavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1911671E11529C00A1B073 /* NavView.m */; };
+		9E19116A1E1152A700A1B073 /* NavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1911691E1152A700A1B073 /* NavView.xib */; };
 		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
 		9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */; };
 		9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5D1E0D43C100783B06 /* CoreMedia.framework */; };
@@ -68,6 +70,10 @@
 
 /* Begin PBXFileReference section */
 		13EE40B7770266BE2D80F343 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1911661E11529C00A1B073 /* NavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavView.h; sourceTree = "<group>"; };
+		9E1911671E11529C00A1B073 /* NavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavView.m; sourceTree = "<group>"; };
+		9E1911691E1152A700A1B073 /* NavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavView.xib; sourceTree = "<group>"; };
+		9E19116C1E11570C00A1B073 /* ExtensionTotalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionTotalHeader.h; sourceTree = "<group>"; };
 		9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioIOS.a; sourceTree = "<group>"; };
 		9E733E4C1E0D1C1E00783B06 /* Superpowered3BandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpowered3BandEQ.h; sourceTree = "<group>"; };
 		9E733E4D1E0D1C1E00783B06 /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
@@ -186,6 +192,41 @@
 				F9D11DA6036558DD962296B3 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E1911631E11526900A1B073 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9E19116B1E1156EC00A1B073 /* ExtensionTotalHeader */,
+				9E1911641E11527500A1B073 /* View */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		9E1911641E11527500A1B073 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E1911651E11527C00A1B073 /* NavView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9E1911651E11527C00A1B073 /* NavView */ = {
+			isa = PBXGroup;
+			children = (
+				9E1911661E11529C00A1B073 /* NavView.h */,
+				9E1911671E11529C00A1B073 /* NavView.m */,
+				9E1911691E1152A700A1B073 /* NavView.xib */,
+			);
+			name = NavView;
+			sourceTree = "<group>";
+		};
+		9E19116B1E1156EC00A1B073 /* ExtensionTotalHeader */ = {
+			isa = PBXGroup;
+			children = (
+				9E19116C1E11570C00A1B073 /* ExtensionTotalHeader.h */,
+			);
+			name = ExtensionTotalHeader;
 			sourceTree = "<group>";
 		};
 		9E4DBEF21E0D1623003E9BC5 /* C++PlayerLib */ = {
@@ -420,6 +461,7 @@
 				9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */,
 				9EBF201E1E0D12A500C5A0B3 /* ViewController.h */,
 				9EBF201F1E0D12A500C5A0B3 /* ViewController.m */,
+				9E1911631E11526900A1B073 /* Extension */,
 				9E733ED21E0D5EAE00783B06 /* Logic */,
 				9E733E781E0D4E8A00783B06 /* Resource */,
 				9E733E741E0D4DD500783B06 /* AlertC */,
@@ -581,6 +623,7 @@
 				9E733EA81E0D54D000783B06 /* MusicPlayLogicViewController.xib in Resources */,
 				9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */,
 				9E733ECC1E0D5CEA00783B06 /* SuperPlayerSoundEffectSliderView.xib in Resources */,
+				9E19116A1E1152A700A1B073 /* NavView.xib in Resources */,
 				9E733EC81E0D5CEA00783B06 /* SuperPlayerSoundEffectBtnsView.xib in Resources */,
 				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
 				9E733E971E0D533B00783B06 /* MusicPlayerPlayVC.xib in Resources */,
@@ -667,6 +710,7 @@
 				9E733EA71E0D54D000783B06 /* MusicPlayLogicViewController.m in Sources */,
 				9E733ED61E0D5F3000783B06 /* MusicCenterManager.m in Sources */,
 				9E733EC91E0D5CEA00783B06 /* SuperPlayerSoundEffectPitchView.m in Sources */,
+				9E1911681E11529C00A1B073 /* NavView.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
 				9E733E961E0D533B00783B06 /* MusicPlayerPlayVC.m in Sources */,

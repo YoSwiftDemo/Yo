@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,8 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-w0-dsh" customClass="NavView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1Ui-3F-Hgq"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEp-jf-Y2L">
-                    <rect key="frame" x="103" y="189" width="81" height="30"/>
+                    <rect key="frame" x="136" y="224" width="81" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.21324382980000001" blue="0.1709883458" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="音乐UI层VC">
@@ -29,6 +36,12 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.085799790918827057" green="0.75324195623397827" blue="0.57982546091079712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8x9-w0-dsh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1gU-K8-AAN"/>
+                <constraint firstAttribute="trailing" secondItem="8x9-w0-dsh" secondAttribute="trailing" id="QbN-AG-3gQ"/>
+                <constraint firstItem="8x9-w0-dsh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yya-UN-JDT"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
 </document>

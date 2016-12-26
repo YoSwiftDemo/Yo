@@ -13,10 +13,14 @@
 @end
 
 @implementation MusicPlayerPlayVC
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,7 +89,9 @@
     //如果作为单独一块容器
     if (!superViewController&&!superView) {
         AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        delegate.window.rootViewController =  [[UINavigationController alloc]initWithRootViewController:musicPlayerPlayViewController];
+        UINavigationController *nav =  [[UINavigationController alloc]initWithRootViewController:musicPlayerPlayViewController];
+        delegate.window.rootViewController =  nav;
+        nav.navigationBar.hidden = YES;
     }
     // 加载子VC   logic  和 UI
     

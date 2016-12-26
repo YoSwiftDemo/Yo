@@ -51,6 +51,8 @@
     //添加到父视图上
     [superViewController addChildViewController:musicPlayUIViewController];
     [superViewController.view addSubview:musicPlayUIViewController.view];
+    //frme
+    musicPlayUIViewController.view.frame = LogicViewControllerFrame;
     //返回
     if (block) {
         block(YES,musicPlayUIViewController);

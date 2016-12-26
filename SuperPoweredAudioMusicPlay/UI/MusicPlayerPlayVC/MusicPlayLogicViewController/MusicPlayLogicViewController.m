@@ -53,6 +53,8 @@
     //添加到父视图上
     [superViewController addChildViewController:musicPlayLogicViewController];
     [superViewController.view addSubview:musicPlayLogicViewController.view];
+    //frame
+    musicPlayLogicViewController.view.frame = LogicViewControllerFrame;
     //加载UI层
     __weak MusicPlayLogicViewController *weak_musicPlayLogicViewController = musicPlayLogicViewController;
     [MusicPlayUIViewController showMusicPlayUIViewControllerOnSuperViewController:musicPlayLogicViewController

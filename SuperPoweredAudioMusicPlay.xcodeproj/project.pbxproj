@@ -900,7 +900,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
-				GCC_PREFIX_HEADER = /Users/yuekekui/GitHubProject/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
+				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -920,7 +920,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
-				GCC_PREFIX_HEADER = /Users/yuekekui/GitHubProject/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
+				GCC_PREFIX_HEADER = /Users/yuekekui/GitHub/SuperPoweredAudioMusicPlay/SuperPoweredAudioMusicPlay/TotalHeaderFile/TotalHeaderFile.pch;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

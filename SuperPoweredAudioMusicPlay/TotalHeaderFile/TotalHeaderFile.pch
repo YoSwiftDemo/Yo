@@ -21,10 +21,14 @@
 #import "MusicDataManager.h"                      //音乐数据层
 #import "AppDelegate.h"
 
+#import "NavView.h"
+#import "PlayerUIView.h"
 
 
 #pragma mark -lib ---------------------第三方库区域 ---------------------------------
+
 #import <XXNibBridge.h>                           //xib动态桥接库
+
 #pragma mark --------------------------宏定义区域 -----------------------------------
 #define LRC_RENDER_COLOR   [UIColor greenColor]   //LrcLabel 歌词渲染的颜色(绿色)
 #define SUPER_PLAYER_UIVC_FRAME_HEIGHT  120       //承载播放器的VC frame的高度

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <XXNibBridge.h> 
 @class NavView;
 @protocol NavViewDelegate <NSObject>
 @optional

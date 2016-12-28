@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class PlayerUIView;//一半写代理方法最好自个嫩进取，以备不时之需
+@class PlayerUIView;//写代理方法最好自个嫩进取，以备不时之需
 @protocol PlayerUIViewDeleagte <NSObject>
 @optional
 //音效调节btn  调出   最好Vc改成View吧  暂时没改
@@ -19,7 +18,6 @@
 -(void)changeMusicPlayOfresumeOrWithPlayerUIView:(PlayerUIView *)playerUIView;
 // sldier 数据更变 最好 合并在一起 SDK里基本用到时候用一对，很骚单独用
 -(void)changeMusicControlSliderValueWithPlayerUIView:(PlayerUIView *)playerUIView bgmValue:(CGFloat)bgmValue  micValue:(CGFloat)micValue;
-
 @end
 //桥接
 @interface PlayerUIView : UIView<XXNibBridge>
@@ -40,6 +38,5 @@
 @property(assign,nonatomic)CGFloat            recordProgressValue; //记录音乐进度 音量0-1.0f
 @property (weak,nonatomic) id<PlayerUIViewDeleagte>delegate;       //代理
 
-#pragma mark -public  methods ------------------------------------------ 公有方法区域  -----------------------------------------
 
 @end

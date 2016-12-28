@@ -23,7 +23,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-#pragma mark -life cycle ------------------------------------生 命 周 期 区 域 -----------------------------------
+#pragma mark -public  methods ------------------------------------------ 公有方法区域  -----------------------------------------
 #pragma mark -  加载 承载音乐UI层的控制器  UI VC
 /**
  * @brief: 加载 承载音乐UI层的控制器  UI VC

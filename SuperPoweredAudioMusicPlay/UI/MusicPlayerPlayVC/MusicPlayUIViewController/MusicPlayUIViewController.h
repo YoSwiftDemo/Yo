@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NavView.h"
+#import "PlayerUIView.h"
 @interface MusicPlayUIViewController : UIViewController
-#pragma mark -life cycle ------------------------------------生 命 周 期 区 域 -----------------------------------
+@property (weak, nonatomic) IBOutlet NavView        *navView;
+@property (weak, nonatomic) IBOutlet PlayerUIView   *playerFunctionUIView;
 
+#pragma mark -public  methods ------------------------------------------ 公有方法区域  -----------------------------------------
+#pragma mark -  加载 承载音乐UI层的控制器  UI VC
+/**
+ * @brief: 加载 承载音乐UI层的控制器  UI VC
+ *
+ * @discussion：父子关系 音乐VC>logic>UI
+ *
+ * @use:音乐lodicVC创建的同时，需要加载 承载音乐UI层的控制器
+ */
 +(void)showMusicPlayUIViewControllerOnSuperViewController:(UIViewController *)superViewController
                                  LogicViewControllerFrame:(CGRect)LogicViewControllerFrame
                                                  complete:(void(^)(BOOL finished,MusicPlayUIViewController *musicPlayUIViewController))block;

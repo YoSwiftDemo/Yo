@@ -21,9 +21,14 @@
 #import "MusicDataManager.h"                      //音乐数据层
 #import "AppDelegate.h"
 
+
+#import "LrcLabel.h"
 #import "NavView.h"
 #import "PlayerUIView.h"
+#import "LrcShowView.h"
 
+
+#import "LrcModel.h"
 
 #pragma mark -lib ---------------------第三方库区域 ---------------------------------
 

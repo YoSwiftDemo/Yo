@@ -51,6 +51,10 @@
 		9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF20261E0D12A500C5A0B3 /* LaunchScreen.storyboard */; };
 		9EBF20331E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20321E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayTests.m */; };
 		9EBF203E1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF203D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m */; };
+		9EF93C8E1E14008800D5A667 /* LrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF93C8D1E14008800D5A667 /* LrcLabel.m */; };
+		9EF93C931E1400BA00D5A667 /* LrcShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF93C911E1400BA00D5A667 /* LrcShowView.m */; };
+		9EF93C941E1400BA00D5A667 /* LrcShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EF93C921E1400BA00D5A667 /* LrcShowView.xib */; };
+		9EF93C991E14013800D5A667 /* LrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF93C981E14013800D5A667 /* LrcModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +154,13 @@
 		9EBF20391E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPoweredAudioMusicPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF203D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperPoweredAudioMusicPlayUITests.m; sourceTree = "<group>"; };
 		9EBF203F1E0D12A500C5A0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF93C8C1E14008800D5A667 /* LrcLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcLabel.h; sourceTree = "<group>"; };
+		9EF93C8D1E14008800D5A667 /* LrcLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcLabel.m; sourceTree = "<group>"; };
+		9EF93C901E1400BA00D5A667 /* LrcShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcShowView.h; sourceTree = "<group>"; };
+		9EF93C911E1400BA00D5A667 /* LrcShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcShowView.m; sourceTree = "<group>"; };
+		9EF93C921E1400BA00D5A667 /* LrcShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LrcShowView.xib; sourceTree = "<group>"; };
+		9EF93C971E14013800D5A667 /* LrcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcModel.h; sourceTree = "<group>"; };
+		9EF93C981E14013800D5A667 /* LrcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcModel.m; sourceTree = "<group>"; };
 		E5697A194E99D4E2CA263DC5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D11DA6036558DD962296B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +222,8 @@
 		9E1911641E11527500A1B073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9EF93C8F1E14008F00D5A667 /* LRCView */,
+				9EF93C8B1E14006D00D5A667 /* LRCLab */,
 				9E1911651E11527C00A1B073 /* NavView */,
 			);
 			name = View;
@@ -494,6 +507,7 @@
 				9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */,
 				9EBF201E1E0D12A500C5A0B3 /* ViewController.h */,
 				9EBF201F1E0D12A500C5A0B3 /* ViewController.m */,
+				9EF93C951E14010D00D5A667 /* Model */,
 				9E1911631E11526900A1B073 /* Extension */,
 				9E733ED21E0D5EAE00783B06 /* Logic */,
 				9E733E781E0D4E8A00783B06 /* Resource */,
@@ -534,6 +548,42 @@
 				9EBF203F1E0D12A500C5A0B3 /* Info.plist */,
 			);
 			path = SuperPoweredAudioMusicPlayUITests;
+			sourceTree = "<group>";
+		};
+		9EF93C8B1E14006D00D5A667 /* LRCLab */ = {
+			isa = PBXGroup;
+			children = (
+				9EF93C8C1E14008800D5A667 /* LrcLabel.h */,
+				9EF93C8D1E14008800D5A667 /* LrcLabel.m */,
+			);
+			name = LRCLab;
+			sourceTree = "<group>";
+		};
+		9EF93C8F1E14008F00D5A667 /* LRCView */ = {
+			isa = PBXGroup;
+			children = (
+				9EF93C901E1400BA00D5A667 /* LrcShowView.h */,
+				9EF93C911E1400BA00D5A667 /* LrcShowView.m */,
+				9EF93C921E1400BA00D5A667 /* LrcShowView.xib */,
+			);
+			name = LRCView;
+			sourceTree = "<group>";
+		};
+		9EF93C951E14010D00D5A667 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EF93C961E14012300D5A667 /* LRCModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9EF93C961E14012300D5A667 /* LRCModel */ = {
+			isa = PBXGroup;
+			children = (
+				9EF93C971E14013800D5A667 /* LrcModel.h */,
+				9EF93C981E14013800D5A667 /* LrcModel.m */,
+			);
+			name = LRCModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E81A2531E12C705001EE740 /* PlayerUIView.xib in Resources */,
+				9EF93C941E1400BA00D5A667 /* LrcShowView.xib in Resources */,
 				9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */,
 				9E733ECA1E0D5CEA00783B06 /* SuperPlayerSoundEffectPitchView.xib in Resources */,
 				9E733E9D1E0D538B00783B06 /* MusicPlayUIViewController.xib in Resources */,
@@ -733,6 +784,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF93C8E1E14008800D5A667 /* LrcLabel.m in Sources */,
 				9E733E771E0D4DFA00783B06 /* AlertManager.m in Sources */,
 				9E733ECB1E0D5CEA00783B06 /* SuperPlayerSoundEffectSliderView.m in Sources */,
 				9E733E731E0D4D0F00783B06 /* MusicSuperPlayer.mm in Sources */,
@@ -749,7 +801,9 @@
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
 				9E733E961E0D533B00783B06 /* MusicPlayerPlayVC.m in Sources */,
+				9EF93C931E1400BA00D5A667 /* LrcShowView.m in Sources */,
 				9E733ECD1E0D5CEA00783B06 /* SuperPlayerSoundEffectTitleView.m in Sources */,
+				9EF93C991E14013800D5A667 /* LrcModel.m in Sources */,
 				9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

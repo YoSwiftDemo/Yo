@@ -93,7 +93,10 @@
         delegate.window.rootViewController =  nav;
         nav.navigationBar.hidden = YES;
     }
-    // 加载子VC   logic  和 UI
+    //blcok
+    if(block){
+        block(YES,musicPlayerPlayViewController);
+    }
     
 }
 

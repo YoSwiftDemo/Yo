@@ -20,7 +20,7 @@
 #import "MusicCenterManager.h"                    //  音乐控制中心
 #import "MusicDataManager.h"                      //音乐数据层
 #import "AppDelegate.h"
-
+#import <AVFoundation/AVFoundation.h>
 
 #import "LrcLabel.h"
 #import "NavView.h"
@@ -42,6 +42,11 @@
 #define SCREEN_WIDTH            [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT           [[UIScreen mainScreen] bounds].size.height
 #define APP_DELEGATE            (AppDelegate *)[UIApplication sharedApplication].delegate
+
+#ifndef MUSIC_TEST
+#define MUSIC_TEST     1
+#endif
+
 // 音效的宏定义
 #define NUMFXUNITS 8
 #define TIMEPITCHINDEX 0

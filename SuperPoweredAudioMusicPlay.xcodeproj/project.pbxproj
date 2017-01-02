@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74890BB5AAF1ABA3B9574C51 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EE40B7770266BE2D80F343 /* libPods.a */; };
+		9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */; };
 		9E1911681E11529C00A1B073 /* NavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1911671E11529C00A1B073 /* NavView.m */; };
 		9E19116A1E1152A700A1B073 /* NavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E1911691E1152A700A1B073 /* NavView.xib */; };
 		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
@@ -76,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		13EE40B7770266BE2D80F343 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "王菲传奇.mp3"; path = "../王菲传奇.mp3"; sourceTree = "<group>"; };
 		9E1911661E11529C00A1B073 /* NavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavView.h; sourceTree = "<group>"; };
 		9E1911671E11529C00A1B073 /* NavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavView.m; sourceTree = "<group>"; };
 		9E1911691E1152A700A1B073 /* NavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavView.xib; sourceTree = "<group>"; };
@@ -210,6 +212,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E1109D81E1A4B7A00D52F25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		9E1911631E11526900A1B073 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +317,8 @@
 				9E733E711E0D4D0F00783B06 /* MusicSuperPlayer.h */,
 				9E733E721E0D4D0F00783B06 /* MusicSuperPlayer.mm */,
 			);
-			path = "PlayerOfC++";
+			name = "PlayerOfC++";
+			path = "UI/PlayerOfC++";
 			sourceTree = "<group>";
 		};
 		9E733E741E0D4DD500783B06 /* AlertC */ = {
@@ -317,13 +328,6 @@
 				9E733E761E0D4DFA00783B06 /* AlertManager.m */,
 			);
 			path = AlertC;
-			sourceTree = "<group>";
-		};
-		9E733E781E0D4E8A00783B06 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */ = {
@@ -465,7 +469,6 @@
 			children = (
 				9E733EA91E0D5C9100783B06 /* MusicPlayEffectVC */,
 				9E733E7D1E0D4F5C00783B06 /* MusicPlayerPlayVC */,
-				9E733E701E0D4CD600783B06 /* PlayerOfC++ */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -503,14 +506,15 @@
 		9EBF20171E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay */ = {
 			isa = PBXGroup;
 			children = (
+				9E1109D81E1A4B7A00D52F25 /* Resources */,
 				9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */,
 				9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */,
 				9EBF201E1E0D12A500C5A0B3 /* ViewController.h */,
 				9EBF201F1E0D12A500C5A0B3 /* ViewController.m */,
+				9E733E701E0D4CD600783B06 /* PlayerOfC++ */,
 				9EF93C951E14010D00D5A667 /* Model */,
 				9E1911631E11526900A1B073 /* Extension */,
 				9E733ED21E0D5EAE00783B06 /* Logic */,
-				9E733E781E0D4E8A00783B06 /* Resource */,
 				9E733E741E0D4DD500783B06 /* AlertC */,
 				9E733E6F1E0D4CBE00783B06 /* UI */,
 				9E733E5A1E0D400000783B06 /* TotalHeaderFile */,
@@ -705,6 +709,7 @@
 				9E733E9D1E0D538B00783B06 /* MusicPlayUIViewController.xib in Resources */,
 				9E733ECE1E0D5CEA00783B06 /* SuperPlayerSoundEffectTitleView.xib in Resources */,
 				9E733ED01E0D5CEA00783B06 /* SuperPlayerSoundEffectVC.xib in Resources */,
+				9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */,
 				9E733EA81E0D54D000783B06 /* MusicPlayLogicViewController.xib in Resources */,
 				9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */,
 				9E733ECC1E0D5CEA00783B06 /* SuperPlayerSoundEffectSliderView.xib in Resources */,

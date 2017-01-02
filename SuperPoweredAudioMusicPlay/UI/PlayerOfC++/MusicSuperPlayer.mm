@@ -167,12 +167,13 @@ static MusicSuperPlayer *signleton = nil;
         _superPlayer = [self loadSuperPlayerwithSamplerate:_samplerate
                                         ofmusicFilePathStr:musicFilePathStr];
     }
-    /* test  测试本地数据
-      _superPlayer->open([[[NSBundle mainBundle] pathForResource:@"track"
-                                                          ofType:@"mp3"] fileSystemRepresentation]);
-     */
-     //加载指定路径
+#if MUSIC_TEST
+    _superPlayer->open([[[NSBundle mainBundle] pathForResource:@"王菲传奇"
+                                                        ofType:@"mp3"] fileSystemRepresentation]);
+#else
+    //加载指定路径
     _superPlayer->open([musicFilePathStr fileSystemRepresentation]);
+#endif
     // 播放器处理器代理
     [_superHandles setdelg:self];
     // 播放器处理器  最好判断其状态。怎么判断？？？？
@@ -368,7 +369,7 @@ static MusicSuperPlayer *signleton = nil;
                                            dismissAfterDelay:2];
         return false;
     }
-   // NSLog(@"我已经开启的 音乐处理器            %d",_superPlayer->durationSeconds);
+    NSLog(@"我已经开启的 音乐处理器            %d",_superPlayer->durationSeconds);
     if(samplerate!=self->_samplerate){
         _samplerate =samplerate;
         _superPlayer->setSamplerate(samplerate);

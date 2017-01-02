@@ -28,7 +28,7 @@
 @property(nonatomic,assign) CGFloat                              accompanyValue;                    //C++播放器的音量（0-1.0f）
 @property(nonatomic,assign) NSInteger                            pitchValue;                        //C++播放器的音调（-12-12）
 @property(nonatomic,assign) NSInteger                            selectEffectTag;                   //C++播放器的 音效效果
-@property(nonatomic,weak) id<MusicSuperPlayerSendValueDelegate>  musicSuperPlayerSendValueDelegate; // 代理block 都可以
+@property(nonatomic,weak) id<MusicSuperPlayerSendValueDelegate>musicSuperPlayerSendValueDelegate; // 代理block 都可以
 @property(nonatomic,copy)  void(^musicSuperPlayerInfoBlock)(CGFloat musicTotalTime,
                                                             CGFloat musicCurrentTime,
                                                             CGFloat MusicPersent);

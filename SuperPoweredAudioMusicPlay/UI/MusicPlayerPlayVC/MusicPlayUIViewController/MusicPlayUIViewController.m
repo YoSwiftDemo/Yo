@@ -7,8 +7,8 @@
 //
 
 #import "MusicPlayUIViewController.h"
-
-@interface MusicPlayUIViewController ()
+#import "MusicSuperPlayer.h"
+@interface MusicPlayUIViewController ()<MusicSuperPlayerSendValueDelegate>
 
 @end
 
@@ -53,12 +53,40 @@
     [superViewController.view addSubview:musicPlayUIViewController.view];
     //frme
     musicPlayUIViewController.view.frame = LogicViewControllerFrame;
+    
+    
+    
+    // 因为播放器管理中心是个单利 ，所以他的代理方法 通过单利  直接找调度中心把
+    MusicCenterManager *musicCenterManager = [MusicCenterManager shareManager];
+    __weak MusicPlayUIViewController *weak_musicUIVC = musicPlayUIViewController;
+    musicCenterManager.superPlayer.musicSuperPlayerSendValueDelegate = weak_musicUIVC;   //代理写成self 报错  可以研究下
+    musicCenterManager.superPlayer.musicSuperPlayerInfoBlock = ^(CGFloat musicTotalTime,
+                                                                 CGFloat musicCurrentTime,
+                                                                 CGFloat MusicPersent){
+             // 把播放器的信息 给功能View 上的子控件
+         //总时间 这些数据总是需要开启定时器才行
+        weak_musicUIVC.playerFunctionUIView.totalTimeLab.text = [NSString stringWithFormat:@"%.f",musicTotalTime];
+        weak_musicUIVC.playerFunctionUIView.currentTimeLab.text = [NSString stringWithFormat:@"%f",musicCurrentTime];
+        weak_musicUIVC.playerFunctionUIView.progressSlider.value = MusicPersent;
+        NSLog(@"eqewqew-----------------------------------------------------------------------");
+        
+        
+        
+    };
+    
+    
+    
     //返回
     if (block) {
         block(YES,musicPlayUIViewController);
     }
+    
 }
-
+-(void)senderCurrentSuperMusicPramaOftotalTimeValue:(CGFloat)musicTotalTime
+                                   currentTimeValue:(CGFloat)currentTimeValue
+                                currentPersentvalue:(CGFloat)currentPersentvalue{
+    
+}
 /*
 #pragma mark - Navigation
 

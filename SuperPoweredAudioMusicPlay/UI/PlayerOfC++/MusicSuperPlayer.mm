@@ -364,9 +364,9 @@ static MusicSuperPlayer *signleton = nil;
     if( !_superPlayer->playing )
     {
          // _superPlayer->togglePlayback();
-        [[AlertManager shareManager]showSingleAlertWithTitle:@"温馨小提示"
-                                                     message:@"音乐加载失败，请重新加载"
-                                           dismissAfterDelay:2];
+//        [[AlertManager shareManager]showSingleAlertWithTitle:@"温馨小提示"
+//                                                     message:@"音乐加载失败，请重新加载"
+//                                           dismissAfterDelay:1];
         return false;
     }
     NSLog(@"我已经开启的 音乐处理器            %d",_superPlayer->durationSeconds);

@@ -28,7 +28,7 @@
                                                             musicPlayerVCFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
                                                                       complete:^(BOOL finished,
                                                                     MusicPlayerPlayVC *musicPlayerPlayViewController) {
-                                                              //音乐UI加载完成后，开始启动音乐的加载
+                                                                    //音乐UI加载完成后，开始启动音乐的加载
                                                                           [musicCenterManager showSuperMusicOfSamplerateNum:MUSIC_SAMPLERATE
                                                                                                            musicFilePathStr:@""];
                                                                           

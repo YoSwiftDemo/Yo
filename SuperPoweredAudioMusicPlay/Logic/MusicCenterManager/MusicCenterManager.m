@@ -87,6 +87,7 @@ static MusicCenterManager *signleton = nil;
     if(!musicFilePathStr){
         return;
     }
+    
     // 加载的是 c++播放器
     [self.superPlayer musicSuperPlayerPlayWithMudicPathStr:musicFilePathStr
                                                 samplerate:samplerateNum];

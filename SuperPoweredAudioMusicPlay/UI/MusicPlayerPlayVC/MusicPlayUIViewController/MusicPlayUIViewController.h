@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NavView.h"
 #import "PlayerUIView.h"
-@interface MusicPlayUIViewController : UIViewController
+@interface MusicPlayUIViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet NavView        *navView;
 @property (weak, nonatomic) IBOutlet PlayerUIView   *playerFunctionUIView;
 

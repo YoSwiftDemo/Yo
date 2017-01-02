@@ -28,17 +28,20 @@
                         <constraint firstAttribute="height" constant="64" id="1Ui-3F-Hgq"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-zB-zp9" customClass="PlayerUIView">
-                    <rect key="frame" x="0.0" y="337" width="375" height="330"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-zB-zp9" customClass="PlayerUIView">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" red="0.76338654756546021" green="0.28340268135070801" blue="0.080883152782917023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.085799790918827057" green="0.75324195623397827" blue="0.57982546091079712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="8x9-w0-dsh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1gU-K8-AAN"/>
+                <constraint firstAttribute="trailing" secondItem="AEf-zB-zp9" secondAttribute="trailing" id="9oh-2g-OfE"/>
+                <constraint firstItem="AEf-zB-zp9" firstAttribute="top" secondItem="8x9-w0-dsh" secondAttribute="bottom" id="PLV-ko-8Nd"/>
                 <constraint firstAttribute="trailing" secondItem="8x9-w0-dsh" secondAttribute="trailing" id="QbN-AG-3gQ"/>
+                <constraint firstItem="AEf-zB-zp9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WCk-ow-fGp"/>
                 <constraint firstItem="8x9-w0-dsh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yya-UN-JDT"/>
+                <constraint firstAttribute="bottom" secondItem="AEf-zB-zp9" secondAttribute="bottom" id="f17-EA-5ak"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>

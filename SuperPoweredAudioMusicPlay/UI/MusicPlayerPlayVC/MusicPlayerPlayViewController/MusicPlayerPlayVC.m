@@ -93,6 +93,9 @@
         delegate.window.rootViewController =  nav;
         nav.navigationBar.hidden = YES;
     }
+    
+    //代理
+    
     //blcok
     if(block){
         block(YES,musicPlayerPlayViewController);

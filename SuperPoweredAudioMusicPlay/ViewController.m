@@ -17,14 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    // 去音乐管理中心调加载音乐播放功能界面的代码
-    [[MusicCenterManager shareManager] showMusicPlayerPlayViewControllerOnSuperViewController:nil
-                                                                                  inSuperView:nil
-                                                                           musicPlayerVCFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
-                                                                                     complete:^(BOOL finished,
-                                                                                                MusicPlayerPlayVC *musicPlayerPlayViewController) {
-        
-    }];
 }
 
 
@@ -35,3 +27,25 @@
 
 
 @end
+
+
+
+
+
+
+
+/********* 持续更新
+    项目分析地址
+http://www.jianshu.com/p/053eafecb295
+ 
+*******/
+
+
+
+
+
+
+
+
+
+

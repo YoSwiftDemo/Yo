@@ -13,17 +13,46 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 
-#pragma mark ----------------------------   manager 管理层
+#pragma mark ----------------------------   manager   管理层
 #import "STMusicDataCenterManager.h"
 #import "STMusicCenterManager.h"
+#pragma mark ----------------------------   STMusicViewC   音乐功能控制层
+#import "STMusicBaseViewC.h"
+#import "STCMusicViewC.h"
+#import "STYunMusicViewC.h"
 
+#pragma mark ----------------------------   STMusicLogicViewC  音乐逻辑层
+#import "STMusicLogicBaseViewC.h"
+#import "STMusicLogicViewC.h"
 
-#pragma mark ----------------------------   STMusicView层
+#pragma mark ----------------------------   STMusicUIViewC   音乐UI层
+#import "STYunMusicUIViewC.h"
+#import "STCMusicUIViewC.h"
+#import "STMusicUIBaseViewC.h"
+
+#pragma mark ----------------------------   STMusicSEViewC  音效 功能层
+#import "STMusicSEBaseViewC.h"
+#import "STCMusicSEViewC.h"
+#import "STYunMusicSEViewC.h"
+#pragma mark ----------------------------   STMusicSELogicViewC  音效 逻辑层
+#import "STMusicSELogicBaseViewC.h"
+#import "STMusicSELogicViewC.h"
+#pragma mark ----------------------------   STMusicSEUIViewC  音效 UI层
+#import "STMusicSEBaseUIViewC.h"
+#import "STYunMusicSEUIViewC.h"
+#import "STCMusicSEUIViewC.h"
+
+#pragma mark ----------------------------   STMusicView View层
 #import "STMusicLrcModel.h"
 
-#pragma mark ----------------------------  自定义View
+#pragma mark ----------------------------   自定义View
 #import "STLrcLab.h"
 #import "STDoubleLRCLabShowView.h"
+
+#import "STMusicSENavView.h"
+#import "STMusicSEEffectTypeView.h"
+#import "STMusicSEPitchView.h"
+#import "STMusicSESliderView.h"
 
 
 #pragma mark ----------------------------   第三方

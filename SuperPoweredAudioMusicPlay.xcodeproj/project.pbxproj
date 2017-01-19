@@ -27,6 +27,46 @@
 		9E8B07BB1E311062002BF095 /* STLrcLab.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07BA1E311062002BF095 /* STLrcLab.m */; };
 		9E8B07C01E3110C0002BF095 /* STDoubleLRCLabShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07BE1E3110C0002BF095 /* STDoubleLRCLabShowView.m */; };
 		9E8B07C11E3110C0002BF095 /* STDoubleLRCLabShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07BF1E3110C0002BF095 /* STDoubleLRCLabShowView.xib */; };
+		9E8B07D01E311289002BF095 /* STMusicBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07CE1E311289002BF095 /* STMusicBaseViewC.m */; };
+		9E8B07D11E311289002BF095 /* STMusicBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07CF1E311289002BF095 /* STMusicBaseViewC.xib */; };
+		9E8B07D51E3112BE002BF095 /* STCMusicViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07D31E3112BE002BF095 /* STCMusicViewC.m */; };
+		9E8B07D61E3112BE002BF095 /* STCMusicViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07D41E3112BE002BF095 /* STCMusicViewC.xib */; };
+		9E8B07DA1E3112D0002BF095 /* STYunMusicViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07D81E3112D0002BF095 /* STYunMusicViewC.m */; };
+		9E8B07DB1E3112D0002BF095 /* STYunMusicViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07D91E3112D0002BF095 /* STYunMusicViewC.xib */; };
+		9E8B07DF1E3113F5002BF095 /* STMusicLogicBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07DD1E3113F5002BF095 /* STMusicLogicBaseViewC.m */; };
+		9E8B07E01E3113F5002BF095 /* STMusicLogicBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07DE1E3113F5002BF095 /* STMusicLogicBaseViewC.xib */; };
+		9E8B07E41E31141C002BF095 /* STMusicLogicViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07E21E31141C002BF095 /* STMusicLogicViewC.m */; };
+		9E8B07E51E31141C002BF095 /* STMusicLogicViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07E31E31141C002BF095 /* STMusicLogicViewC.xib */; };
+		9E8B07E91E311445002BF095 /* STMusicUIBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07E71E311445002BF095 /* STMusicUIBaseViewC.m */; };
+		9E8B07EA1E311445002BF095 /* STMusicUIBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07E81E311445002BF095 /* STMusicUIBaseViewC.xib */; };
+		9E8B07F31E3114A4002BF095 /* STCMusicUIViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07F11E3114A4002BF095 /* STCMusicUIViewC.m */; };
+		9E8B07F41E3114A4002BF095 /* STCMusicUIViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07F21E3114A4002BF095 /* STCMusicUIViewC.xib */; };
+		9E8B07F81E3114B8002BF095 /* STYunMusicUIViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07F61E3114B8002BF095 /* STYunMusicUIViewC.m */; };
+		9E8B07F91E3114B8002BF095 /* STYunMusicUIViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07F71E3114B8002BF095 /* STYunMusicUIViewC.xib */; };
+		9E8B07FD1E3115F9002BF095 /* STMusicSEBaseUIViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07FB1E3115F9002BF095 /* STMusicSEBaseUIViewC.m */; };
+		9E8B07FE1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07FC1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib */; };
+		9E8B08021E31168D002BF095 /* STYunMusicSEUIViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08001E31168D002BF095 /* STYunMusicSEUIViewC.m */; };
+		9E8B08031E31168D002BF095 /* STYunMusicSEUIViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08011E31168D002BF095 /* STYunMusicSEUIViewC.xib */; };
+		9E8B08071E3116C2002BF095 /* STCMusicSEUIViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08051E3116C2002BF095 /* STCMusicSEUIViewC.m */; };
+		9E8B08081E3116C2002BF095 /* STCMusicSEUIViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08061E3116C2002BF095 /* STCMusicSEUIViewC.xib */; };
+		9E8B080C1E31180E002BF095 /* STMusicSELogicBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B080A1E31180E002BF095 /* STMusicSELogicBaseViewC.m */; };
+		9E8B080D1E31180E002BF095 /* STMusicSELogicBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B080B1E31180E002BF095 /* STMusicSELogicBaseViewC.xib */; };
+		9E8B08121E311847002BF095 /* STMusicSELogicViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08101E311847002BF095 /* STMusicSELogicViewC.m */; };
+		9E8B08131E311847002BF095 /* STMusicSELogicViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08111E311847002BF095 /* STMusicSELogicViewC.xib */; };
+		9E8B08171E3118B4002BF095 /* STMusicSEBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08151E3118B4002BF095 /* STMusicSEBaseViewC.m */; };
+		9E8B08181E3118B4002BF095 /* STMusicSEBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08161E3118B4002BF095 /* STMusicSEBaseViewC.xib */; };
+		9E8B081C1E3118DB002BF095 /* STCMusicSEViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B081A1E3118DB002BF095 /* STCMusicSEViewC.m */; };
+		9E8B081D1E3118DB002BF095 /* STCMusicSEViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B081B1E3118DB002BF095 /* STCMusicSEViewC.xib */; };
+		9E8B08211E3118EA002BF095 /* STYunMusicSEViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B081F1E3118EA002BF095 /* STYunMusicSEViewC.m */; };
+		9E8B08221E3118EA002BF095 /* STYunMusicSEViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08201E3118EA002BF095 /* STYunMusicSEViewC.xib */; };
+		9E8B08261E311ABD002BF095 /* STMusicSESliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08251E311ABD002BF095 /* STMusicSESliderView.m */; };
+		9E8B08281E311AD1002BF095 /* STMusicSESliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08271E311AD1002BF095 /* STMusicSESliderView.xib */; };
+		9E8B082C1E311AF5002BF095 /* STMusicSEPitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B082B1E311AF5002BF095 /* STMusicSEPitchView.m */; };
+		9E8B082E1E311AFE002BF095 /* STMusicSEPitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B082D1E311AFE002BF095 /* STMusicSEPitchView.xib */; };
+		9E8B08321E311B36002BF095 /* STMusicSEEffectTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08311E311B36002BF095 /* STMusicSEEffectTypeView.m */; };
+		9E8B08341E311B40002BF095 /* STMusicSEEffectTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08331E311B40002BF095 /* STMusicSEEffectTypeView.xib */; };
+		9E8B08381E311B5D002BF095 /* STMusicSENavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08371E311B5D002BF095 /* STMusicSENavView.m */; };
+		9E8B083A1E311B6C002BF095 /* STMusicSENavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08391E311B6C002BF095 /* STMusicSENavView.xib */; };
 		9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20191E0D12A500C5A0B3 /* main.m */; };
 		9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */; };
 		9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201F1E0D12A500C5A0B3 /* ViewController.m */; };
@@ -56,8 +96,6 @@
 
 /* Begin PBXFileReference section */
 		9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "王菲传奇.mp3"; path = "../王菲传奇.mp3"; sourceTree = "<group>"; };
-		9E69EA5F1E2FC82400697891 /* STMusicFunctionTotalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicFunctionTotalHeader.h; sourceTree = "<group>"; };
-		9E69EA711E2FCA7A00697891 /* STMusicSETotalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSETotalHeader.h; sourceTree = "<group>"; };
 		9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioIOS.a; sourceTree = "<group>"; };
 		9E733E4C1E0D1C1E00783B06 /* Superpowered3BandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpowered3BandEQ.h; sourceTree = "<group>"; };
 		9E733E4D1E0D1C1E00783B06 /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
@@ -94,6 +132,66 @@
 		9E8B07BD1E3110C0002BF095 /* STDoubleLRCLabShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDoubleLRCLabShowView.h; sourceTree = "<group>"; };
 		9E8B07BE1E3110C0002BF095 /* STDoubleLRCLabShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDoubleLRCLabShowView.m; sourceTree = "<group>"; };
 		9E8B07BF1E3110C0002BF095 /* STDoubleLRCLabShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STDoubleLRCLabShowView.xib; sourceTree = "<group>"; };
+		9E8B07CD1E311289002BF095 /* STMusicBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicBaseViewC.h; sourceTree = "<group>"; };
+		9E8B07CE1E311289002BF095 /* STMusicBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicBaseViewC.m; sourceTree = "<group>"; };
+		9E8B07CF1E311289002BF095 /* STMusicBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicBaseViewC.xib; sourceTree = "<group>"; };
+		9E8B07D21E3112BE002BF095 /* STCMusicViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCMusicViewC.h; sourceTree = "<group>"; };
+		9E8B07D31E3112BE002BF095 /* STCMusicViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCMusicViewC.m; sourceTree = "<group>"; };
+		9E8B07D41E3112BE002BF095 /* STCMusicViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCMusicViewC.xib; sourceTree = "<group>"; };
+		9E8B07D71E3112D0002BF095 /* STYunMusicViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STYunMusicViewC.h; sourceTree = "<group>"; };
+		9E8B07D81E3112D0002BF095 /* STYunMusicViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STYunMusicViewC.m; sourceTree = "<group>"; };
+		9E8B07D91E3112D0002BF095 /* STYunMusicViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STYunMusicViewC.xib; sourceTree = "<group>"; };
+		9E8B07DC1E3113F5002BF095 /* STMusicLogicBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicLogicBaseViewC.h; sourceTree = "<group>"; };
+		9E8B07DD1E3113F5002BF095 /* STMusicLogicBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicLogicBaseViewC.m; sourceTree = "<group>"; };
+		9E8B07DE1E3113F5002BF095 /* STMusicLogicBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicLogicBaseViewC.xib; sourceTree = "<group>"; };
+		9E8B07E11E31141C002BF095 /* STMusicLogicViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicLogicViewC.h; sourceTree = "<group>"; };
+		9E8B07E21E31141C002BF095 /* STMusicLogicViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicLogicViewC.m; sourceTree = "<group>"; };
+		9E8B07E31E31141C002BF095 /* STMusicLogicViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicLogicViewC.xib; sourceTree = "<group>"; };
+		9E8B07E61E311445002BF095 /* STMusicUIBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicUIBaseViewC.h; sourceTree = "<group>"; };
+		9E8B07E71E311445002BF095 /* STMusicUIBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicUIBaseViewC.m; sourceTree = "<group>"; };
+		9E8B07E81E311445002BF095 /* STMusicUIBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicUIBaseViewC.xib; sourceTree = "<group>"; };
+		9E8B07F01E3114A4002BF095 /* STCMusicUIViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCMusicUIViewC.h; sourceTree = "<group>"; };
+		9E8B07F11E3114A4002BF095 /* STCMusicUIViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCMusicUIViewC.m; sourceTree = "<group>"; };
+		9E8B07F21E3114A4002BF095 /* STCMusicUIViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCMusicUIViewC.xib; sourceTree = "<group>"; };
+		9E8B07F51E3114B8002BF095 /* STYunMusicUIViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STYunMusicUIViewC.h; sourceTree = "<group>"; };
+		9E8B07F61E3114B8002BF095 /* STYunMusicUIViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STYunMusicUIViewC.m; sourceTree = "<group>"; };
+		9E8B07F71E3114B8002BF095 /* STYunMusicUIViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STYunMusicUIViewC.xib; sourceTree = "<group>"; };
+		9E8B07FA1E3115F9002BF095 /* STMusicSEBaseUIViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSEBaseUIViewC.h; sourceTree = "<group>"; };
+		9E8B07FB1E3115F9002BF095 /* STMusicSEBaseUIViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSEBaseUIViewC.m; sourceTree = "<group>"; };
+		9E8B07FC1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSEBaseUIViewC.xib; sourceTree = "<group>"; };
+		9E8B07FF1E31168D002BF095 /* STYunMusicSEUIViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STYunMusicSEUIViewC.h; sourceTree = "<group>"; };
+		9E8B08001E31168D002BF095 /* STYunMusicSEUIViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STYunMusicSEUIViewC.m; sourceTree = "<group>"; };
+		9E8B08011E31168D002BF095 /* STYunMusicSEUIViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STYunMusicSEUIViewC.xib; sourceTree = "<group>"; };
+		9E8B08041E3116C2002BF095 /* STCMusicSEUIViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCMusicSEUIViewC.h; sourceTree = "<group>"; };
+		9E8B08051E3116C2002BF095 /* STCMusicSEUIViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCMusicSEUIViewC.m; sourceTree = "<group>"; };
+		9E8B08061E3116C2002BF095 /* STCMusicSEUIViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCMusicSEUIViewC.xib; sourceTree = "<group>"; };
+		9E8B08091E31180E002BF095 /* STMusicSELogicBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSELogicBaseViewC.h; sourceTree = "<group>"; };
+		9E8B080A1E31180E002BF095 /* STMusicSELogicBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSELogicBaseViewC.m; sourceTree = "<group>"; };
+		9E8B080B1E31180E002BF095 /* STMusicSELogicBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSELogicBaseViewC.xib; sourceTree = "<group>"; };
+		9E8B080F1E311847002BF095 /* STMusicSELogicViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSELogicViewC.h; sourceTree = "<group>"; };
+		9E8B08101E311847002BF095 /* STMusicSELogicViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSELogicViewC.m; sourceTree = "<group>"; };
+		9E8B08111E311847002BF095 /* STMusicSELogicViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSELogicViewC.xib; sourceTree = "<group>"; };
+		9E8B08141E3118B4002BF095 /* STMusicSEBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSEBaseViewC.h; sourceTree = "<group>"; };
+		9E8B08151E3118B4002BF095 /* STMusicSEBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSEBaseViewC.m; sourceTree = "<group>"; };
+		9E8B08161E3118B4002BF095 /* STMusicSEBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSEBaseViewC.xib; sourceTree = "<group>"; };
+		9E8B08191E3118DB002BF095 /* STCMusicSEViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCMusicSEViewC.h; sourceTree = "<group>"; };
+		9E8B081A1E3118DB002BF095 /* STCMusicSEViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCMusicSEViewC.m; sourceTree = "<group>"; };
+		9E8B081B1E3118DB002BF095 /* STCMusicSEViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCMusicSEViewC.xib; sourceTree = "<group>"; };
+		9E8B081E1E3118EA002BF095 /* STYunMusicSEViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STYunMusicSEViewC.h; sourceTree = "<group>"; };
+		9E8B081F1E3118EA002BF095 /* STYunMusicSEViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STYunMusicSEViewC.m; sourceTree = "<group>"; };
+		9E8B08201E3118EA002BF095 /* STYunMusicSEViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STYunMusicSEViewC.xib; sourceTree = "<group>"; };
+		9E8B08241E311ABD002BF095 /* STMusicSESliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSESliderView.h; sourceTree = "<group>"; };
+		9E8B08251E311ABD002BF095 /* STMusicSESliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSESliderView.m; sourceTree = "<group>"; };
+		9E8B08271E311AD1002BF095 /* STMusicSESliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSESliderView.xib; sourceTree = "<group>"; };
+		9E8B082A1E311AF5002BF095 /* STMusicSEPitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSEPitchView.h; sourceTree = "<group>"; };
+		9E8B082B1E311AF5002BF095 /* STMusicSEPitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSEPitchView.m; sourceTree = "<group>"; };
+		9E8B082D1E311AFE002BF095 /* STMusicSEPitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSEPitchView.xib; sourceTree = "<group>"; };
+		9E8B08301E311B36002BF095 /* STMusicSEEffectTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSEEffectTypeView.h; sourceTree = "<group>"; };
+		9E8B08311E311B36002BF095 /* STMusicSEEffectTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSEEffectTypeView.m; sourceTree = "<group>"; };
+		9E8B08331E311B40002BF095 /* STMusicSEEffectTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSEEffectTypeView.xib; sourceTree = "<group>"; };
+		9E8B08361E311B5D002BF095 /* STMusicSENavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSENavView.h; sourceTree = "<group>"; };
+		9E8B08371E311B5D002BF095 /* STMusicSENavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSENavView.m; sourceTree = "<group>"; };
+		9E8B08391E311B6C002BF095 /* STMusicSENavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSENavView.xib; sourceTree = "<group>"; };
 		9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredAudioMusicPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF20191E0D12A500C5A0B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -191,13 +289,13 @@
 		9E69EA511E2FB7D500697891 /* STMusic */ = {
 			isa = PBXGroup;
 			children = (
+				9E69EA521E2FC3AD00697891 /* STMusicFunction */,
+				9E69EA531E2FC3D600697891 /* STMusicSE */,
 				9E8B07AA1E3103E9002BF095 /* STMusicView */,
 				9E69EA751E2FCAE100697891 /* STMusicPlayer */,
-				9E69EA741E2FCAC800697891 /* STMusicThirdLib */,
-				9E69EA531E2FC3D600697891 /* STMusicSE */,
-				9E69EA521E2FC3AD00697891 /* STMusicFunction */,
 				9E69EA641E2FC8AB00697891 /* STMusicExtension */,
 				9E69EA631E2FC89100697891 /* STMusicManager */,
+				9E69EA741E2FCAC800697891 /* STMusicThirdLib */,
 				9E8B07B01E310505002BF095 /* STMusicPrefixHeader.pch */,
 			);
 			name = STMusic;
@@ -207,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				9E69EA661E2FC98600697891 /* STMusicView */,
-				9E69EA5F1E2FC82400697891 /* STMusicFunctionTotalHeader.h */,
 				9E69EA5B1E2FC7B900697891 /* STMusicUIViewC */,
 				9E69EA581E2FC77200697891 /* STMusicLogicViewC */,
 				9E69EA551E2FC74E00697891 /* STMusicViewC */,
@@ -218,7 +315,6 @@
 		9E69EA531E2FC3D600697891 /* STMusicSE */ = {
 			isa = PBXGroup;
 			children = (
-				9E69EA711E2FCA7A00697891 /* STMusicSETotalHeader.h */,
 				9E69EA6D1E2FCA0F00697891 /* STMusicSEUIViewC */,
 				9E69EA6B1E2FC9E100697891 /* STMusicSELogicViewC */,
 				9E69EA671E2FC99D00697891 /* STMusicSEViewC */,
@@ -229,6 +325,9 @@
 		9E69EA541E2FC72D00697891 /* STMusicBaseViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07CD1E311289002BF095 /* STMusicBaseViewC.h */,
+				9E8B07CE1E311289002BF095 /* STMusicBaseViewC.m */,
+				9E8B07CF1E311289002BF095 /* STMusicBaseViewC.xib */,
 			);
 			name = STMusicBaseViewC;
 			sourceTree = "<group>";
@@ -246,6 +345,9 @@
 		9E69EA561E2FC75900697891 /* STCMusic */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07D21E3112BE002BF095 /* STCMusicViewC.h */,
+				9E8B07D31E3112BE002BF095 /* STCMusicViewC.m */,
+				9E8B07D41E3112BE002BF095 /* STCMusicViewC.xib */,
 			);
 			name = STCMusic;
 			sourceTree = "<group>";
@@ -253,6 +355,9 @@
 		9E69EA571E2FC76100697891 /* STYunMusicViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07D71E3112D0002BF095 /* STYunMusicViewC.h */,
+				9E8B07D81E3112D0002BF095 /* STYunMusicViewC.m */,
+				9E8B07D91E3112D0002BF095 /* STYunMusicViewC.xib */,
 			);
 			name = STYunMusicViewC;
 			sourceTree = "<group>";
@@ -269,6 +374,9 @@
 		9E69EA591E2FC78B00697891 /* STMusicLogicBaseViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07DC1E3113F5002BF095 /* STMusicLogicBaseViewC.h */,
+				9E8B07DD1E3113F5002BF095 /* STMusicLogicBaseViewC.m */,
+				9E8B07DE1E3113F5002BF095 /* STMusicLogicBaseViewC.xib */,
 			);
 			name = STMusicLogicBaseViewC;
 			sourceTree = "<group>";
@@ -276,6 +384,9 @@
 		9E69EA5A1E2FC79B00697891 /* STMusicLogicViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07E11E31141C002BF095 /* STMusicLogicViewC.h */,
+				9E8B07E21E31141C002BF095 /* STMusicLogicViewC.m */,
+				9E8B07E31E31141C002BF095 /* STMusicLogicViewC.xib */,
 			);
 			name = STMusicLogicViewC;
 			sourceTree = "<group>";
@@ -293,6 +404,9 @@
 		9E69EA5C1E2FC7C500697891 /* STMusicUIBaseViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07E61E311445002BF095 /* STMusicUIBaseViewC.h */,
+				9E8B07E71E311445002BF095 /* STMusicUIBaseViewC.m */,
+				9E8B07E81E311445002BF095 /* STMusicUIBaseViewC.xib */,
 			);
 			name = STMusicUIBaseViewC;
 			sourceTree = "<group>";
@@ -300,6 +414,9 @@
 		9E69EA5D1E2FC7D600697891 /* STCMusicUIViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07F01E3114A4002BF095 /* STCMusicUIViewC.h */,
+				9E8B07F11E3114A4002BF095 /* STCMusicUIViewC.m */,
+				9E8B07F21E3114A4002BF095 /* STCMusicUIViewC.xib */,
 			);
 			name = STCMusicUIViewC;
 			sourceTree = "<group>";
@@ -307,6 +424,9 @@
 		9E69EA5E1E2FC7E700697891 /* STYunMusicUIViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07F51E3114B8002BF095 /* STYunMusicUIViewC.h */,
+				9E8B07F61E3114B8002BF095 /* STYunMusicUIViewC.m */,
+				9E8B07F71E3114B8002BF095 /* STYunMusicUIViewC.xib */,
 			);
 			name = STYunMusicUIViewC;
 			sourceTree = "<group>";
@@ -367,6 +487,9 @@
 		9E69EA681E2FC9AA00697891 /* STMusicSEBaseViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B08141E3118B4002BF095 /* STMusicSEBaseViewC.h */,
+				9E8B08151E3118B4002BF095 /* STMusicSEBaseViewC.m */,
+				9E8B08161E3118B4002BF095 /* STMusicSEBaseViewC.xib */,
 			);
 			name = STMusicSEBaseViewC;
 			sourceTree = "<group>";
@@ -374,6 +497,9 @@
 		9E69EA691E2FC9BE00697891 /* STCMusicSEViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B08191E3118DB002BF095 /* STCMusicSEViewC.h */,
+				9E8B081A1E3118DB002BF095 /* STCMusicSEViewC.m */,
+				9E8B081B1E3118DB002BF095 /* STCMusicSEViewC.xib */,
 			);
 			name = STCMusicSEViewC;
 			sourceTree = "<group>";
@@ -381,6 +507,9 @@
 		9E69EA6A1E2FC9D000697891 /* STYunMusicSEViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B081E1E3118EA002BF095 /* STYunMusicSEViewC.h */,
+				9E8B081F1E3118EA002BF095 /* STYunMusicSEViewC.m */,
+				9E8B08201E3118EA002BF095 /* STYunMusicSEViewC.xib */,
 			);
 			name = STYunMusicSEViewC;
 			sourceTree = "<group>";
@@ -388,6 +517,7 @@
 		9E69EA6B1E2FC9E100697891 /* STMusicSELogicViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B080E1E31182D002BF095 /* STMusicSELogicViewC */,
 				9E69EA6C1E2FC9FE00697891 /* STMusicSELogicBaseViewC */,
 			);
 			name = STMusicSELogicViewC;
@@ -396,6 +526,9 @@
 		9E69EA6C1E2FC9FE00697891 /* STMusicSELogicBaseViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B08091E31180E002BF095 /* STMusicSELogicBaseViewC.h */,
+				9E8B080A1E31180E002BF095 /* STMusicSELogicBaseViewC.m */,
+				9E8B080B1E31180E002BF095 /* STMusicSELogicBaseViewC.xib */,
 			);
 			name = STMusicSELogicBaseViewC;
 			sourceTree = "<group>";
@@ -403,8 +536,8 @@
 		9E69EA6D1E2FCA0F00697891 /* STMusicSEUIViewC */ = {
 			isa = PBXGroup;
 			children = (
-				9E69EA701E2FCA4E00697891 /* STYunMusicSEUIViewC */,
-				9E69EA6F1E2FCA3300697891 /* STCMusicSEUIViewC */,
+				9E69EA701E2FCA4E00697891 /* STCMusicSEUIViewC */,
+				9E69EA6F1E2FCA3300697891 /* STYunMusicSEUIViewC */,
 				9E69EA6E1E2FCA2600697891 /* STMusicSEUIBaseViewC */,
 			);
 			name = STMusicSEUIViewC;
@@ -413,29 +546,42 @@
 		9E69EA6E1E2FCA2600697891 /* STMusicSEUIBaseViewC */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07FA1E3115F9002BF095 /* STMusicSEBaseUIViewC.h */,
+				9E8B07FB1E3115F9002BF095 /* STMusicSEBaseUIViewC.m */,
+				9E8B07FC1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib */,
 			);
 			name = STMusicSEUIBaseViewC;
 			sourceTree = "<group>";
 		};
-		9E69EA6F1E2FCA3300697891 /* STCMusicSEUIViewC */ = {
+		9E69EA6F1E2FCA3300697891 /* STYunMusicSEUIViewC */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = STCMusicSEUIViewC;
-			sourceTree = "<group>";
-		};
-		9E69EA701E2FCA4E00697891 /* STYunMusicSEUIViewC */ = {
-			isa = PBXGroup;
-			children = (
+				9E8B07FF1E31168D002BF095 /* STYunMusicSEUIViewC.h */,
+				9E8B08001E31168D002BF095 /* STYunMusicSEUIViewC.m */,
+				9E8B08011E31168D002BF095 /* STYunMusicSEUIViewC.xib */,
 			);
 			name = STYunMusicSEUIViewC;
+			sourceTree = "<group>";
+		};
+		9E69EA701E2FCA4E00697891 /* STCMusicSEUIViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B08041E3116C2002BF095 /* STCMusicSEUIViewC.h */,
+				9E8B08051E3116C2002BF095 /* STCMusicSEUIViewC.m */,
+				9E8B08061E3116C2002BF095 /* STCMusicSEUIViewC.xib */,
+			);
+			name = STCMusicSEUIViewC;
 			sourceTree = "<group>";
 		};
 		9E69EA721E2FCA8B00697891 /* STMusicExtensionView */ = {
 			isa = PBXGroup;
 			children = (
-				9E8B07BC1E3110A5002BF095 /* STDoubleLRCLabShowView */,
 				9E8B07B81E31104A002BF095 /* STLrcLab */,
+				9E8B07BC1E3110A5002BF095 /* STDoubleLRCLabShowView */,
+				9E8B08351E311B51002BF095 /* STMusicSENavView */,
+				9E8B082F1E311B20002BF095 /* STMusicSEEffectTypeView */,
+				9E8B08291E311ADD002BF095 /* STMusicSEPitchView */,
+				9E8B08231E311AA3002BF095 /* STMusicSESliderView */,
 			);
 			name = STMusicExtensionView;
 			sourceTree = "<group>";
@@ -539,6 +685,56 @@
 				9E8B07BF1E3110C0002BF095 /* STDoubleLRCLabShowView.xib */,
 			);
 			name = STDoubleLRCLabShowView;
+			sourceTree = "<group>";
+		};
+		9E8B080E1E31182D002BF095 /* STMusicSELogicViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B080F1E311847002BF095 /* STMusicSELogicViewC.h */,
+				9E8B08101E311847002BF095 /* STMusicSELogicViewC.m */,
+				9E8B08111E311847002BF095 /* STMusicSELogicViewC.xib */,
+			);
+			name = STMusicSELogicViewC;
+			sourceTree = "<group>";
+		};
+		9E8B08231E311AA3002BF095 /* STMusicSESliderView */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B08241E311ABD002BF095 /* STMusicSESliderView.h */,
+				9E8B08251E311ABD002BF095 /* STMusicSESliderView.m */,
+				9E8B08271E311AD1002BF095 /* STMusicSESliderView.xib */,
+			);
+			name = STMusicSESliderView;
+			sourceTree = "<group>";
+		};
+		9E8B08291E311ADD002BF095 /* STMusicSEPitchView */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B082A1E311AF5002BF095 /* STMusicSEPitchView.h */,
+				9E8B082B1E311AF5002BF095 /* STMusicSEPitchView.m */,
+				9E8B082D1E311AFE002BF095 /* STMusicSEPitchView.xib */,
+			);
+			name = STMusicSEPitchView;
+			sourceTree = "<group>";
+		};
+		9E8B082F1E311B20002BF095 /* STMusicSEEffectTypeView */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B08301E311B36002BF095 /* STMusicSEEffectTypeView.h */,
+				9E8B08311E311B36002BF095 /* STMusicSEEffectTypeView.m */,
+				9E8B08331E311B40002BF095 /* STMusicSEEffectTypeView.xib */,
+			);
+			name = STMusicSEEffectTypeView;
+			sourceTree = "<group>";
+		};
+		9E8B08351E311B51002BF095 /* STMusicSENavView */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B08361E311B5D002BF095 /* STMusicSENavView.h */,
+				9E8B08371E311B5D002BF095 /* STMusicSENavView.m */,
+				9E8B08391E311B6C002BF095 /* STMusicSENavView.xib */,
+			);
+			name = STMusicSENavView;
 			sourceTree = "<group>";
 		};
 		9EBF200C1E0D12A500C5A0B3 = {
@@ -719,10 +915,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8B083A1E311B6C002BF095 /* STMusicSENavView.xib in Resources */,
+				9E8B08131E311847002BF095 /* STMusicSELogicViewC.xib in Resources */,
+				9E8B081D1E3118DB002BF095 /* STCMusicSEViewC.xib in Resources */,
+				9E8B07D11E311289002BF095 /* STMusicBaseViewC.xib in Resources */,
 				9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */,
+				9E8B07E51E31141C002BF095 /* STMusicLogicViewC.xib in Resources */,
+				9E8B07F91E3114B8002BF095 /* STYunMusicUIViewC.xib in Resources */,
+				9E8B07E01E3113F5002BF095 /* STMusicLogicBaseViewC.xib in Resources */,
+				9E8B080D1E31180E002BF095 /* STMusicSELogicBaseViewC.xib in Resources */,
+				9E8B082E1E311AFE002BF095 /* STMusicSEPitchView.xib in Resources */,
+				9E8B08081E3116C2002BF095 /* STCMusicSEUIViewC.xib in Resources */,
 				9E8B07C11E3110C0002BF095 /* STDoubleLRCLabShowView.xib in Resources */,
 				9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */,
 				9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */,
+				9E8B08181E3118B4002BF095 /* STMusicSEBaseViewC.xib in Resources */,
+				9E8B08341E311B40002BF095 /* STMusicSEEffectTypeView.xib in Resources */,
+				9E8B08031E31168D002BF095 /* STYunMusicSEUIViewC.xib in Resources */,
+				9E8B08281E311AD1002BF095 /* STMusicSESliderView.xib in Resources */,
+				9E8B07F41E3114A4002BF095 /* STCMusicUIViewC.xib in Resources */,
+				9E8B07D61E3112BE002BF095 /* STCMusicViewC.xib in Resources */,
+				9E8B08221E3118EA002BF095 /* STYunMusicSEViewC.xib in Resources */,
+				9E8B07FE1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib in Resources */,
+				9E8B07DB1E3112D0002BF095 /* STYunMusicViewC.xib in Resources */,
+				9E8B07EA1E311445002BF095 /* STMusicUIBaseViewC.xib in Resources */,
 				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,14 +1014,34 @@
 			files = (
 				9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */,
 				9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */,
+				9E8B08321E311B36002BF095 /* STMusicSEEffectTypeView.m in Sources */,
+				9E8B07DA1E3112D0002BF095 /* STYunMusicViewC.m in Sources */,
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
+				9E8B08021E31168D002BF095 /* STYunMusicSEUIViewC.m in Sources */,
+				9E8B080C1E31180E002BF095 /* STMusicSELogicBaseViewC.m in Sources */,
+				9E8B082C1E311AF5002BF095 /* STMusicSEPitchView.m in Sources */,
+				9E8B08121E311847002BF095 /* STMusicSELogicViewC.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
+				9E8B08211E3118EA002BF095 /* STYunMusicSEViewC.m in Sources */,
+				9E8B08171E3118B4002BF095 /* STMusicSEBaseViewC.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
+				9E8B07F81E3114B8002BF095 /* STYunMusicUIViewC.m in Sources */,
 				9E8B07C01E3110C0002BF095 /* STDoubleLRCLabShowView.m in Sources */,
 				9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */,
+				9E8B07FD1E3115F9002BF095 /* STMusicSEBaseUIViewC.m in Sources */,
 				9E8B07B71E310D76002BF095 /* STMusicLrcModel.m in Sources */,
+				9E8B081C1E3118DB002BF095 /* STCMusicSEViewC.m in Sources */,
 				9E8B07BB1E311062002BF095 /* STLrcLab.m in Sources */,
+				9E8B07F31E3114A4002BF095 /* STCMusicUIViewC.m in Sources */,
+				9E8B07D01E311289002BF095 /* STMusicBaseViewC.m in Sources */,
+				9E8B07DF1E3113F5002BF095 /* STMusicLogicBaseViewC.m in Sources */,
+				9E8B08071E3116C2002BF095 /* STCMusicSEUIViewC.m in Sources */,
+				9E8B07E41E31141C002BF095 /* STMusicLogicViewC.m in Sources */,
+				9E8B08381E311B5D002BF095 /* STMusicSENavView.m in Sources */,
 				9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */,
+				9E8B08261E311ABD002BF095 /* STMusicSESliderView.m in Sources */,
+				9E8B07E91E311445002BF095 /* STMusicUIBaseViewC.m in Sources */,
+				9E8B07D51E3112BE002BF095 /* STCMusicViewC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

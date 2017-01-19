@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods.xcscheme</key>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SuperPoweredAudioMusicPlay.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XMNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4B400D7316D86CFB1EDADA95ECA9A742</key>
+		<key>6D675D7468561CA85588524E27384B7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C0D41EFB9C1BDB17B17982D5D99873F</key>
+		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC94FE2C0D0C3B1F92C702DDB33AD9BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BABC46E29B33B300F21459910A30113B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

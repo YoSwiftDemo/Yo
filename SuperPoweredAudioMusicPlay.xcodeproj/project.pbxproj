@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74890BB5AAF1ABA3B9574C51 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EE40B7770266BE2D80F343 /* libPods.a */; };
+		4E6B178EFCA74F6336CDCEBD /* libPods-SuperPoweredAudioMusicPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCC1E6C9DA8D2915476719 /* libPods-SuperPoweredAudioMusicPlay.a */; };
 		9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */; };
 		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
 		9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */; };
@@ -20,6 +20,10 @@
 		9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E691E0D440400783B06 /* MediaPlayer.framework */; };
 		9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6B1E0D440D00783B06 /* QuartzCore.framework */; };
 		9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6D1E0D441600783B06 /* UIKit.framework */; };
+		9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */; };
+		9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07AE1E310432002BF095 /* STMusicModel.m */; };
+		9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */; };
+		9E8B07B71E310D76002BF095 /* STMusicLrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07B61E310D76002BF095 /* STMusicLrcModel.m */; };
 		9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20191E0D12A500C5A0B3 /* main.m */; };
 		9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */; };
 		9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201F1E0D12A500C5A0B3 /* ViewController.m */; };
@@ -48,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13EE40B7770266BE2D80F343 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "王菲传奇.mp3"; path = "../王菲传奇.mp3"; sourceTree = "<group>"; };
 		9E69EA5F1E2FC82400697891 /* STMusicFunctionTotalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicFunctionTotalHeader.h; sourceTree = "<group>"; };
 		9E69EA711E2FCA7A00697891 /* STMusicSETotalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSETotalHeader.h; sourceTree = "<group>"; };
@@ -74,6 +77,15 @@
 		9E733E691E0D440400783B06 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		9E733E6B1E0D440D00783B06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9E733E6D1E0D441600783B06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E8B07A71E3103B3002BF095 /* STMusicCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicCenterManager.h; sourceTree = "<group>"; };
+		9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicCenterManager.m; sourceTree = "<group>"; };
+		9E8B07AD1E310432002BF095 /* STMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicModel.h; sourceTree = "<group>"; };
+		9E8B07AE1E310432002BF095 /* STMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicModel.m; sourceTree = "<group>"; };
+		9E8B07B01E310505002BF095 /* STMusicPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicPrefixHeader.pch; sourceTree = "<group>"; };
+		9E8B07B11E310CF2002BF095 /* STMusicDataCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicDataCenterManager.h; sourceTree = "<group>"; };
+		9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicDataCenterManager.m; sourceTree = "<group>"; };
+		9E8B07B51E310D76002BF095 /* STMusicLrcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicLrcModel.h; sourceTree = "<group>"; };
+		9E8B07B61E310D76002BF095 /* STMusicLrcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicLrcModel.m; sourceTree = "<group>"; };
 		9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredAudioMusicPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF20191E0D12A500C5A0B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,8 +102,9 @@
 		9EBF20391E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPoweredAudioMusicPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF203D1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperPoweredAudioMusicPlayUITests.m; sourceTree = "<group>"; };
 		9EBF203F1E0D12A500C5A0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5697A194E99D4E2CA263DC5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F9D11DA6036558DD962296B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A5F45A65CD83C3A392B3A3A7 /* Pods-SuperPoweredAudioMusicPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperPoweredAudioMusicPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperPoweredAudioMusicPlay/Pods-SuperPoweredAudioMusicPlay.release.xcconfig"; sourceTree = "<group>"; };
+		B3CCC1E6C9DA8D2915476719 /* libPods-SuperPoweredAudioMusicPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperPoweredAudioMusicPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFD2E734CA2D4644D6E5CB3 /* Pods-SuperPoweredAudioMusicPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperPoweredAudioMusicPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperPoweredAudioMusicPlay/Pods-SuperPoweredAudioMusicPlay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +122,7 @@
 				9E733E601E0D43CF00783B06 /* AudioToolbox.framework in Frameworks */,
 				9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */,
 				9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */,
-				74890BB5AAF1ABA3B9574C51 /* libPods.a in Frameworks */,
+				4E6B178EFCA74F6336CDCEBD /* libPods-SuperPoweredAudioMusicPlay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,11 +143,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02F9438AA207E380F6DD65DA /* Pods */ = {
+		86F00E7EAC8E58504AA8B391 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E5697A194E99D4E2CA263DC5 /* Pods.debug.xcconfig */,
-				F9D11DA6036558DD962296B3 /* Pods.release.xcconfig */,
+				BEFD2E734CA2D4644D6E5CB3 /* Pods-SuperPoweredAudioMusicPlay.debug.xcconfig */,
+				A5F45A65CD83C3A392B3A3A7 /* Pods-SuperPoweredAudioMusicPlay.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -170,12 +183,14 @@
 		9E69EA511E2FB7D500697891 /* STMusic */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07AA1E3103E9002BF095 /* STMusicView */,
 				9E69EA751E2FCAE100697891 /* STMusicPlayer */,
 				9E69EA741E2FCAC800697891 /* STMusicThirdLib */,
 				9E69EA531E2FC3D600697891 /* STMusicSE */,
 				9E69EA521E2FC3AD00697891 /* STMusicFunction */,
 				9E69EA641E2FC8AB00697891 /* STMusicExtension */,
 				9E69EA631E2FC89100697891 /* STMusicManager */,
+				9E8B07B01E310505002BF095 /* STMusicPrefixHeader.pch */,
 			);
 			name = STMusic;
 			sourceTree = "<group>";
@@ -291,6 +306,8 @@
 		9E69EA601E2FC83C00697891 /* STMusicCenterManager */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07A71E3103B3002BF095 /* STMusicCenterManager.h */,
+				9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */,
 			);
 			name = STMusicCenterManager;
 			sourceTree = "<group>";
@@ -316,6 +333,8 @@
 		9E69EA651E2FC8C300697891 /* STMusicDataCenterManager */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07B11E310CF2002BF095 /* STMusicDataCenterManager.h */,
+				9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */,
 			);
 			name = STMusicDataCenterManager;
 			sourceTree = "<group>";
@@ -453,9 +472,44 @@
 				9E733E611E0D43D900783B06 /* Accelerate.framework */,
 				9E733E5F1E0D43CF00783B06 /* AudioToolbox.framework */,
 				9E733E5D1E0D43C100783B06 /* CoreMedia.framework */,
-				13EE40B7770266BE2D80F343 /* libPods.a */,
+				B3CCC1E6C9DA8D2915476719 /* libPods-SuperPoweredAudioMusicPlay.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E8B07AA1E3103E9002BF095 /* STMusicView */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B07AB1E3103F3002BF095 /* STModel */,
+			);
+			name = STMusicView;
+			sourceTree = "<group>";
+		};
+		9E8B07AB1E3103F3002BF095 /* STModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B07B41E310D51002BF095 /* STMusicLrcModel */,
+				9E8B07AC1E3103FD002BF095 /* STMusicModel */,
+			);
+			name = STModel;
+			sourceTree = "<group>";
+		};
+		9E8B07AC1E3103FD002BF095 /* STMusicModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B07AD1E310432002BF095 /* STMusicModel.h */,
+				9E8B07AE1E310432002BF095 /* STMusicModel.m */,
+			);
+			name = STMusicModel;
+			sourceTree = "<group>";
+		};
+		9E8B07B41E310D51002BF095 /* STMusicLrcModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B07B51E310D76002BF095 /* STMusicLrcModel.h */,
+				9E8B07B61E310D76002BF095 /* STMusicLrcModel.m */,
+			);
+			name = STMusicLrcModel;
 			sourceTree = "<group>";
 		};
 		9EBF200C1E0D12A500C5A0B3 = {
@@ -466,7 +520,7 @@
 				9EBF203C1E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlayUITests */,
 				9EBF20161E0D12A500C5A0B3 /* Products */,
 				9E733E5C1E0D43C100783B06 /* Frameworks */,
-				02F9438AA207E380F6DD65DA /* Pods */,
+				86F00E7EAC8E58504AA8B391 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -531,12 +585,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EBF20421E0D12A500C5A0B3 /* Build configuration list for PBXNativeTarget "SuperPoweredAudioMusicPlay" */;
 			buildPhases = (
-				20CD126053622FB4130456B2 /* Check Pods Manifest.lock */,
+				28026CAE73B33065EEBC96E5 /* [CP] Check Pods Manifest.lock */,
 				9EBF20111E0D12A500C5A0B3 /* Sources */,
 				9EBF20121E0D12A500C5A0B3 /* Frameworks */,
 				9EBF20131E0D12A500C5A0B3 /* Resources */,
-				DF5B3A16AE0402CDBCFCABBF /* Embed Pods Frameworks */,
-				18049BDD548B9A2E37FE0FEE /* Copy Pods Resources */,
+				52A958399394D198CB70E980 /* [CP] Embed Pods Frameworks */,
+				6C92F239DC7E7F8C0B3D0D13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -660,49 +714,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18049BDD548B9A2E37FE0FEE /* Copy Pods Resources */ = {
+		28026CAE73B33065EEBC96E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		20CD126053622FB4130456B2 /* Check Pods Manifest.lock */ = {
+		52A958399394D198CB70E980 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperPoweredAudioMusicPlay/Pods-SuperPoweredAudioMusicPlay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF5B3A16AE0402CDBCFCABBF /* Embed Pods Frameworks */ = {
+		6C92F239DC7E7F8C0B3D0D13 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperPoweredAudioMusicPlay/Pods-SuperPoweredAudioMusicPlay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -712,10 +766,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */,
+				9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */,
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
 				9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */,
+				9E8B07B71E310D76002BF095 /* STMusicLrcModel.m in Sources */,
+				9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,12 +918,12 @@
 		};
 		9EBF20431E0D12A500C5A0B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5697A194E99D4E2CA263DC5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BEFD2E734CA2D4644D6E5CB3 /* Pods-SuperPoweredAudioMusicPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperPoweredAudioMusicPlay/STMusicPrefixHeader.pch";
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -880,12 +938,12 @@
 		};
 		9EBF20441E0D12A500C5A0B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9D11DA6036558DD962296B3 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A5F45A65CD83C3A392B3A3A7 /* Pods-SuperPoweredAudioMusicPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BKME25WU4F;
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperPoweredAudioMusicPlay/STMusicPrefixHeader.pch";
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

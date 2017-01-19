@@ -1,0 +1,41 @@
+//
+//  STMusicPrefixHeader.pch
+//  SuperPoweredAudioMusicPlay
+//
+//  Created by 岳克奎 on 17/1/19.
+//  Copyright © 2017年 岳克奎. All rights reserved.
+//
+
+#ifndef STMusicPrefixHeader_pch
+#define STMusicPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#pragma mark ----------------------------   manager 管理层
+#import "STMusicDataCenterManager.h"
+#import "STMusicCenterManager.h"
+
+
+#pragma mark ----------------------------   STMusicView层
+#import "STMusicLrcModel.h"
+
+
+
+#pragma mark ----------------------------   第三方
+#import <MJExtension.h>
+#import <XXNibBridge.h>
+#import <XMNetworking.h>
+
+
+
+#pragma mark ----------------------------   宏定义
+
+#define ST_MUSIC_DATA_CENTERMANAGER  [STMusicDataCenterManager shareManager]
+#define ST_MUSIC_DATA_CENTERMANAGER  [STMusicDataCenterManager shareManager] 
+
+
+
+
+#endif /* STMusicPrefixHeader_pch */

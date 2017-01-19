@@ -52,7 +52,7 @@ static STMusicCenterManager *signleton = nil;
  * @discussion: 1.一定是给了model，再设置音乐状态
  *              2.
  *
- * @function: 驱动层属性变化，set下发数据，logic作为公有层。负责从驱动层接数据。
+ * @ Function: 驱动层属性变化，set下发数据，logic作为公有层。负责从驱动层接数据。
  */
 -(void)setMusicPlayerPlayingState:(BOOL)musicPlayerPlayingState{
     if (_delegate &&[_delegate respondsToSelector:@selector(sendDataForSTMusicLogicViewCSTMusicPlayerPlayingState:)]) {

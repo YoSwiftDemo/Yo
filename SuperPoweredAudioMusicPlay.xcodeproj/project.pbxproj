@@ -24,6 +24,9 @@
 		9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07AE1E310432002BF095 /* STMusicModel.m */; };
 		9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */; };
 		9E8B07B71E310D76002BF095 /* STMusicLrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07B61E310D76002BF095 /* STMusicLrcModel.m */; };
+		9E8B07BB1E311062002BF095 /* STLrcLab.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07BA1E311062002BF095 /* STLrcLab.m */; };
+		9E8B07C01E3110C0002BF095 /* STDoubleLRCLabShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07BE1E3110C0002BF095 /* STDoubleLRCLabShowView.m */; };
+		9E8B07C11E3110C0002BF095 /* STDoubleLRCLabShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B07BF1E3110C0002BF095 /* STDoubleLRCLabShowView.xib */; };
 		9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20191E0D12A500C5A0B3 /* main.m */; };
 		9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */; };
 		9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201F1E0D12A500C5A0B3 /* ViewController.m */; };
@@ -86,6 +89,11 @@
 		9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicDataCenterManager.m; sourceTree = "<group>"; };
 		9E8B07B51E310D76002BF095 /* STMusicLrcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicLrcModel.h; sourceTree = "<group>"; };
 		9E8B07B61E310D76002BF095 /* STMusicLrcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicLrcModel.m; sourceTree = "<group>"; };
+		9E8B07B91E311062002BF095 /* STLrcLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLrcLab.h; sourceTree = "<group>"; };
+		9E8B07BA1E311062002BF095 /* STLrcLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLrcLab.m; sourceTree = "<group>"; };
+		9E8B07BD1E3110C0002BF095 /* STDoubleLRCLabShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDoubleLRCLabShowView.h; sourceTree = "<group>"; };
+		9E8B07BE1E3110C0002BF095 /* STDoubleLRCLabShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDoubleLRCLabShowView.m; sourceTree = "<group>"; };
+		9E8B07BF1E3110C0002BF095 /* STDoubleLRCLabShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STDoubleLRCLabShowView.xib; sourceTree = "<group>"; };
 		9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredAudioMusicPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF20191E0D12A500C5A0B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -426,6 +434,8 @@
 		9E69EA721E2FCA8B00697891 /* STMusicExtensionView */ = {
 			isa = PBXGroup;
 			children = (
+				9E8B07BC1E3110A5002BF095 /* STDoubleLRCLabShowView */,
+				9E8B07B81E31104A002BF095 /* STLrcLab */,
 			);
 			name = STMusicExtensionView;
 			sourceTree = "<group>";
@@ -510,6 +520,25 @@
 				9E8B07B61E310D76002BF095 /* STMusicLrcModel.m */,
 			);
 			name = STMusicLrcModel;
+			sourceTree = "<group>";
+		};
+		9E8B07B81E31104A002BF095 /* STLrcLab */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B07B91E311062002BF095 /* STLrcLab.h */,
+				9E8B07BA1E311062002BF095 /* STLrcLab.m */,
+			);
+			name = STLrcLab;
+			sourceTree = "<group>";
+		};
+		9E8B07BC1E3110A5002BF095 /* STDoubleLRCLabShowView */ = {
+			isa = PBXGroup;
+			children = (
+				9E8B07BD1E3110C0002BF095 /* STDoubleLRCLabShowView.h */,
+				9E8B07BE1E3110C0002BF095 /* STDoubleLRCLabShowView.m */,
+				9E8B07BF1E3110C0002BF095 /* STDoubleLRCLabShowView.xib */,
+			);
+			name = STDoubleLRCLabShowView;
 			sourceTree = "<group>";
 		};
 		9EBF200C1E0D12A500C5A0B3 = {
@@ -691,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EBF20281E0D12A500C5A0B3 /* LaunchScreen.storyboard in Resources */,
+				9E8B07C11E3110C0002BF095 /* STDoubleLRCLabShowView.xib in Resources */,
 				9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */,
 				9EBF20251E0D12A500C5A0B3 /* Assets.xcassets in Resources */,
 				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
@@ -771,8 +801,10 @@
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
+				9E8B07C01E3110C0002BF095 /* STDoubleLRCLabShowView.m in Sources */,
 				9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */,
 				9E8B07B71E310D76002BF095 /* STMusicLrcModel.m in Sources */,
+				9E8B07BB1E311062002BF095 /* STLrcLab.m in Sources */,
 				9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

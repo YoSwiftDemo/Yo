@@ -21,6 +21,9 @@
 #pragma mark ----------------------------   STMusicView层
 #import "STMusicLrcModel.h"
 
+#pragma mark ----------------------------  自定义View
+#import "STLrcLab.h"
+#import "STDoubleLRCLabShowView.h"
 
 
 #pragma mark ----------------------------   第三方

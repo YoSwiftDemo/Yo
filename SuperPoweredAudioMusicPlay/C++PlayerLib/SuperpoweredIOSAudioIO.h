@@ -28,12 +28,13 @@
 
  @since Multi-channel output is available in iOS 6.0 and later.
 
- @param deviceChannels The iOS device's built-in output channels.
- @param HDMIChannels HDMI output channels.
- @param USBChannels USB output channels.
- @param numberOfHDMIChannelsAvailable Number of available HDMI output channels. Read only.
- @param numberOfUSBChannelsAvailable Number of available USB output channels. Read only.
- @param headphoneAvailable Something is plugged into the iOS device's headphone socket or not. Read only.
+ @ param deviceChannels The iOS device's built-in output channels.
+ @ param HDMIChannels HDMI output channels.
+ @ param USBChannels USB output channels.
+ @ param numberOfHDMIChannelsAvailable Number of available HDMI output channels. Read only.
+ @ param numberOfUSBChannelsAvailable Number of available USB output channels. Read only.
+ @ param headphoneAvailable Something is plugged into the iOS device's headphone socket or not. Read only.
+ 
  */
 typedef struct multiOutputChannelMap {
     // Information you provide:
@@ -56,8 +57,8 @@ typedef struct multiOutputChannelMap {
  @since Available in iOS 6.0 and later.
  @see @c multiOutputChannelMap
 
- @param USBChannels Example: set USBChannels[0] to 3, to receive the input of the third USB channel on the first buffer.
- @param numberOfUSBChannelsAvailable Number of USB input channels.
+ @ param USBChannels Example: set USBChannels[0] to 3, to receive the input of the third USB channel on the first buffer.
+ @ param numberOfUSBChannelsAvailable Number of USB input channels.
  */
 typedef struct multiInputChannelMap {
     int USBChannels[32]; // You provide this.
@@ -71,7 +72,7 @@ typedef struct multiInputChannelMap {
  
  @return Return false for no audio output (silence).
 
- @param clientData A custom pointer your callback receives.
+ @param clientdata A custom pointer your callback receives.
  @param buffers Input-output buffers.
  @param inputChannels The number of input channels.
  @param outputChannels The number of output channels.

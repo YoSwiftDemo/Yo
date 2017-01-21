@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STNavMiddleBtnView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccd-co-veI">
+                    <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="4nF-Zb-kWb"/>
+                        <constraint firstAttribute="height" constant="44" id="Fr0-km-Tdw"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I21-nu-MSs">
+                    <rect key="frame" x="336" y="20" width="44" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VfX-wP-MPt"/>
+                        <constraint firstAttribute="width" constant="44" id="wCj-ns-6My"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hs-he-IPW">
+                    <rect key="frame" x="0.0" y="64" width="380" height="1"/>
+                    <color key="backgroundColor" red="0.49879116600000001" green="1" blue="0.30308530960000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="m3o-OH-c69"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xov-XX-JyR" customClass="STThreeBtnView">
+                    <rect key="frame" x="76" y="23" width="201" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.2637068742" blue="0.52200801240000005" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I21-nu-MSs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="CO3-ee-tK1"/>
+                <constraint firstAttribute="trailing" secondItem="I21-nu-MSs" secondAttribute="trailing" id="CiI-cs-v57"/>
+                <constraint firstAttribute="trailing" secondItem="4Hs-he-IPW" secondAttribute="trailing" id="ElM-mh-xr3"/>
+                <constraint firstItem="ccd-co-veI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GNS-Uj-DqH"/>
+                <constraint firstItem="4Hs-he-IPW" firstAttribute="top" secondItem="I21-nu-MSs" secondAttribute="bottom" id="Ncj-rk-8JK"/>
+                <constraint firstItem="ccd-co-veI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="dal-8X-UhR"/>
+                <constraint firstItem="4Hs-he-IPW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rpR-44-oOj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="stThreeBtnView" destination="xov-XX-JyR" id="Ktg-XT-tKL"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="-40"/>
+        </view>
+    </objects>
+</document>

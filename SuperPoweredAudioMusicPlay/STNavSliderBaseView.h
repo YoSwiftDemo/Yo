@@ -1,5 +1,5 @@
 //
-//  STBaseViewC.h
+//  STNavSliderBaseView.h
 //  SuperPoweredAudioMusicPlay
 //
 //  Created by 岳克奎 on 17/1/21.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STBaseViewC : UIViewController
+@interface STNavSliderBaseView : UIView
+//btn个数
+@property(nonatomic,assign)NSInteger   btnCount;
+
+ 
 
 @end

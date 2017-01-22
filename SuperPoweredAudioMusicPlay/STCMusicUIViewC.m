@@ -63,4 +63,18 @@
   
     
 }
+-(void)sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTSMusicState:(BOOL)stCMusicState{
+    [self.musicControlStateBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState?@"music_stop_playing":@"music_resume_playing"]]
+                               forState:UIControlStateNormal];
+}
+/*
+ 暂停与播放
+ 
+ */
+- (IBAction)musicControlBtnShowStateClick:(UIButton *)sender {
+     ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState = !ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState;
+}
+
+
+
 @end

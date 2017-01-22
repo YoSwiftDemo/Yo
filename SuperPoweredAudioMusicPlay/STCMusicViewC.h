@@ -15,7 +15,7 @@
 @optional
 //UI的UI处理
 -(void)sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTMusicModel:(STMusicModel *)stMusicModel;
-
+-(void)sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTSMusicState:(BOOL)stCMusicState;
 @end
 @interface STCMusicViewC : STMusicBaseViewC  <STMusicLogicViewCDelegate>
 @property(weak,nonatomic)id<STCMusicViewCDeleagte>delegate;

@@ -70,6 +70,8 @@
 		9E8B08341E311B40002BF095 /* STMusicSEEffectTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08331E311B40002BF095 /* STMusicSEEffectTypeView.xib */; };
 		9E8B08381E311B5D002BF095 /* STMusicSENavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B08371E311B5D002BF095 /* STMusicSENavView.m */; };
 		9E8B083A1E311B6C002BF095 /* STMusicSENavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B08391E311B6C002BF095 /* STMusicSENavView.xib */; };
+		9EB861381E34C3A50020CD41 /* STMusic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB861371E34C3A50020CD41 /* STMusic.xcassets */; };
+		9EB8613C1E34EB230020CD41 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8613B1E34EB230020CD41 /* UIView+Layout.m */; };
 		9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF20191E0D12A500C5A0B3 /* main.m */; };
 		9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */; };
 		9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF201F1E0D12A500C5A0B3 /* ViewController.m */; };
@@ -201,6 +203,9 @@
 		9E8B08361E311B5D002BF095 /* STMusicSENavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSENavView.h; sourceTree = "<group>"; };
 		9E8B08371E311B5D002BF095 /* STMusicSENavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSENavView.m; sourceTree = "<group>"; };
 		9E8B08391E311B6C002BF095 /* STMusicSENavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSENavView.xib; sourceTree = "<group>"; };
+		9EB861371E34C3A50020CD41 /* STMusic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = STMusic.xcassets; sourceTree = "<group>"; };
+		9EB8613A1E34EB230020CD41 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		9EB8613B1E34EB230020CD41 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		9EBF20151E0D12A500C5A0B3 /* SuperPoweredAudioMusicPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredAudioMusicPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF20191E0D12A500C5A0B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EBF201B1E0D12A500C5A0B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -299,6 +304,7 @@
 		9E69EA511E2FB7D500697891 /* STMusic */ = {
 			isa = PBXGroup;
 			children = (
+				9EB861371E34C3A50020CD41 /* STMusic.xcassets */,
 				9E69EA521E2FC3AD00697891 /* STMusicFunction */,
 				9E69EA531E2FC3D600697891 /* STMusicSE */,
 				9E8B07AA1E3103E9002BF095 /* STMusicView */,
@@ -658,6 +664,7 @@
 			isa = PBXGroup;
 			children = (
 				9E881FC71E334ABC00852853 /* STCommonHeader.h */,
+				9EB861391E34EAD70020CD41 /* UIView */,
 				9E83F79C1E346C3A00D57E60 /* NSString */,
 			);
 			name = STCommon;
@@ -765,6 +772,15 @@
 				9E8B08391E311B6C002BF095 /* STMusicSENavView.xib */,
 			);
 			name = STMusicSENavView;
+			sourceTree = "<group>";
+		};
+		9EB861391E34EAD70020CD41 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				9EB8613A1E34EB230020CD41 /* UIView+Layout.h */,
+				9EB8613B1E34EB230020CD41 /* UIView+Layout.m */,
+			);
+			name = UIView;
 			sourceTree = "<group>";
 		};
 		9EBF200C1E0D12A500C5A0B3 = {
@@ -964,6 +980,7 @@
 				9E8B08341E311B40002BF095 /* STMusicSEEffectTypeView.xib in Resources */,
 				9E8B08031E31168D002BF095 /* STYunMusicSEUIViewC.xib in Resources */,
 				9E8B08281E311AD1002BF095 /* STMusicSESliderView.xib in Resources */,
+				9EB861381E34C3A50020CD41 /* STMusic.xcassets in Resources */,
 				9E8B07F41E3114A4002BF095 /* STCMusicUIViewC.xib in Resources */,
 				9E8B07D61E3112BE002BF095 /* STCMusicViewC.xib in Resources */,
 				9E8B08221E3118EA002BF095 /* STYunMusicSEViewC.xib in Resources */,
@@ -1052,6 +1069,7 @@
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
 				9E8B08021E31168D002BF095 /* STYunMusicSEUIViewC.m in Sources */,
 				9E8B080C1E31180E002BF095 /* STMusicSELogicBaseViewC.m in Sources */,
+				9EB8613C1E34EB230020CD41 /* UIView+Layout.m in Sources */,
 				9E8B082C1E311AF5002BF095 /* STMusicSEPitchView.m in Sources */,
 				9E8B08121E311847002BF095 /* STMusicSELogicViewC.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,

@@ -24,6 +24,7 @@
                                                                                         newViewCNameStr:@"STCMusicViewC"
                                                                                                complete:^(BOOL finished, STMusicBaseViewC *newViewC) {
                                                                                                }];
+    stCMusicViewC.panGestureRecognizer.enabled = YES;
     //childViewC logicViewC
     STMusicLogicViewC *stMusicLogicViewC = (STMusicLogicViewC *)[STMusicLogicViewC showSTMusicLogicOnSuperViewC:stCMusicViewC
                                                                                                     ofFrameRect:CGRectMake(0, 0 , 100,200) newViewCNameStr:@"STMusicLogicViewC"
@@ -65,13 +66,14 @@
     //第二步 驱动层处理
     [ST_MUSIC_CENTER_MANAGER setMusicModel:stMusicModel];
     
-    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
-    
-    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
-        NSLog(@"播放成功");
-    }else{
-          NSLog(@"播放失败");
-    }
+    [ST_MUSIC_CENTER_MANAGER setMusicPlayerPlayingState:YES];
+//    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
+//    
+//    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
+//        NSLog(@"播放成功");
+//    }else{
+//          NSLog(@"播放失败");
+//    }
     
     
     

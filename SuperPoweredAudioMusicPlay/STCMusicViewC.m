@@ -59,26 +59,25 @@
 /**
  * @brief：调节音乐播放状态
  *
- * @prama: stMusicPlayerPlingState 期望 音乐状态（播放+暂停）
+ * @prama: stMusicPlayerPlingState  音乐状态（播放+暂停）
  *
  *
  * @discussion:1.从子 logicViewC 拿到变化数据
- *             2.
+ *             2.当播放器加载音乐ok并且播放成功后，才让驱动层的音乐状态改变
  *             3.
  *
  *
  */
 // 音乐state
 -(BOOL)sendForSTMusicViewCOfSTMusicPlayerPlayingState:(BOOL)stMusicPlayerPlingState{
-//    if (!self.stMusicModel) {
-//        return NO;
-//    }
-//    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState = stMusicPlayerPlingState;
-//    [self.stCMusicUIViewC.musicControlStateBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState ?@"fw_relive_suspend":@"fw_relive_start"]]
-//                                               forState:UIControlStateNormal];
-//    
-//    return ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState;
-    return YES;
+    //需要调  音乐管理中心 状态属性管理 管理的结果返回给驱动层
+    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState = stMusicPlayerPlingState;
+    //把最后得到的状态下传给UI层
+    if (_delegate &&[_delegate respondsToSelector:@selector(sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTSMusicState:)]) {
+        [_delegate sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTSMusicState:ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState ];
+    }
+    return ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState;
+
 }
 
 // 加载和 退出 C++音乐 界面

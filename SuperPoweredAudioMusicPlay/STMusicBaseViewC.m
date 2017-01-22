@@ -117,6 +117,148 @@
 
 
 
+#pragma mark - pan手势拖动音乐ViewC（重写get）
+/**
+ * @brief:pan手势拖动音乐ViewC
+ *
+ *@discussion：1.需要重写get
+ */
+-(UIPanGestureRecognizer *)panGestureRecognizer{
+    if (!_panGestureRecognizer) {
+        _panGestureRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognizerClick:)];
+        [self.view addGestureRecognizer:_panGestureRecognizer];
+    }
+    return _panGestureRecognizer;
+}
+#pragma mark - pan手势执行方法
+/**
+ * @brief:pan手势执行方法
+ *
+ *@discussion：1.需要 记录的音乐ViewC的父ViewC
+ */
+- (void)panGestureRecognizerClick:(UIPanGestureRecognizer *)sender {
+    CGPoint panPoint = [sender locationInView:self.recordSuperViewC.view];
+    CGPoint panPoint_moveValue = [sender translationInView:self.recordSuperViewC.view];
+    [self  setPanGesForYunMusicVC:panPoint
+                    withModeValue:panPoint_moveValue];
+    
+}
+#pragma mark - 坐标处理
+/**
+ * @brief:坐标处理
+ *
+ *@discussion：沿用悬浮直播里的处理
+ */
+-(void)setPanGesForYunMusicVC:(CGPoint)panPoint withModeValue:(CGPoint)moveVlue {
+    self.view.transform = CGAffineTransformTranslate( self.view.transform, moveVlue.x, moveVlue.y);
+    [_panGestureRecognizer setTranslation:CGPointZero inView:self.view];
+    if (_panGestureRecognizer.state == UIGestureRecognizerStateBegan) {
+    }
+    if (_panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+    }
+    if (_panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        // 当向左边滑动
+        if(self.view.x<0){
+            [UIView animateWithDuration:0.2
+                             animations:^{
+                                 self.view.x =0;
+                             }
+                             completion:^(BOOL finished) {
+                             }];
+        }
+        if(self.view.frame.origin.y<50){
+            [UIView animateWithDuration:0.2
+                             animations:^{
+                                 self.view.y =50;
+                             }
+                             completion:^(BOOL finished) {
+                             }];
+        }
+        if(self.view.frame.origin.y> SCREEN_HEIGHT/2){
+            [UIView animateWithDuration:0.2
+                             animations:^{
+                                 self.view.y = SCREEN_HEIGHT/2;
+                             }
+                             completion:^(BOOL finished) {
+                             }];
+        }
+        if(self.view.x>SCREEN_WIDTH/3){
+            [UIView animateWithDuration:0.2
+                             animations:^{
+                                 self.view.x = SCREEN_WIDTH/3;
+                             }
+                             completion:^(BOOL finished) {
+                                 
+                             }];
+            
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

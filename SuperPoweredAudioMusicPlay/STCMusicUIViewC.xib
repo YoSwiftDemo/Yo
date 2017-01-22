@@ -25,32 +25,35 @@
             <rect key="frame" x="0.0" y="0.0" width="491" height="266"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-da-OhL">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-da-OhL">
                     <rect key="frame" x="70" y="10" width="50" height="40"/>
-                    <color key="backgroundColor" red="0.11616614190000001" green="1" blue="0.079239280499999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="G2w-1k-cOS"/>
                         <constraint firstAttribute="height" constant="40" id="Pgh-G7-FNR"/>
                     </constraints>
-                    <state key="normal" title="关闭"/>
+                    <state key="normal" title="关闭" image="music_Close"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-W2-iCZ">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-W2-iCZ">
                     <rect key="frame" x="10" y="10" width="50" height="40"/>
-                    <color key="backgroundColor" red="0.11616614190000001" green="1" blue="0.079239280499999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="WkW-RN-m08"/>
                         <constraint firstAttribute="width" constant="50" id="ntI-VU-v21"/>
                     </constraints>
-                    <state key="normal" title="音效"/>
+                    <state key="normal" title="音效" image="music_show_Sound_Effect"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-yc-6Qj">
-                    <rect key="frame" x="10" y="91" width="50" height="40"/>
-                    <color key="backgroundColor" red="0.11616614190000001" green="1" blue="0.079239280499999995" alpha="1" colorSpace="calibratedRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-yc-6Qj">
+                    <rect key="frame" x="10" y="91" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="50" id="Hhl-1U-9T9"/>
                         <constraint firstAttribute="height" constant="40" id="lt4-5Y-MTI"/>
+                        <constraint firstAttribute="width" constant="40" id="pyr-N9-EIR"/>
                     </constraints>
-                    <state key="normal" title="暂停"/>
+                    <state key="normal" title="暂停" image="music_resume_playing"/>
+                    <connections>
+                        <action selector="musicControlBtnShowStateClick:" destination="-1" eventType="touchUpInside" id="rqN-mK-MDN"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09V-r3-gsj">
                     <rect key="frame" x="10" y="60" width="69.5" height="21"/>
@@ -73,13 +76,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-aQ-Nag" customClass="STDoubleLRCLabShowView">
-                    <rect key="frame" x="70" y="91" width="411" height="50"/>
+                    <rect key="frame" x="60" y="91" width="421" height="50"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="1q3-PA-2XR"/>
                     </constraints>
                 </view>
             </subviews>
+            <color key="backgroundColor" red="0.071957610547542572" green="0.82761752605438232" blue="0.77797597646713257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="w97-yc-6Qj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="42A-RK-yTu"/>
                 <constraint firstItem="2Ju-2n-ghE" firstAttribute="leading" secondItem="09V-r3-gsj" secondAttribute="trailing" constant="10" id="DYD-2j-VyF"/>
@@ -99,4 +103,9 @@
             <point key="canvasLocation" x="82.5" y="-148"/>
         </view>
     </objects>
+    <resources>
+        <image name="music_Close" width="63" height="23"/>
+        <image name="music_resume_playing" width="109" height="109"/>
+        <image name="music_show_Sound_Effect" width="63" height="23"/>
+    </resources>
 </document>

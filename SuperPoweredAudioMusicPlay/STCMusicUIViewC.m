@@ -63,4 +63,14 @@
   
     
 }
+/*
+ 暂停与播放
+ 
+ */
+- (IBAction)musicControlBtnShowStateClick:(UIButton *)sender {
+     ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState = !ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState;
+}
+
+
+
 @end

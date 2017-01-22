@@ -9,12 +9,12 @@ struct reverbInternals;
  
  One instance allocates around 120 kb memory.
  
- @param dry >= 0.0f and <= 1.0f. Read only.
- @param wet >= 0.0f and <= 1.0f. Read only.
- @param mix >= 0.0f and <= 1.0f. Read only.
- @param width >= 0.0f and <= 1.0f. Read only.
- @param damp >= 0.0f and <= 1.0f. Read only.
- @param roomSize >= 0.0f and <= 1.0f. Read only.
+ @ param dry >= 0.0f and <= 1.0f. Read only.
+ @ param wet >= 0.0f and <= 1.0f. Read only.
+ @ param mix >= 0.0f and <= 1.0f. Read only.
+ @ param width >= 0.0f and <= 1.0f. Read only.
+ @ param damp >= 0.0f and <= 1.0f. Read only.
+ @ param roomSize >= 0.0f and <= 1.0f. Read only.
  */
 class SuperpoweredReverb: public SuperpoweredFX {
 public:

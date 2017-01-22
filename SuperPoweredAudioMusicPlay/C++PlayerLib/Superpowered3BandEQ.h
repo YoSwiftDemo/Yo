@@ -4,7 +4,7 @@
 #include "SuperpoweredFX.h"
 struct eqInternals;
 
-/**
+/*
  @brief Classic three-band equalizer with unique characteristics and total kills.
  
  It doesn't allocate any internal buffers and needs just a few bytes of memory.

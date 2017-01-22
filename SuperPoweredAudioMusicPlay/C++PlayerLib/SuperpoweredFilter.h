@@ -15,16 +15,17 @@ typedef enum SuperpoweredFilterType {
 } SuperpoweredFilterType;
 
 /**
- @brief IIR filters.
+ @ brief IIR filters.
  
  It doesn't allocate any internal buffers and needs just a few bytes of memory.
  
- @param frequency Current frequency value. Read only.
- @param decibel Current decibel value for shelving and parametric filters. Read only.
- @param resonance Current resonance value for resonant filters. Read only.
- @param octave Current octave value for bandlimited and parametric filters. Read only.
- @param slope Current slope value for shelving filters. Read only.
- @param type Filter type. Read only.
+ @ param frequency Current frequency value. Read only.
+ @ param decibel Current decibel value for shelving and parametric filters. Read only.
+ @ param resonance Current resonance value for resonant filters. Read only.
+ @ param octave Current octave value for bandlimited and parametric filters. Read only.
+ @ param slope Current slope value for shelving filters. Read only.
+ @ param type Filter type. Read only.
+ 
  */
 class SuperpoweredFilter: public SuperpoweredFX {
 public:

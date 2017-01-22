@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4E6B178EFCA74F6336CDCEBD /* libPods-SuperPoweredAudioMusicPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCC1E6C9DA8D2915476719 /* libPods-SuperPoweredAudioMusicPlay.a */; };
 		9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */; };
+		9E36CFBC1E33A99A0065479A /* STHomePageBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36CFBA1E33A99A0065479A /* STHomePageBaseViewC.m */; };
+		9E36CFBD1E33A99A0065479A /* STHomePageBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E36CFBB1E33A99A0065479A /* STHomePageBaseViewC.xib */; };
+		9E36CFC21E33AF3B0065479A /* STNavSliderBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36CFC11E33AF3B0065479A /* STNavSliderBaseView.m */; };
 		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
 		9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */; };
 		9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5D1E0D43C100783B06 /* CoreMedia.framework */; };
@@ -20,6 +23,12 @@
 		9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E691E0D440400783B06 /* MediaPlayer.framework */; };
 		9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6B1E0D440D00783B06 /* QuartzCore.framework */; };
 		9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6D1E0D441600783B06 /* UIKit.framework */; };
+		9E881F921E3323AE00852853 /* STHomePageUIBaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E881F901E3323AE00852853 /* STHomePageUIBaseViewC.m */; };
+		9E881F931E3323AE00852853 /* STHomePageUIBaseViewC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E881F911E3323AE00852853 /* STHomePageUIBaseViewC.xib */; };
+		9E881FA91E332D8A00852853 /* STNavBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E881FA81E332D8A00852853 /* STNavBaseView.m */; };
+		9E881FAB1E332D9600852853 /* STNavBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E881FAA1E332D9600852853 /* STNavBaseView.xib */; };
+		9E881FB41E33332500852853 /* STUnderLineBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E881FB31E33332500852853 /* STUnderLineBtn.xib */; };
+		9E881FB71E33334900852853 /* STUnderLineBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E881FB61E33334900852853 /* STUnderLineBtn.m */; };
 		9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */; };
 		9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07AE1E310432002BF095 /* STMusicModel.m */; };
 		9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */; };
@@ -96,6 +105,11 @@
 
 /* Begin PBXFileReference section */
 		9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "王菲传奇.mp3"; path = "../王菲传奇.mp3"; sourceTree = "<group>"; };
+		9E36CFB91E33A99A0065479A /* STHomePageBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHomePageBaseViewC.h; sourceTree = "<group>"; };
+		9E36CFBA1E33A99A0065479A /* STHomePageBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHomePageBaseViewC.m; sourceTree = "<group>"; };
+		9E36CFBB1E33A99A0065479A /* STHomePageBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STHomePageBaseViewC.xib; sourceTree = "<group>"; };
+		9E36CFC01E33AF3B0065479A /* STNavSliderBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavSliderBaseView.h; sourceTree = "<group>"; };
+		9E36CFC11E33AF3B0065479A /* STNavSliderBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavSliderBaseView.m; sourceTree = "<group>"; };
 		9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioIOS.a; sourceTree = "<group>"; };
 		9E733E4C1E0D1C1E00783B06 /* Superpowered3BandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpowered3BandEQ.h; sourceTree = "<group>"; };
 		9E733E4D1E0D1C1E00783B06 /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
@@ -118,6 +132,16 @@
 		9E733E691E0D440400783B06 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		9E733E6B1E0D440D00783B06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9E733E6D1E0D441600783B06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E881F8F1E3323AE00852853 /* STHomePageUIBaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHomePageUIBaseViewC.h; sourceTree = "<group>"; };
+		9E881F901E3323AE00852853 /* STHomePageUIBaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHomePageUIBaseViewC.m; sourceTree = "<group>"; };
+		9E881F911E3323AE00852853 /* STHomePageUIBaseViewC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STHomePageUIBaseViewC.xib; sourceTree = "<group>"; };
+		9E881FA71E332D8A00852853 /* STNavBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavBaseView.h; sourceTree = "<group>"; };
+		9E881FA81E332D8A00852853 /* STNavBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavBaseView.m; sourceTree = "<group>"; };
+		9E881FAA1E332D9600852853 /* STNavBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STNavBaseView.xib; sourceTree = "<group>"; };
+		9E881FB31E33332500852853 /* STUnderLineBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STUnderLineBtn.xib; sourceTree = "<group>"; };
+		9E881FB51E33334900852853 /* STUnderLineBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUnderLineBtn.h; sourceTree = "<group>"; };
+		9E881FB61E33334900852853 /* STUnderLineBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUnderLineBtn.m; sourceTree = "<group>"; };
+		9E881FC71E334ABC00852853 /* STCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STCommonHeader.h; sourceTree = "<group>"; };
 		9E8B07A71E3103B3002BF095 /* STMusicCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicCenterManager.h; sourceTree = "<group>"; };
 		9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicCenterManager.m; sourceTree = "<group>"; };
 		9E8B07AD1E310432002BF095 /* STMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicModel.h; sourceTree = "<group>"; };
@@ -264,6 +288,15 @@
 				9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		9E36CFBF1E33AEDA0065479A /* STNavSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				9E36CFC01E33AF3B0065479A /* STNavSliderBaseView.h */,
+				9E36CFC11E33AF3B0065479A /* STNavSliderBaseView.m */,
+			);
+			name = STNavSlideView;
 			sourceTree = "<group>";
 		};
 		9E4DBEF21E0D1623003E9BC5 /* C++PlayerLib */ = {
@@ -633,6 +666,114 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E881F801E33228D00852853 /* STHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				9E881F8D1E33235100852853 /* STHomePageUIViewC */,
+				9E881F871E3322F200852853 /* STHomePageViewC */,
+			);
+			name = STHomePage;
+			sourceTree = "<group>";
+		};
+		9E881F861E3322E300852853 /* STHomePageBaseViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E36CFB91E33A99A0065479A /* STHomePageBaseViewC.h */,
+				9E36CFBA1E33A99A0065479A /* STHomePageBaseViewC.m */,
+				9E36CFBB1E33A99A0065479A /* STHomePageBaseViewC.xib */,
+			);
+			name = STHomePageBaseViewC;
+			sourceTree = "<group>";
+		};
+		9E881F871E3322F200852853 /* STHomePageViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E881F861E3322E300852853 /* STHomePageBaseViewC */,
+			);
+			name = STHomePageViewC;
+			sourceTree = "<group>";
+		};
+		9E881F8D1E33235100852853 /* STHomePageUIViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E881F8E1E33237600852853 /* STHomePageUIViewC */,
+			);
+			name = STHomePageUIViewC;
+			sourceTree = "<group>";
+		};
+		9E881F8E1E33237600852853 /* STHomePageUIViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E881F8F1E3323AE00852853 /* STHomePageUIBaseViewC.h */,
+				9E881F901E3323AE00852853 /* STHomePageUIBaseViewC.m */,
+				9E881F911E3323AE00852853 /* STHomePageUIBaseViewC.xib */,
+			);
+			name = STHomePageUIViewC;
+			sourceTree = "<group>";
+		};
+		9E881F951E3329FC00852853 /* STCommon */ = {
+			isa = PBXGroup;
+			children = (
+				9E881FC71E334ABC00852853 /* STCommonHeader.h */,
+				9E881FA31E332C9100852853 /* STCommonView */,
+				9E881F961E332A0500852853 /* STCommonViewC */,
+			);
+			name = STCommon;
+			sourceTree = "<group>";
+		};
+		9E881F961E332A0500852853 /* STCommonViewC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = STCommonViewC;
+			sourceTree = "<group>";
+		};
+		9E881FA31E332C9100852853 /* STCommonView */ = {
+			isa = PBXGroup;
+			children = (
+				9E881FB11E3332CC00852853 /* STButton */,
+				9E881FA41E332CA500852853 /* STNavView */,
+			);
+			name = STCommonView;
+			sourceTree = "<group>";
+		};
+		9E881FA41E332CA500852853 /* STNavView */ = {
+			isa = PBXGroup;
+			children = (
+				9E36CFBF1E33AEDA0065479A /* STNavSlideView */,
+				9E881FA61E332D4700852853 /* STNavBaseView */,
+			);
+			name = STNavView;
+			sourceTree = "<group>";
+		};
+		9E881FA61E332D4700852853 /* STNavBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				9E881FA71E332D8A00852853 /* STNavBaseView.h */,
+				9E881FA81E332D8A00852853 /* STNavBaseView.m */,
+				9E881FAA1E332D9600852853 /* STNavBaseView.xib */,
+			);
+			name = STNavBaseView;
+			sourceTree = "<group>";
+		};
+		9E881FB11E3332CC00852853 /* STButton */ = {
+			isa = PBXGroup;
+			children = (
+				9E881FB21E3332D400852853 /* STUnderLineBtnView */,
+			);
+			name = STButton;
+			sourceTree = "<group>";
+		};
+		9E881FB21E3332D400852853 /* STUnderLineBtnView */ = {
+			isa = PBXGroup;
+			children = (
+				9E881FB51E33334900852853 /* STUnderLineBtn.h */,
+				9E881FB61E33334900852853 /* STUnderLineBtn.m */,
+				9E881FB31E33332500852853 /* STUnderLineBtn.xib */,
+			);
+			name = STUnderLineBtnView;
+			sourceTree = "<group>";
+		};
 		9E8B07AA1E3103E9002BF095 /* STMusicView */ = {
 			isa = PBXGroup;
 			children = (
@@ -766,6 +907,8 @@
 				9EBF201C1E0D12A500C5A0B3 /* AppDelegate.m */,
 				9EBF201E1E0D12A500C5A0B3 /* ViewController.h */,
 				9EBF201F1E0D12A500C5A0B3 /* ViewController.m */,
+				9E881F951E3329FC00852853 /* STCommon */,
+				9E881F801E33228D00852853 /* STHomePage */,
 				9E69EA511E2FB7D500697891 /* STMusic */,
 				9E1109D81E1A4B7A00D52F25 /* Resources */,
 				9EBF20211E0D12A500C5A0B3 /* Main.storyboard */,
@@ -925,6 +1068,7 @@
 				9E8B07E01E3113F5002BF095 /* STMusicLogicBaseViewC.xib in Resources */,
 				9E8B080D1E31180E002BF095 /* STMusicSELogicBaseViewC.xib in Resources */,
 				9E8B082E1E311AFE002BF095 /* STMusicSEPitchView.xib in Resources */,
+				9E881FAB1E332D9600852853 /* STNavBaseView.xib in Resources */,
 				9E8B08081E3116C2002BF095 /* STCMusicSEUIViewC.xib in Resources */,
 				9E8B07C11E3110C0002BF095 /* STDoubleLRCLabShowView.xib in Resources */,
 				9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */,
@@ -932,6 +1076,7 @@
 				9E8B08181E3118B4002BF095 /* STMusicSEBaseViewC.xib in Resources */,
 				9E8B08341E311B40002BF095 /* STMusicSEEffectTypeView.xib in Resources */,
 				9E8B08031E31168D002BF095 /* STYunMusicSEUIViewC.xib in Resources */,
+				9E36CFBD1E33A99A0065479A /* STHomePageBaseViewC.xib in Resources */,
 				9E8B08281E311AD1002BF095 /* STMusicSESliderView.xib in Resources */,
 				9E8B07F41E3114A4002BF095 /* STCMusicUIViewC.xib in Resources */,
 				9E8B07D61E3112BE002BF095 /* STCMusicViewC.xib in Resources */,
@@ -939,7 +1084,9 @@
 				9E8B07FE1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib in Resources */,
 				9E8B07DB1E3112D0002BF095 /* STYunMusicViewC.xib in Resources */,
 				9E8B07EA1E311445002BF095 /* STMusicUIBaseViewC.xib in Resources */,
+				9E881F931E3323AE00852853 /* STHomePageUIBaseViewC.xib in Resources */,
 				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
+				9E881FB41E33332500852853 /* STUnderLineBtn.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,13 +1163,17 @@
 				9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */,
 				9E8B08321E311B36002BF095 /* STMusicSEEffectTypeView.m in Sources */,
 				9E8B07DA1E3112D0002BF095 /* STYunMusicViewC.m in Sources */,
+				9E881FA91E332D8A00852853 /* STNavBaseView.m in Sources */,
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
 				9E8B08021E31168D002BF095 /* STYunMusicSEUIViewC.m in Sources */,
 				9E8B080C1E31180E002BF095 /* STMusicSELogicBaseViewC.m in Sources */,
+				9E881F921E3323AE00852853 /* STHomePageUIBaseViewC.m in Sources */,
+				9E36CFC21E33AF3B0065479A /* STNavSliderBaseView.m in Sources */,
 				9E8B082C1E311AF5002BF095 /* STMusicSEPitchView.m in Sources */,
 				9E8B08121E311847002BF095 /* STMusicSELogicViewC.m in Sources */,
 				9EBF201D1E0D12A500C5A0B3 /* AppDelegate.m in Sources */,
 				9E8B08211E3118EA002BF095 /* STYunMusicSEViewC.m in Sources */,
+				9E36CFBC1E33A99A0065479A /* STHomePageBaseViewC.m in Sources */,
 				9E8B08171E3118B4002BF095 /* STMusicSEBaseViewC.m in Sources */,
 				9EBF201A1E0D12A500C5A0B3 /* main.m in Sources */,
 				9E8B07F81E3114B8002BF095 /* STYunMusicUIViewC.m in Sources */,
@@ -1034,6 +1185,7 @@
 				9E8B07BB1E311062002BF095 /* STLrcLab.m in Sources */,
 				9E8B07F31E3114A4002BF095 /* STCMusicUIViewC.m in Sources */,
 				9E8B07D01E311289002BF095 /* STMusicBaseViewC.m in Sources */,
+				9E881FB71E33334900852853 /* STUnderLineBtn.m in Sources */,
 				9E8B07DF1E3113F5002BF095 /* STMusicLogicBaseViewC.m in Sources */,
 				9E8B08071E3116C2002BF095 /* STCMusicSEUIViewC.m in Sources */,
 				9E8B07E41E31141C002BF095 /* STMusicLogicViewC.m in Sources */,

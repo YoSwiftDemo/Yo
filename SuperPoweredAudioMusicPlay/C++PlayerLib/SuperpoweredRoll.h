@@ -9,9 +9,10 @@ struct rollInternals;
  
  One instance allocates around 1600 kb memory.
  
- @param wet Limited to >= 0.0f and <= 1.0f.
- @param bpm Limited to >= 60.0f and <= 240.0f
- @param beats Limit: 1/64 beats to 4 beats. (>= 0.015625f and <= 4.0f)
+ @ param wet Limited to >= 0.0f and <= 1.0f.
+ @ param bpm Limited to >= 60.0f and <= 240.0f
+ @ param beats Limit: 1/64 beats to 4 beats. (>= 0.015625f and <= 4.0f)
+ 
 */
 class SuperpoweredRoll: public SuperpoweredFX {
 public:

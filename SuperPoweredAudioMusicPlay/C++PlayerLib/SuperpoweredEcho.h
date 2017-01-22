@@ -9,11 +9,11 @@ struct echoInternals;
  
  One instance allocates around 770 kb memory.
  
- @param dry >= 0.0f and <= 1.0f. Read only.
- @param wet >= 0.0f and <= 1.0f. Read only.
- @param bpm >= 60.0f and <= 240.0f. Read-write.
- @param beats Delay in beats, >= 0.125f and <= 2.0f. Read-write.
- @param decay >= 0.0f and <= 1.0f. Read-write.
+ @ param dry >= 0.0f and <= 1.0f. Read only.
+ @ param wet >= 0.0f and <= 1.0f. Read only.
+ @ param bpm >= 60.0f and <= 240.0f. Read-write.
+ @ param beats Delay in beats, >= 0.125f and <= 2.0f. Read-write.
+ @ param decay >= 0.0f and <= 1.0f. Read-write.
  */
 class SuperpoweredEcho: public SuperpoweredFX {
 public:

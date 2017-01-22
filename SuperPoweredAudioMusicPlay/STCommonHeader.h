@@ -9,5 +9,5 @@
 #ifndef STCommonHeader_h
 #define STCommonHeader_h
 
-
+#import "NSString+Common.h"
 #endif /* STCommonHeader_h */

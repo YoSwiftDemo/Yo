@@ -114,39 +114,39 @@ typedef void (* SuperpoweredAdvancedAudioPlayerCallback) (void *clientData, Supe
  - Apple Lossless (on iOS only).
  - Http Live Streaming (HLS): vod/live/event streams, AAC-LC/MP3 in audio files or MPEG-TS files. Support for byte ranges and AES-128 encryption.
 
- @param positionMs The current position. Always accurate, no matter of time-stretching and other transformations. Read only.
- @param positionPercent The current position as a percentage (0.0f to 1.0f). Read only.
- @param positionSeconds The current position as seconds elapsed. Read only.
- @param displayPositionMs Same as positionMs, but positionMs is not updated until seeking to a different position is finished. This is updated immediately after setPosition() or seek() is called.  Read only.
- @param durationMs The duration of the current track in milliseconds. Equals to UINT_MAX for live streams. Read only.
- @param durationSeconds The duration of the current track in seconds. Equals to UINT_MAX for live streams. Read only.
- @param waitingForBuffering Indicates if the player waits for audio data to be bufferred. Read only.
- @param playing Indicates if the player is playing or paused. Read only.
- @param tempo The current tempo. Read only.
- @param masterTempo Time-stretching is enabled or not. Read only.
- @param pitchShift Note offset from -12 to 12. 0 means no pitch shift. Read only.
- @param pitchShiftCents Pitch shift cents, from -1200 (one octave down) to 1200 (one octave up). 0 means no pitch shift. Read only.
- @param bpm Must be correct for syncing. There is no auto-bpm detection inside. Read only.
- @param currentBpm The actual bpm of the track (as bpm changes with the current tempo). Read only.
- @param slip If enabled, scratching or reverse will maintain the playback position as if you had never entered those modes. Read only.
- @param scratching The player is in scratching mode or not. Read only.
- @param reverse Indicates if the playback goes backwards. Read only.
- @param looping Indicates if looping is enabled. Read only.
- @param firstBeatMs Tells where the first beat (the beatgrid) begins. Must be correct for syncing. Read only.
- @param msElapsedSinceLastBeat How many milliseconds elapsed since the last beat. Read only.
- @param beatIndex Which beat has just happened (1 [1.0f-1.999f], 2 [2.0f-2.999f], 3 [3.0f-3.99f], 4 [4.0f-4.99f]). A value of 0 means "don't know". Read only.
- @param bufferStartPercent What is buffered from the original source, start point. Will always be 0 for non-network sources (files). Read only.
- @param bufferEndPercent What is buffered from the original source, end point. Will always be 1.0f for non-network sources (files). Read only.
- @param currentBps The current download speed.
- @param syncMode The current sync mode (off, tempo, or tempo and beat).
- @param fixDoubleOrHalfBPM If tempo is >1.4f or <0.6f, it will treat the bpm as half or double. Good for certain genres. False by default.
- @param waitForNextBeatWithBeatSync Wait for the next beat if beat-syncing is enabled. False by default.
- @param dynamicHLSAlternativeSwitching Dynamicly changing the current HLS alternative to match the available network bandwidth. Default is true.
- @param reverseToForwardAtLoopStart If looping and playback direction is reverse, reaching the beginning of the loop will change direction to forward. True by default.
- @param downloadSecondsAhead The HLS content download strategy: how many seconds ahead of the playback position to download. Default is HLS_DOWNLOAD_REMAINING, meaning it will download everything after the playback position, until the end. HLS_DOWNLOAD_EVERYTHING downloads before the playback position too.
- @param maxDownloadAttempts If HLS download fails, how many times to try until sleep. Default: 100. After sleep, NetworkError is called continously.
- @param minTimeStretchingTempo Will not time-stretch, just resample below this tempo. Default: 0.501f (recommended value for low CPU on older mobile devices, such as the first iPad). Set this before an open() call. 
- @param maxTimeStretchingTempo Will not time-stretch, just resample above this tempo. Default: 2.0f (recommended value for low CPU on older mobile devices, such as the first iPad).
+ @ param positionMs The current position. Always accurate, no matter of time-stretching and other transformations. Read only.
+ @ param positionPercent The current position as a percentage (0.0f to 1.0f). Read only.
+ @ param positionSeconds The current position as seconds elapsed. Read only.
+ @ param displayPositionMs Same as positionMs, but positionMs is not updated until seeking to a different position is finished. This is updated immediately after setPosition() or seek() is called.  Read only.
+ @ param durationMs The duration of the current track in milliseconds. Equals to UINT_MAX for live streams. Read only.
+ @ param durationSeconds The duration of the current track in seconds. Equals to UINT_MAX for live streams. Read only.
+ @ param waitingForBuffering Indicates if the player waits for audio data to be bufferred. Read only.
+ @ param playing Indicates if the player is playing or paused. Read only.
+ @ param tempo The current tempo. Read only.
+ @ param masterTempo Time-stretching is enabled or not. Read only.
+ @ param pitchShift Note offset from -12 to 12. 0 means no pitch shift. Read only.
+ @ param pitchShiftCents Pitch shift cents, from -1200 (one octave down) to 1200 (one octave up). 0 means no pitch shift. Read only.
+ @ param bpm Must be correct for syncing. There is no auto-bpm detection inside. Read only.
+ @ param currentBpm The actual bpm of the track (as bpm changes with the current tempo). Read only.
+ @ param slip If enabled, scratching or reverse will maintain the playback position as if you had never entered those modes. Read only.
+ @ param scratching The player is in scratching mode or not. Read only.
+ @ aram reverse Indicates if the playback goes backwards. Read only.
+ @ param looping Indicates if looping is enabled. Read only.
+ @ param firstBeatMs Tells where the first beat (the beatgrid) begins. Must be correct for syncing. Read only.
+ @ param msElapsedSinceLastBeat How many milliseconds elapsed since the last beat. Read only.
+ @ param beatIndex Which beat has just happened (1 [1.0f-1.999f], 2 [2.0f-2.999f], 3 [3.0f-3.99f], 4 [4.0f-4.99f]). A value of 0 means "don't know". Read only.
+ @ param bufferStartPercent What is buffered from the original source, start point. Will always be 0 for non-network sources (files). Read only.
+ @ param bufferEndPercent What is buffered from the original source, end point. Will always be 1.0f for non-network sources (files). Read only.
+ @ param currentBps The current download speed.
+ @ param syncMode The current sync mode (off, tempo, or tempo and beat).
+ @ param fixDoubleOrHalfBPM If tempo is >1.4f or <0.6f, it will treat the bpm as half or double. Good for certain genres. False by default.
+ @ param waitForNextBeatWithBeatSync Wait for the next beat if beat-syncing is enabled. False by default.
+ @ param dynamicHLSAlternativeSwitching Dynamicly changing the current HLS alternative to match the available network bandwidth. Default is true.
+ @ param reverseToForwardAtLoopStart If looping and playback direction is reverse, reaching the beginning of the loop will change direction to forward. True by default.
+ @ param downloadSecondsAhead The HLS content download strategy: how many seconds ahead of the playback position to download. Default is HLS_DOWNLOAD_REMAINING, meaning it will download everything after the playback position, until the end. HLS_DOWNLOAD_EVERYTHING downloads before the playback position too.
+ @ param maxDownloadAttempts If HLS download fails, how many times to try until sleep. Default: 100. After sleep, NetworkError is called continously.
+ @ param minTimeStretchingTempo Will not time-stretch, just resample below this tempo. Default: 0.501f (recommended value for low CPU on older mobile devices, such as the first iPad). Set this before an open() call.
+ @ param maxTimeStretchingTempo Will not time-stretch, just resample above this tempo. Default: 2.0f (recommended value for low CPU on older mobile devices, such as the first iPad).
 */
 class SuperpoweredAdvancedAudioPlayer {
 public:

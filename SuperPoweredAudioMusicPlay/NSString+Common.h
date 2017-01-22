@@ -12,7 +12,15 @@
 /**
  * @brief:lrc字符串转lrc数据源数组
  *
+ * return: NSMutableDictionary   key1:  lrcModelDataSourceArray  key2:lrcTimePointDataArray
  */
--(void)lrcStringToLrcSoureDataArrayComplete:(void(^)(NSMutableArray *lrcModelDataSoureMArray,
-                                                     NSMutableArray *lrcPointDurationMArray))block;
+-(NSMutableDictionary *)st_parsingLrcStr;
+/**
+ * @brief: 时间转S处理（
+ *
+ * @use:将 秒s 转为  01：07.45
+ */
+-(NSString *)st_timeTypeOfSToTimeTypeOfMS;
+
+- (BOOL)st_isEmpty;
 @end

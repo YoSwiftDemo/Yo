@@ -20,7 +20,7 @@
     
     //加载
     STCMusicViewC *stCMusicViewC = (STCMusicViewC *)[STCMusicViewC showSTMusicFunctionViewCOnSuperViewC:self
-                                                                                            ofFrameRect:CGRectMake(0, 0 , 100,200)
+                                                                                            ofFrameRect:CGRectMake(0, 0 ,SCREEN_WIDTH,200)
                                                                                         newViewCNameStr:@"STCMusicViewC"
                                                                                                complete:^(BOOL finished, STMusicBaseViewC *newViewC) {
                                                                                                }];
@@ -42,26 +42,37 @@
                                                                                                        complete:^(BOOL finished,
                                                                                                                   STMusicUIBaseViewC *newViewC) {
                                                                                                            
-                                                                                                                                                                                            }];
-     stCMusicUIViewC.view.tag = 10002;
+                                                                                                                    }];
+ 
     stCMusicViewC.recordChildLogicViewC = stCMusicUIViewC;
-//    [stCMusicUIViewC setDelegate:stCMusicViewC];
+    //delegate
+    stCMusicViewC.delegate = stCMusicUIViewC;
+    [ST_MUSIC_PLAYER_CENTER_MANAGER setDelegate:stCMusicUIViewC];
+
+    //第一步：处理lrc，生成音乐model
+    //拿到歌词str 转为数据源数组
+    NSString *lrcFilePath = [[NSBundle mainBundle]pathForResource:@"10405520" ofType:@"lrc"];
+    NSString *lrcContent = [NSString stringWithContentsOfFile:lrcFilePath encoding:NSUTF8StringEncoding error:nil];
     
-    //music  mdoel 需要的基本数据
-    ST_MUSIC_CENTER_MANAGER.musicBaseSimpleInfoDic = @{@"musicNameStr":@"音乐名称",
-                                                       @"musicSingerNameStr":@"歌手名称",
-                                                       @"musicLrcContentDataStr":@"歌词",
-                                                       @"musicFilePathStr":@"音乐路径"};
-    //music stat play
-    if (  ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState) {
-        //open msuic ViewC with animate
-        ST_MUSIC_CENTER_MANAGER.musicViewCShowControllerState = YES;
-    }else{
-        NSLog(@"无法加载音乐");
-    }
-   //push   && add
-    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicFilePathStr = @"21312312";
+    NSMutableDictionary *musicModelMDic = @{@"musicNameStr":@"传奇",
+                                            @"musicSingerNameStr":@"王菲",
+                                            @"musicLrcContentDataStr":[[NSBundle mainBundle]pathForResource:@"10405520" ofType:@"lrc"],
+                                            @"musicFilePathStr":@"音乐路径播放器暂时用的测试数据",
+                                            @"lrcModelDataSourceArray": [[lrcContent st_parsingLrcStr] valueForKey:@"lrcModelDataSourceArray"],
+                                            @"lrcTimePointDataArray":[[lrcContent st_parsingLrcStr] valueForKey:@"lrcTimePointDataArray"]}.mutableCopy;
+    //STMusicModel
+    STMusicModel *stMusicModel =[STMusicModel mj_objectWithKeyValues:musicModelMDic];
+    //第二步 驱动层处理
+    [ST_MUSIC_CENTER_MANAGER setMusicModel:stMusicModel];
+    
     [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
+    
+    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
+        NSLog(@"播放成功");
+    }else{
+          NSLog(@"播放失败");
+    }
+    
     
     
 }

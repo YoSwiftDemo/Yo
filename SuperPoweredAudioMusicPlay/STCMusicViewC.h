@@ -8,7 +8,16 @@
 
 #import "STMusicBaseViewC.h"
 #import "STMusicLogicViewC.h"
-@interface STCMusicViewC : STMusicBaseViewC  <STMusicLogicViewCDelegate>
 
+
+@protocol STCMusicViewCDeleagte <NSObject>
+
+@optional
+//UI的UI处理
+-(void)sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTMusicModel:(STMusicModel *)stMusicModel;
+
+@end
+@interface STCMusicViewC : STMusicBaseViewC  <STMusicLogicViewCDelegate>
+@property(weak,nonatomic)id<STCMusicViewCDeleagte>delegate;
 
 @end

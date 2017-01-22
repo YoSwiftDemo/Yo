@@ -350,7 +350,13 @@ static STCMusicPlayerCenterManager *signleton = nil;
     if (_stCMusicPlayerCenterManagerBlock) {
         _stCMusicPlayerCenterManagerBlock(_superPlayer->durationSeconds, _superPlayer->positionSeconds,_superPlayer->positionPercent);
     }
-    NSLog(@"哈哈哈");
+    
+    if (_delegate&&[_delegate respondsToSelector:@selector(sendDataFromSTCMusicPlayerCenterManagerToSTMusicUIViewCOfMusicTotalDuration:andMusicCurrentDuration:andMusicProgress:)]) {
+        [_delegate sendDataFromSTCMusicPlayerCenterManagerToSTMusicUIViewCOfMusicTotalDuration:_superPlayer->durationSeconds
+                                                                       andMusicCurrentDuration: _superPlayer->positionSeconds
+                                                                              andMusicProgress:_superPlayer->positionPercent];
+    }
+//    NSLog(@"哈哈哈");
     return !silence;
 }
 #pragma mark - App进程打断后回到暂定方法 （player  delegate Method）
@@ -410,6 +416,8 @@ externalAudioDeviceName:(NSString *)externalAudioDeviceName
     _recordSTCMusicFilePathStr = [self searchFullFilePathOfMusicFilePathStr:recordSTCMusicFilePathStr];
      [self musicSuperPlayerPlayWithMudicPathStr:_recordSTCMusicFilePathStr
                                      samplerate:MUSIC_SAMPLERATE];
+    //默认加载后 就播放
+    //[self setRecordSTCMusicPlayerState:YES];
 }
 
 -(void)setRecordSTCMusicPlayerState:(BOOL)recordSTCMusicPlayerState{
@@ -597,7 +605,9 @@ externalAudioDeviceName:(NSString *)externalAudioDeviceName
 }
 
 
-
+-(void)setDelegate:(id<STCMusicPlayerCenterManagerDelegate>)delegate{
+    _delegate = delegate;
+}
 
 
 

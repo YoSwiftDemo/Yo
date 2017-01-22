@@ -46,6 +46,7 @@
 #pragma mark ----------------------------   STMusicView View层
 #import "STMusicLrcModel.h"
 
+
 #pragma mark ----------------------------   自定义View
 #import "STLrcLab.h"
 #import "STDoubleLRCLabShowView.h"
@@ -54,12 +55,14 @@
 #import "STMusicSEEffectTypeView.h"
 #import "STMusicSEPitchView.h"
 #import "STMusicSESliderView.h"
-
-
+#pragma mark ----------------------------   STCommon 公共类层
+#import "STCommonHeader.h"
 #pragma mark ----------------------------   第三方
 #import <MJExtension.h>
 #import <XXNibBridge.h>
 #import <XMNetworking.h>
+
+
 
 
 

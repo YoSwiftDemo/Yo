@@ -87,7 +87,7 @@ static STMusicDataCenterManager *signleton = nil;
                     for (int i = 0; i<lrcArray.count-1; i++) {
                         //时间在前  内容 在后，
                         NSDictionary *tempDic =@{@"lrcStartTimeStr":[weak_Self timeWithString:[lrcArray[i] substringFromIndex:1]],
-                                                 @"lrcContentStr":[[lrcArray lastObject] isEmpty]?@"  ":[lrcArray lastObject]};
+                                                 @"lrcContentStr":[[lrcArray lastObject]st_isEmpty]?@"  ":[lrcArray lastObject]};
                         //临时存每行先别MJ去转mdoel
                         [tempMArray addObject:tempDic];
                     }
@@ -158,11 +158,11 @@ static STMusicDataCenterManager *signleton = nil;
             //注意i+2  因为当前这行 歌词走完了。那么他应该显示的是 下 下一行歌词 对不对！但是，如果下一行为空呢。这都要考虑
             NSDictionary *secondLrcDic = tempMArray[i+1];
             NSString *nextStr =  @"";
-            if ([secondLrcDic[@"lrcContentStr"] isEmpty]) {
+            if ([secondLrcDic[@"lrcContentStr"] st_isEmpty]) {
                 if (i+2 >= tempMArray.count-1) {
                     nextStr = @"";
                 }else{
-                    nextStr =  [secondLrcDic[@"lrcContentStr"] isEmpty]?tempMArray[i+2][@"lrcContentStr"]:secondLrcDic[@"lrcContentStr"];
+                    nextStr =  [secondLrcDic[@"lrcContentStr"] st_isEmpty]?tempMArray[i+2][@"lrcContentStr"]:secondLrcDic[@"lrcContentStr"];
                 }
             }
             NSDictionary *modelDic =@{@"lrcStartTimeStr":firstLrcDic[@"lrcStartTimeStr"],

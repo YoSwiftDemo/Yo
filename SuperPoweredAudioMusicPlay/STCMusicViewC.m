@@ -19,15 +19,28 @@
     // Do any additional setup after loading the view from its nib.
 }
 #pragma mark ------------------------------------------------  delegate
-// model
+/**
+ * @brief:传入音乐信息model
+ *
+ * @discussion：1.处理UI变化
+ *              2.传入C++播放器控制中心
+ *
+ */
 -(void)sendDataForSTMusicViewCOfSTMusicModel:(STMusicModel *)stMusicModel{
+    //拿到了数据 歌词路径传下去
+    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicFilePathStr:stMusicModel.musicFilePathStr];
+    if (_delegate &&[_delegate respondsToSelector:@selector(sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTMusicModel:)]) {
+        [_delegate sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTMusicModel:stMusicModel];
+    }
+    //UI的变化继续传下去吧
+    
 //    self.stMusicModel = stMusicModel;
 //    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicFilePathStr = stMusicModel.musicFilePathStr;
 //    self.stCMusicUIViewC.musicLrcShowView.lrcModelDataSoueceMArray = stMusicModel.lrcModelDataSourceArray;
 //    self.stCMusicUIViewC.musicLrcShowView.lrcTimePointDataMArray = stMusicModel.lrcTimePointDataArray;
 //    self.stCMusicUIViewC.musicInfoShowLab.text = [NSString stringWithFormat:@"%@ %@",[stMusicModel.musicNameStr isEmpty]?@"":stMusicModel.musicNameStr,[stMusicModel.musicSingerNameStr isEmpty]?@"":stMusicModel.musicSingerNameStr];
-//    
-//    //player  play new music
+    
+    //player  play new music
 //    __weak typeof(self)weak_Self = self;
 //    ST_MUSIC_PLAYER_CENTER_MANAGER.stCMusicPlayerCenterManagerBlock = ^(CGFloat stCMusicPlyerOfTotalTime,
 //                                                                        CGFloat stCMusicPlyerOfCurrentTime,

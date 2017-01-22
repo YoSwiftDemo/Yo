@@ -14,6 +14,13 @@
 -(void)showMusicPlayerPlayingOfcurrentTime:(CGFloat)musicCurrentTime
                          andMusicTotalTime:(CGFloat)musicTotalTime
                           andMusicProgress:(CGFloat)msuicProgress{
+    
+    
+    NSLog(@"---------%f -----------------%f----------------------- %f ",musicCurrentTime,musicTotalTime,msuicProgress);
+    
+    NSLog(@"----%ld -----------%ld",_lrcTimePointDataMArray.count,_lrcModelDataSoueceMArray.count);
+    
+    
     //  least 10 lines lyrics
     if (self.lrcModelDataSoueceMArray.count<10) {
         NSDictionary *dic = self.lrcTimePointDataMArray[0];
@@ -41,13 +48,13 @@
             float lineTotalTime =self.recordNextModelStartTime-weak_Self.recordCurrentModelStartTime;
             float linePlayTime =self.recordCurrentTime-weak_Self.recordCurrentModelStartTime;
             // 根据 lineIndex判断要显示上行还是下行，给lrcLab传入进度
-            dispatch_sync(dispatch_get_main_queue(), ^{
+            //dispatch_sync(dispatch_get_main_queue(), ^{
             if (weak_Self.lineIndex%2==0) {
                 weak_Self.lrcUpLab.progress =  linePlayTime/lineTotalTime;
             }else{
                 weak_Self.lrcDowmLab.progress =  linePlayTime/lineTotalTime;
             }
-           });
+          // });
         }else{
             //某行 数据的取法
             //判断当前的时间  是否 在 model 的区间里面        时间点我可以全部返回 回来
@@ -73,7 +80,7 @@
                     
                  
                     // 根据 lineIndex 判断。每次进来更新数据  要更新2行的数据，上下行都要更新 不要考虑下一行是否为空，数据源创建时候已经处理
-                    dispatch_sync(dispatch_get_main_queue(), ^{
+                    //dispatch_sync(dispatch_get_main_queue(), ^{
                         //确保一开始进度是0
                         weak_Self.lrcUpLab.progress = 0;
                         weak_Self.lrcDowmLab.progress = 0;
@@ -84,7 +91,7 @@
                             weak_Self.lrcDowmLab.text = model.lrcContentStr;
                             weak_Self.lrcUpLab.text = nextModel.lrcContentStr;
                         }
-                    });
+                    //});
                   
                     return ;
                 }

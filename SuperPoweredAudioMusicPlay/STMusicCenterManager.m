@@ -59,34 +59,7 @@ static STMusicCenterManager *signleton = nil;
       _musicPlayerPlayingState= [_delegate sendDataForSTMusicLogicViewCSTMusicPlayerPlayingState:musicPlayerPlayingState];
     }
 }
-/**
- *
- *
- *
- *
- * @discussion:1.需要把model数据交给ViewC
- *
- */
--(void)setMusicBaseSimpleInfoDic:(NSDictionary *)musicBaseSimpleInfoDic{
-    /*
-    __weak typeof(self)weak_Self = self;
-    [ST_MUSIC_DATA_CENTERMANAGER analysisLrcDataOfSTMusicBaseSimpleDic:musicBaseSimpleInfoDic
-                                                              complete:^(BOOL finished,
-                                                                         NSMutableArray *stMusicLrcModelDataSourceMArray,
-                                                                         NSMutableArray *stLrcPointTimeStrDataMArray) {
-                                                                 //m dic
-                                                                  NSMutableDictionary *tempMusicTempMDic =musicBaseSimpleInfoDic.mutableCopy;
-                                                                 //add prama of array
-                                                                  [tempMusicTempMDic setValue:stMusicLrcModelDataSourceMArray forKey:@"lrcModelDataSourceArray"];
-                                                                  [tempMusicTempMDic setValue:stLrcPointTimeStrDataMArray forKey:@"lrcTimePointDataArray"];
-                                                                 // 转成model
-                                                                  STMusicModel *stMusicModel = [STMusicModel mj_objectWithKeyValues:tempMusicTempMDic];
-                                                                   [weak_Self setMusicModel:stMusicModel];
-                                                                 // send to logic
-                                                             
-    }];
-     */
-}
+//model
 -(void)setMusicModel:(STMusicModel *)musicModel{
        _musicModel = musicModel;
     if(_delegate &&[_delegate respondsToSelector:@selector(sendDataForSTMusicLogicViewCOfSTMusicModel:)]){

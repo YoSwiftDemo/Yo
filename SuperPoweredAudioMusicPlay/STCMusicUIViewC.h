@@ -7,7 +7,13 @@
 //
 
 #import "STMusicUIBaseViewC.h"
-
-@interface STCMusicUIViewC : STMusicUIBaseViewC
-
+#import "STDoubleLRCLabShowView.h"
+@interface STCMusicUIViewC : STMusicUIBaseViewC<STCMusicViewCDeleagte,STCMusicPlayerCenterManagerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton               *musicSoundEffectBtn;
+@property (weak, nonatomic) IBOutlet UIButton               *musicCloseBtn;
+@property (weak, nonatomic) IBOutlet UIButton               *musicControlStateBtn;
+@property (weak, nonatomic) IBOutlet UILabel                *musicInfoShowLab;
+@property (weak, nonatomic) IBOutlet UILabel                *musicSurplusTimeShowLab;
+@property (weak, nonatomic) IBOutlet STDoubleLRCLabShowView *musicLrcShowView;
+@property(assign,nonatomic) CGFloat                         musicSurplusTimeValue;
 @end

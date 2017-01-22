@@ -20,6 +20,9 @@
 		9E733E6A1E0D440400783B06 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E691E0D440400783B06 /* MediaPlayer.framework */; };
 		9E733E6C1E0D440D00783B06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6B1E0D440D00783B06 /* QuartzCore.framework */; };
 		9E733E6E1E0D441600783B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E6D1E0D441600783B06 /* UIKit.framework */; };
+		9E83F79B1E34611500D57E60 /* STCMusicPlayerCenterManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E83F79A1E34611500D57E60 /* STCMusicPlayerCenterManager.mm */; };
+		9E83F79F1E346CA300D57E60 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E83F79E1E346CA300D57E60 /* NSString+Common.m */; };
+		9E83F7A11E34A21800D57E60 /* 10405520.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 9E83F7A01E34A21800D57E60 /* 10405520.lrc */; };
 		9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */; };
 		9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07AE1E310432002BF095 /* STMusicModel.m */; };
 		9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B07B21E310CF2002BF095 /* STMusicDataCenterManager.m */; };
@@ -118,6 +121,11 @@
 		9E733E691E0D440400783B06 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		9E733E6B1E0D440D00783B06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9E733E6D1E0D441600783B06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E83F7991E34611500D57E60 /* STCMusicPlayerCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCMusicPlayerCenterManager.h; sourceTree = "<group>"; };
+		9E83F79A1E34611500D57E60 /* STCMusicPlayerCenterManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STCMusicPlayerCenterManager.mm; sourceTree = "<group>"; };
+		9E83F79D1E346CA300D57E60 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		9E83F79E1E346CA300D57E60 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		9E83F7A01E34A21800D57E60 /* 10405520.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 10405520.lrc; sourceTree = "<group>"; };
 		9E881FC71E334ABC00852853 /* STCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STCommonHeader.h; sourceTree = "<group>"; };
 		9E8B07A71E3103B3002BF095 /* STMusicCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicCenterManager.h; sourceTree = "<group>"; };
 		9E8B07A81E3103B3002BF095 /* STMusicCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicCenterManager.m; sourceTree = "<group>"; };
@@ -263,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */,
+				9E83F7A01E34A21800D57E60 /* 10405520.lrc */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -597,6 +606,7 @@
 		9E69EA741E2FCAC800697891 /* STMusicThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				9E83F7981E34610200D57E60 /* C++Player */,
 				9E4DBEF21E0D1623003E9BC5 /* C++PlayerLib */,
 			);
 			name = STMusicThirdLib;
@@ -605,16 +615,8 @@
 		9E69EA751E2FCAE100697891 /* STMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				9E69EA761E2FCAEB00697891 /* STMusicC++Player */,
 			);
 			name = STMusicPlayer;
-			sourceTree = "<group>";
-		};
-		9E69EA761E2FCAEB00697891 /* STMusicC++Player */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "STMusicC++Player";
 			sourceTree = "<group>";
 		};
 		9E733E5C1E0D43C100783B06 /* Frameworks */ = {
@@ -634,10 +636,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E83F7981E34610200D57E60 /* C++Player */ = {
+			isa = PBXGroup;
+			children = (
+				9E83F7991E34611500D57E60 /* STCMusicPlayerCenterManager.h */,
+				9E83F79A1E34611500D57E60 /* STCMusicPlayerCenterManager.mm */,
+			);
+			name = "C++Player";
+			sourceTree = "<group>";
+		};
+		9E83F79C1E346C3A00D57E60 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				9E83F79D1E346CA300D57E60 /* NSString+Common.h */,
+				9E83F79E1E346CA300D57E60 /* NSString+Common.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
 		9E881F951E3329FC00852853 /* STCommon */ = {
 			isa = PBXGroup;
 			children = (
 				9E881FC71E334ABC00852853 /* STCommonHeader.h */,
+				9E83F79C1E346C3A00D57E60 /* NSString */,
 			);
 			name = STCommon;
 			sourceTree = "<group>";
@@ -949,6 +970,7 @@
 				9E8B07FE1E3115F9002BF095 /* STMusicSEBaseUIViewC.xib in Resources */,
 				9E8B07DB1E3112D0002BF095 /* STYunMusicViewC.xib in Resources */,
 				9E8B07EA1E311445002BF095 /* STMusicUIBaseViewC.xib in Resources */,
+				9E83F7A11E34A21800D57E60 /* 10405520.lrc in Resources */,
 				9EBF20231E0D12A500C5A0B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1025,6 +1047,7 @@
 				9E8B07B31E310CF2002BF095 /* STMusicDataCenterManager.m in Sources */,
 				9E8B07AF1E310432002BF095 /* STMusicModel.m in Sources */,
 				9E8B08321E311B36002BF095 /* STMusicSEEffectTypeView.m in Sources */,
+				9E83F79B1E34611500D57E60 /* STCMusicPlayerCenterManager.mm in Sources */,
 				9E8B07DA1E3112D0002BF095 /* STYunMusicViewC.m in Sources */,
 				9EBF20201E0D12A500C5A0B3 /* ViewController.m in Sources */,
 				9E8B08021E31168D002BF095 /* STYunMusicSEUIViewC.m in Sources */,
@@ -1045,6 +1068,7 @@
 				9E8B07F31E3114A4002BF095 /* STCMusicUIViewC.m in Sources */,
 				9E8B07D01E311289002BF095 /* STMusicBaseViewC.m in Sources */,
 				9E8B07DF1E3113F5002BF095 /* STMusicLogicBaseViewC.m in Sources */,
+				9E83F79F1E346CA300D57E60 /* NSString+Common.m in Sources */,
 				9E8B08071E3116C2002BF095 /* STCMusicSEUIViewC.m in Sources */,
 				9E8B07E41E31141C002BF095 /* STMusicLogicViewC.m in Sources */,
 				9E8B08381E311B5D002BF095 /* STMusicSENavView.m in Sources */,
@@ -1240,6 +1264,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1253,6 +1278,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1265,6 +1291,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1277,6 +1304,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = BKME25WU4F;
 				INFOPLIST_FILE = SuperPoweredAudioMusicPlayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QQ738816656.SuperPoweredAudioMusicPlayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

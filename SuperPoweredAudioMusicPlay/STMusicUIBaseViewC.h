@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol STMusicUIBaseViewCDelegate <NSObject>
 
+@optional
+
+@end
 @interface STMusicUIBaseViewC : UIViewController
-
+@property(strong,nonatomic)UIViewController *recordSuperViewC;
+@property(weak,nonatomic)id<STMusicUIBaseViewCDelegate>delegate;
++(STMusicUIBaseViewC *)showSTMusicFunctionViewCOnSuperViewC:(UIViewController *)superViewC
+                                                ofFrameRect:(CGRect)frameRect
+                                            newViewCNameStr:(NSString *)newViewCNameStr
+                                                   complete:(void(^)(BOOL finished,
+                                                                     STMusicUIBaseViewC *newViewC))block;
 @end

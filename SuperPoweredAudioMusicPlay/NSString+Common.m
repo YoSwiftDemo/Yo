@@ -1,61 +1,21 @@
 //
-//  STMusicDataCenterManager.m
-//  FanweApp
+//  NSString+Common.m
+//  SuperPoweredAudioMusicPlay
 //
-//  Created by 岳克奎 on 17/1/12.
-//  Copyright © 2017年 xfg. All rights reserved.
+//  Created by 岳克奎 on 17/1/22.
+//  Copyright © 2017年 岳克奎. All rights reserved.
 //
 
-#import "STMusicDataCenterManager.h"
+#import "NSString+Common.h"
 
-@implementation STMusicDataCenterManager
-#pragma mark -------------------------------------life cycle -------------------------------------
-#pragma mark - 音乐控制中  单利
+@implementation NSString (Common)
 /**
- * @brief: 音乐控制中 单利
+ * @brief:lrc字符串转lrc数据源数组
  *
- * @discussion:我的想法是，用单利管理，这样能够通过C++的player对应的控制器来控制。播放，暂停。如果不这样，需要频繁的
  */
-static STMusicDataCenterManager *signleton = nil;
-+ (instancetype)allocWithZone:(struct _NSZone *)zone
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        signleton = [super allocWithZone:zone];
-    });
-    return signleton;
-}
-+ (STMusicDataCenterManager *)shareManager
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        signleton = [[self alloc] init];
-    });
-    return signleton;
-}
-+ (id)copyWithZone:(struct _NSZone *)zone
-{
-    return signleton;
-}
-
-+ (id)mutableCopyWithZone:(struct _NSZone *)zone
-{
-    return signleton;
-}
-// 歌词处理
-/**
- *
- *
- *
- *
- * @use:当调度中心musicModel发生变化，需要先处理歌词，在下发数据
- */
--(void)analysisLrcDataOfSTMusicBaseSimpleDic:(NSDictionary *)musicBaseDic
-                                    complete:(void(^)(BOOL finished,
-                                                      NSMutableArray *stMusicLrcModelDataSourceMArray,
-                                                      NSMutableArray *stLrcPointTimeStrDataMArray))block{
-    //
-    NSString *musicLrcContentDataStr =[musicBaseDic valueForKey:@"musicLrcContentDataStr"];
+-(NSMutableDictionary *)st_parsingLrcStr{
+    NSLog(@" ----------------11111----------- %@     ",self);
+   // NSString *musicLrcContentDataStr =[musicBaseDic valueForKey:@"musicLrcContentDataStr"];
     //歌曲 信息
     //    NSString *musicInfoStr = [NSString stringWithFormat:@"歌曲：%@ 演唱:%@",musicNameStr, musicSingerStr];
     NSString *musicInfoStr = @" ";
@@ -70,10 +30,12 @@ static STMusicDataCenterManager *signleton = nil;
     NSMutableArray *lrcPointTimeStrArray =[@[]mutableCopy];
     __weak  typeof(self)weak_Self = self;
     //调 enumerateLinesUsingBlock 一行一行的读取数据
-    [musicLrcContentDataStr enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+    [self enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+        
+        
         //拿到每一行
         //判断是否 包含 []
-        if ([musicLrcContentDataStr containsString:@"["]&&[musicLrcContentDataStr containsString:@"]"]) {
+        if ([self  containsString:@"["]&&[self containsString:@"]"]) {
             //分割  如果里面是数字  （歌词很多种，特别给出前几行 很多种，看着不爽，直接不要了。前期时间就直接显示歌手+歌名）
             NSString *regex = @"[0-9]+:[0-9]+\\.[0-9]+";
             NSRange r = [line rangeOfString:regex options:NSRegularExpressionSearch];
@@ -81,13 +43,19 @@ static STMusicDataCenterManager *signleton = nil;
             if(r.location !=NSNotFound){
                 NSArray *lrcArray = [line componentsSeparatedByString:@"]"];
                 NSLog(@"---     array         -------%lu",(unsigned long)lrcArray.count);
-                 //[01:33.22][00:35.75]我应该在车底                  lrcArray.count =  3   2+1
+                //[01:33.22][00:35.75]我应该在车底                  lrcArray.count =  3   2+1
                 //[02:23.65][02:11.47][01:13.79]不会像我这样孩子气   lrcArray.count =  4   3+1
+                
+                
+                
+                
+             
+                
                 if (lrcArray.count>1) {
                     for (int i = 0; i<lrcArray.count-1; i++) {
                         //时间在前  内容 在后，
-                        NSDictionary *tempDic =@{@"lrcStartTimeStr":[weak_Self timeWithString:[lrcArray[i] substringFromIndex:1]],
-                                                 @"lrcContentStr":[[lrcArray lastObject]st_isEmpty]?@"  ":[lrcArray lastObject]};
+                        NSDictionary *tempDic =@{@"lrcStartTimeStr":[weak_Self st_timeTypeOfMSToTimeTypeOfS:[lrcArray[i] substringFromIndex:1]],
+                                                 @"lrcContentStr":[[lrcArray lastObject] isEmpty]?@"  ":[lrcArray lastObject]};
                         //临时存每行先别MJ去转mdoel
                         [tempMArray addObject:tempDic];
                     }
@@ -97,6 +65,10 @@ static STMusicDataCenterManager *signleton = nil;
         }
     }];
     
+    
+    
+    
+    
     // 临时歌词数据排序
     tempMArray = [[tempMArray.copy sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         
@@ -104,7 +76,7 @@ static STMusicDataCenterManager *signleton = nil;
         int number2 =(int) [obj2[@"lrcStartTimeStr"] integerValue];
         //按照降序排列，如果升序就返回结果对换
         if (number1 > number2) {
-            return NSOrderedDescending; 
+            return NSOrderedDescending;
         }else{
             return NSOrderedAscending;
         }
@@ -127,8 +99,12 @@ static STMusicDataCenterManager *signleton = nil;
         //返回数据源
         [lrcDataSoureMArray addObject:[STMusicLrcModel mj_objectWithKeyValues:modelDic]];
         //这里处理下-----------------------------------------------
-        return;
+//        return ;
+        return  @{@"lrcModelDataSourceArray":lrcDataSoureMArray,@"lrcTimePointDataArray":lrcPointTimeStrArray}.mutableCopy;
     }
+    
+    NSLog(@"eqeqwe======         tempMArray     === %lu",(unsigned long)tempMArray.count);
+    
     // tempMArray 存 临时的每行数据 的数据要+1  我要增加1个
     //目的：让mdoel 不仅装下自己的信息。还装有下一行的信息
     for (int i = 0 ;i<tempMArray.count+1;i++) {
@@ -158,11 +134,11 @@ static STMusicDataCenterManager *signleton = nil;
             //注意i+2  因为当前这行 歌词走完了。那么他应该显示的是 下 下一行歌词 对不对！但是，如果下一行为空呢。这都要考虑
             NSDictionary *secondLrcDic = tempMArray[i+1];
             NSString *nextStr =  @"";
-            if ([secondLrcDic[@"lrcContentStr"] st_isEmpty]) {
+            if ([secondLrcDic[@"lrcContentStr"] isEmpty]) {
                 if (i+2 >= tempMArray.count-1) {
                     nextStr = @"";
                 }else{
-                    nextStr =  [secondLrcDic[@"lrcContentStr"] st_isEmpty]?tempMArray[i+2][@"lrcContentStr"]:secondLrcDic[@"lrcContentStr"];
+                    nextStr =  [secondLrcDic[@"lrcContentStr"] isEmpty]?tempMArray[i+2][@"lrcContentStr"]:secondLrcDic[@"lrcContentStr"];
                 }
             }
             NSDictionary *modelDic =@{@"lrcStartTimeStr":firstLrcDic[@"lrcStartTimeStr"],
@@ -173,10 +149,12 @@ static STMusicDataCenterManager *signleton = nil;
             [lrcDataSoureMArray addObject:[STMusicLrcModel mj_objectWithKeyValues:modelDic]];
         }
     }
-    if (block) {
-        //返回 强大lrcMdoel  和 装有每行时间点的 数组
-        block(YES,lrcDataSoureMArray,lrcPointTimeStrArray);
-    }
+//    if (block) {
+//        //返回 强大lrcMdoel  和 装有每行时间点的 数组
+//        block(lrcDataSoureMArray,lrcPointTimeStrArray);
+    
+//    }
+    return @{@"lrcModelDataSourceArray":lrcDataSoureMArray,@"lrcTimePointDataArray":lrcPointTimeStrArray}.mutableCopy;
     
 }
 #pragma mark - 时间转S处理（Data）
@@ -185,12 +163,87 @@ static STMusicDataCenterManager *signleton = nil;
  *
  * @use:将 01：07.45 转为 秒
  */
--(NSString *)timeWithString:(NSString *)timeString
-{
+//-(NSString *)timeWithString:(NSString *)timeString
+//{
+//    // 01:02.38
+//    NSInteger min = [[timeString componentsSeparatedByString:@":"][0] integerValue];
+//    NSInteger sec = [[timeString substringWithRange:NSMakeRange(3, 2)] integerValue];
+//    NSInteger hs = [[timeString componentsSeparatedByString:@"."][1] integerValue];
+//    return [NSString stringWithFormat:@"%f",(min * 60 + sec + hs * 0.01)];
+//}
+-(NSString *)st_timeTypeOfMSToTimeTypeOfS:(NSString *)msTimeString{
     // 01:02.38
-    NSInteger min = [[timeString componentsSeparatedByString:@":"][0] integerValue];
-    NSInteger sec = [[timeString substringWithRange:NSMakeRange(3, 2)] integerValue];
-    NSInteger hs = [[timeString componentsSeparatedByString:@"."][1] integerValue];
+    NSInteger min = [[msTimeString componentsSeparatedByString:@":"][0] integerValue];
+    NSInteger sec = [[msTimeString substringWithRange:NSMakeRange(3, 2)] integerValue];
+    NSInteger hs = [[msTimeString componentsSeparatedByString:@"."][1] integerValue];
     return [NSString stringWithFormat:@"%f",(min * 60 + sec + hs * 0.01)];
 }
+/**
+ * @brief: 时间转S处理（
+ *
+ * @use:将 秒s 转为  01：07.45
+ */
+-(NSString *)st_timeTypeOfSToTimeTypeOfMS{
+   return  [NSString stringWithFormat:@"-%02d:%02d",
+     (int)(self.integerValue/60)%60,
+            (int)self.integerValue%60];
+}
+
+
+
+
+
+
+
+
+
+/**
+ *  判断字符串是否为空
+ *
+ *  @return BOOL
+ */
+- (BOOL)isEmpty{
+    if (self == nil || self == NULL) {
+        return YES;
+    }
+    if ([self isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+        return YES;
+    }
+    return NO;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

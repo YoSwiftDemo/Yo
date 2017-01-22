@@ -1,10 +1,10 @@
 #ifndef Header_SuperpoweredFX
 #define Header_SuperpoweredFX
 
-/**
+/*
  @brief This is the base class for Superpowered effects.
  
- @param enabled Indicates if the effect is enabled (processing audio).
+  @ param enabled Indicates if the effect is enabled (processing audio).
  
 */
 class SuperpoweredFX {

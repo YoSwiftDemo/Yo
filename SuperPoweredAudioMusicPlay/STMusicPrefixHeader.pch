@@ -16,6 +16,7 @@
 #pragma mark ----------------------------   manager   管理层
 #import "STMusicDataCenterManager.h"
 #import "STMusicCenterManager.h"
+#import "STCMusicPlayerCenterManager.h"
 #pragma mark ----------------------------   STMusicViewC   音乐功能控制层
 #import "STMusicBaseViewC.h"
 #import "STCMusicViewC.h"
@@ -45,6 +46,7 @@
 #pragma mark ----------------------------   STMusicView View层
 #import "STMusicLrcModel.h"
 
+
 #pragma mark ----------------------------   自定义View
 #import "STLrcLab.h"
 #import "STDoubleLRCLabShowView.h"
@@ -53,8 +55,8 @@
 #import "STMusicSEEffectTypeView.h"
 #import "STMusicSEPitchView.h"
 #import "STMusicSESliderView.h"
-
-
+#pragma mark ----------------------------   STCommon 公共类层
+#import "STCommonHeader.h"
 #pragma mark ----------------------------   第三方
 #import <MJExtension.h>
 #import <XXNibBridge.h>
@@ -62,12 +64,15 @@
 
 
 
+
+
 #pragma mark ----------------------------   宏定义
 
-#define ST_MUSIC_DATA_CENTERMANAGER  [STMusicDataCenterManager shareManager]
-#define ST_MUSIC_DATA_CENTERMANAGER  [STMusicDataCenterManager shareManager] 
+#define ST_MUSIC_CENTER_MANAGER   [STMusicCenterManager shareManager]
+#define ST_MUSIC_DATA_MANAGER     [STMusicDataCenterManager shareManager]
 
-
-
+#define SCREEN_WIDTH                     [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT                    [[UIScreen mainScreen] bounds].size.height
+#define ST_MUSIC_PLAYER_CENTER_MANAGER   [STCMusicPlayerCenterManager shareManager]
 
 #endif /* STMusicPrefixHeader_pch */

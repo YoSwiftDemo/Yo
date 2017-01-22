@@ -65,13 +65,14 @@
     //第二步 驱动层处理
     [ST_MUSIC_CENTER_MANAGER setMusicModel:stMusicModel];
     
-    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
-    
-    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
-        NSLog(@"播放成功");
-    }else{
-          NSLog(@"播放失败");
-    }
+    [ST_MUSIC_CENTER_MANAGER setMusicPlayerPlayingState:YES];
+//    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
+//    
+//    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
+//        NSLog(@"播放成功");
+//    }else{
+//          NSLog(@"播放失败");
+//    }
     
     
     

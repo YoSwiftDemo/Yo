@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STCMusicUIViewC">
             <connections>
-                <outlet property="musicCloseBtn" destination="w97-yc-6Qj" id="Og4-ne-Q9E"/>
-                <outlet property="musicControlStateBtn" destination="C4T-da-OhL" id="M0Z-EE-Ai4"/>
+                <outlet property="musicCloseBtn" destination="C4T-da-OhL" id="qKp-E5-Jzc"/>
+                <outlet property="musicControlStateBtn" destination="w97-yc-6Qj" id="tjC-CA-5y9"/>
                 <outlet property="musicInfoShowLab" destination="09V-r3-gsj" id="GJG-pu-tKV"/>
                 <outlet property="musicLrcShowView" destination="zcq-aQ-Nag" id="eV3-y6-iC2"/>
                 <outlet property="musicSoundEffectBtn" destination="ZPj-W2-iCZ" id="RIN-SS-xQG"/>

@@ -356,7 +356,6 @@ static STCMusicPlayerCenterManager *signleton = nil;
                                                                        andMusicCurrentDuration: _superPlayer->positionSeconds
                                                                               andMusicProgress:_superPlayer->positionPercent];
     }
-//    NSLog(@"哈哈哈");
     return !silence;
 }
 #pragma mark - App进程打断后回到暂定方法 （player  delegate Method）

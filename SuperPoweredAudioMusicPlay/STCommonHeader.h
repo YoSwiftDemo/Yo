@@ -10,4 +10,5 @@
 #define STCommonHeader_h
 
 #import "NSString+Common.h"
+#import "UIView+Layout.h"
 #endif /* STCommonHeader_h */

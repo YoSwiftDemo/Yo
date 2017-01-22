@@ -24,6 +24,7 @@
                                                                                         newViewCNameStr:@"STCMusicViewC"
                                                                                                complete:^(BOOL finished, STMusicBaseViewC *newViewC) {
                                                                                                }];
+    stCMusicViewC.panGestureRecognizer.enabled = YES;
     //childViewC logicViewC
     STMusicLogicViewC *stMusicLogicViewC = (STMusicLogicViewC *)[STMusicLogicViewC showSTMusicLogicOnSuperViewC:stCMusicViewC
                                                                                                     ofFrameRect:CGRectMake(0, 0 , 100,200) newViewCNameStr:@"STMusicLogicViewC"

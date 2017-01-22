@@ -43,13 +43,24 @@
 -(void)sendDataFromSTCMusicPlayerCenterManagerToSTMusicUIViewCOfMusicTotalDuration:(CGFloat)musicTotalDuration andMusicCurrentDuration:(CGFloat)musicCurrentDuration andMusicProgress:(CGFloat)musicProgress{
     //剩余时间
     NSString *surplusDuration = [NSString stringWithFormat:@"%f",(musicTotalDuration- musicCurrentDuration)];
-    dispatch_sync(dispatch_get_main_queue(), ^{
-          self.musicSurplusTimeShowLab.text = [surplusDuration st_timeTypeOfSToTimeTypeOfMS];
-        if(self.musicLrcShowView.lrcTimePointDataMArray.count>0&& self.musicLrcShowView.lrcModelDataSoueceMArray .count>0)
-        [self.musicLrcShowView showMusicPlayerPlayingOfcurrentTime:musicCurrentDuration
-                                                 andMusicTotalTime:musicTotalDuration
-                                                  andMusicProgress:musicProgress];
-    });
+    if ([NSThread isMainThread]) {
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            self.musicSurplusTimeShowLab.text = [surplusDuration st_timeTypeOfSToTimeTypeOfMS];
+            if(self.musicLrcShowView.lrcTimePointDataMArray.count>0&& self.musicLrcShowView.lrcModelDataSoueceMArray .count>0)
+                [self.musicLrcShowView showMusicPlayerPlayingOfcurrentTime:musicCurrentDuration
+                                                         andMusicTotalTime:musicTotalDuration
+                                                          andMusicProgress:musicProgress];
+        });
+    }else{
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            self.musicSurplusTimeShowLab.text = [surplusDuration st_timeTypeOfSToTimeTypeOfMS];
+            if(self.musicLrcShowView.lrcTimePointDataMArray.count>0&& self.musicLrcShowView.lrcModelDataSoueceMArray .count>0)
+                [self.musicLrcShowView showMusicPlayerPlayingOfcurrentTime:musicCurrentDuration
+                                                         andMusicTotalTime:musicTotalDuration
+                                                          andMusicProgress:musicProgress];
+        });
+    }
+  
     
 }
 @end

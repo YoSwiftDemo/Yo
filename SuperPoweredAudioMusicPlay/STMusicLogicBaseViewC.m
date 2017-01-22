@@ -23,6 +23,37 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
++( STMusicLogicBaseViewC *)showSTMusicLogicOnSuperViewC:(STMusicBaseViewC *)superViewC
+                                            ofFrameRect:(CGRect)frameRect
+                                        newViewCNameStr:(NSString *)newViewCNameStr
+                                               complete:(void(^)(BOOL finished,
+                                                                 STMusicLogicBaseViewC *newViewC))block{
+    //superViewC
+    if (!superViewC) {
+        if(block){
+            block(YES,nil);
+        }
+        return nil;
+    }
+    //class
+    Class newViewControllerClass = NSClassFromString(newViewCNameStr);
+    //new
+    STMusicLogicBaseViewC *newViewC = [[newViewControllerClass alloc]initWithNibName:newViewCNameStr
+                                                                              bundle:nil];
+    //
+    newViewC.recordSuperViewC = superViewC;
+    //frame
+    //ewViewC.view.frame = frameRect;
+    //child
+    [superViewC addChildViewController:newViewC];
+    //[superViewC.view addSubview:newViewC.view];
+    //block
+    if (block) {
+        block(YES,nil);
+    }
+    
+    return newViewC;
+}
 
 /*
 #pragma mark - Navigation

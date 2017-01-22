@@ -23,6 +23,101 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+/**
+ * @brief:     创建新的音乐功能层ViewC(ViewC作为子ViewC)
+ *
+ * @discussion:1.作为子ViewC
+ *             2.写在在基础类，供所有子类调用
+ *             3.
+ */
++(STMusicBaseViewC *)showSTMusicFunctionViewCOnSuperViewC:(UIViewController *)superViewC
+                                              ofFrameRect:(CGRect)frameRect
+                                          newViewCNameStr:(NSString *)newViewCNameStr
+                                                 complete:(void(^)(BOOL finished,
+                                                                   STMusicBaseViewC *newViewC))block{
+    //superViewC
+    if (!superViewC) {
+        if(block){
+            block(YES,nil);
+        }
+        return nil;
+    }
+    //clear
+    for (UIViewController *oneViewC in superViewC.childViewControllers) {
+        if ([oneViewC isKindOfClass:[self class]]) {
+            [oneViewC removeFromParentViewController];
+            [oneViewC.view removeFromSuperview];
+        }
+    }
+    //class
+    Class newViewControllerClass = NSClassFromString(newViewCNameStr);
+    //new
+    STMusicBaseViewC *newViewC = [[newViewControllerClass alloc]initWithNibName:newViewCNameStr
+                                                                         bundle:nil];
+    //
+    newViewC.recordSuperViewC = superViewC;
+    //frame
+    newViewC.view.frame = frameRect;
+    //child
+    [superViewC addChildViewController:newViewC];
+    [superViewC.view addSubview:newViewC.view];
+    
+    //block
+    if (block) {
+        block(YES,nil);
+    }
+    
+    return newViewC;
+}
+/**
+ * @brief:     创建新的音乐功能层ViewC(push 到 ViewC)
+ *
+ * @discussion:1.作为子ViewC
+ *             2.写在在基础类，供所有子类调用
+ *             3.
+ */
++(STMusicBaseViewC *)pushSTMusicFunctionViewCOnSuperViewC:(UIViewController *)superViewC
+                                              ofFrameRect:(CGRect)frameRect
+                                          newViewCNameStr:(NSString *)newViewCNameStr
+                                                 complete:(void(^)(BOOL finished,
+                                                                   STMusicBaseViewC *newViewC))block{
+    //superViewC
+    if (!superViewC) {
+        if(block){
+            block(YES,nil);
+        }
+        return nil;
+    }
+    //class
+    Class newViewControllerClass = NSClassFromString(newViewCNameStr);
+    //new
+    STMusicBaseViewC *newViewC = [[newViewControllerClass alloc]initWithNibName:newViewCNameStr
+                                                                         bundle:nil];
+    //
+    newViewC.recordSuperViewC = superViewC;
+    //frame
+    newViewC.view.frame = frameRect;
+    //child
+    [superViewC addChildViewController:newViewC];
+    [superViewC.view addSubview:newViewC.view];
+    //block
+    if (block) {
+        block(YES,nil);
+    }
+    
+    return newViewC;
+}
+
+
+-(UIViewController *)recordChildLogicViewC{
+    return nil;
+}
+
+
+
+
+
+
 
 /*
 #pragma mark - Navigation

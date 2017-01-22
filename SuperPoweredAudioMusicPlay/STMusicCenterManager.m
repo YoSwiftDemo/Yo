@@ -68,9 +68,9 @@ static STMusicCenterManager *signleton = nil;
  *
  */
 -(void)setMusicBaseSimpleInfoDic:(NSDictionary *)musicBaseSimpleInfoDic{
-    /*
+
     __weak typeof(self)weak_Self = self;
-    [ST_MUSIC_DATA_CENTERMANAGER analysisLrcDataOfSTMusicBaseSimpleDic:musicBaseSimpleInfoDic
+    [ST_MUSIC_DATA_MANAGER analysisLrcDataOfSTMusicBaseSimpleDic:musicBaseSimpleInfoDic
                                                               complete:^(BOOL finished,
                                                                          NSMutableArray *stMusicLrcModelDataSourceMArray,
                                                                          NSMutableArray *stLrcPointTimeStrDataMArray) {
@@ -85,7 +85,9 @@ static STMusicCenterManager *signleton = nil;
                                                                  // send to logic
                                                              
     }];
-     */
+    //test
+    [self setMusicModel:nil];
+    
 }
 -(void)setMusicModel:(STMusicModel *)musicModel{
        _musicModel = musicModel;

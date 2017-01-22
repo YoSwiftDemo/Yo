@@ -7,7 +7,8 @@
 //
 
 #import "STMusicBaseViewC.h"
+#import "STMusicLogicViewC.h"
+@interface STCMusicViewC : STMusicBaseViewC  <STMusicLogicViewCDelegate>
 
-@interface STCMusicViewC : STMusicBaseViewC
 
 @end

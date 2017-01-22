@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface STMusicLogicBaseViewC : UIViewController
-
+@property(strong,nonatomic)UIViewController *recordSuperViewC;
++( STMusicLogicBaseViewC *)showSTMusicLogicOnSuperViewC:(STMusicBaseViewC *)superViewC
+                                            ofFrameRect:(CGRect)frameRect
+                                        newViewCNameStr:(NSString *)newViewCNameStr
+                                               complete:(void(^)(BOOL finished,
+                                                                 STMusicLogicBaseViewC *newViewC))block;
 @end

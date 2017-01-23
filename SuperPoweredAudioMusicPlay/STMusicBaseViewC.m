@@ -58,9 +58,12 @@
     newViewC.recordSuperViewC = superViewC;
     //frame
     newViewC.view.frame = frameRect;
-    //child
+    //add child
     [superViewC addChildViewController:newViewC];
     [superViewC.view addSubview:newViewC.view];
+    //sub show
+    newViewC.recordChildLogicViewC.view.tag = 102;
+    newViewC.recordChildUIViewC.view.tag    = 101;
     
     //block
     if (block) {

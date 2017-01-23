@@ -11,8 +11,10 @@
 @interface STMusicBaseViewC : UIViewController
 
 @property(strong,nonatomic)UIViewController       *recordSuperViewC;
+
 @property(strong,nonatomic)UIViewController       *recordChildUIViewC;
 @property(strong,nonatomic)UIViewController       *recordChildLogicViewC;
+
 @property(strong,nonatomic)UIPanGestureRecognizer *panGestureRecognizer;  //能够在直播层上拖动音乐
 +(STMusicBaseViewC *)showSTMusicFunctionViewCOnSuperViewC:(UIViewController *)superViewC
                                               ofFrameRect:(CGRect)frameRect

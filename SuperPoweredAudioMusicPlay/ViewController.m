@@ -20,6 +20,10 @@
     
 }
 - (IBAction)showTestMusicClick:(UIButton *)sender {
+
+
+
+    
     //加载
     STCMusicViewC *stCMusicViewC = (STCMusicViewC *)[STCMusicViewC showSTMusicFunctionViewCOnSuperViewC:self
                                                                                             ofFrameRect:CGRectMake(0, 0 ,SCREEN_WIDTH,200)
@@ -48,9 +52,15 @@
                                                                                                        }];
     
     stCMusicViewC.recordChildLogicViewC = stCMusicUIViewC;
+    
+ 
     //delegate
     stCMusicViewC.delegate = stCMusicUIViewC;
+    
     [ST_MUSIC_PLAYER_CENTER_MANAGER setDelegate:stCMusicUIViewC];
+    
+    //show
+    ST_MUSIC_CENTER_MANAGER.musicViewCShowControllerState = YES;
     
     //第一步：处理lrc，生成音乐model
     //拿到歌词str 转为数据源数组
@@ -69,6 +79,11 @@
     [ST_MUSIC_CENTER_MANAGER setMusicModel:stMusicModel];
     
     [ST_MUSIC_CENTER_MANAGER setMusicPlayerPlayingState:YES];
+    
+    
+    
+    
+    
     //    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
     //
     //    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){

@@ -8,7 +8,7 @@
 
 #import "STCMusicViewC.h"
 
-@interface STCMusicViewC ()
+@interface STCMusicViewC () 
 
 @end
 
@@ -229,16 +229,6 @@
 }
 
 #pragma mark -set/get
-//-(UIViewController *)recordChildLogicViewC{
-//    if (self.recordChildLogicViewC) {
-//        self.recordChildLogicViewC = [STMusicLogicViewC showSTMusicLogicOnSuperViewC:self
-//                                                                         ofFrameRect:CGRectMake(0, 0 , 100,200) newViewCNameStr:@"STMusicLogicViewC"
-//                                                                            complete:^(BOOL finished,
-//                                                                                       STMusicLogicBaseViewC *newViewC) {
-//                                                                            }];
-//    }
-//    return self.recordChildLogicViewC;
-//}
 
 
 - (void)didReceiveMemoryWarning {
@@ -247,14 +237,6 @@
 }
 
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
 
 @end

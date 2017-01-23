@@ -33,6 +33,9 @@
                         <constraint firstAttribute="height" constant="40" id="Pgh-G7-FNR"/>
                     </constraints>
                     <state key="normal" title="关闭" image="music_Close"/>
+                    <connections>
+                        <action selector="closeMusicClick:" destination="-1" eventType="touchUpInside" id="9Jk-3T-vnJ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-W2-iCZ">
                     <rect key="frame" x="10" y="10" width="50" height="40"/>

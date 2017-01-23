@@ -356,6 +356,7 @@ static STCMusicPlayerCenterManager *signleton = nil;
                                                                        andMusicCurrentDuration: _superPlayer->positionSeconds
                                                                               andMusicProgress:_superPlayer->positionPercent];
     }
+    NSLog(@"hahha");
     return !silence;
 }
 #pragma mark - App进程打断后回到暂定方法 （player  delegate Method）
@@ -433,8 +434,9 @@ externalAudioDeviceName:(NSString *)externalAudioDeviceName
         }else{
             //暂停
             if(_superPlayer->playing){
-                _superPlayer->togglePlayback();
-                [_superHandles stop];
+//                _superPlayer->togglePlayback();
+//                [_superHandles stop];
+                _superPlayer->pause(0,0);
             }
         }
       _recordSTCMusicPlayerState = _superPlayer->playing;

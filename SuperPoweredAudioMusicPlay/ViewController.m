@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+}
+- (IBAction)showTestMusicClick:(UIButton *)sender {
     //加载
     STCMusicViewC *stCMusicViewC = (STCMusicViewC *)[STCMusicViewC showSTMusicFunctionViewCOnSuperViewC:self
                                                                                             ofFrameRect:CGRectMake(0, 0 ,SCREEN_WIDTH,200)
@@ -31,7 +33,7 @@
                                                                                                        complete:^(BOOL finished,
                                                                                                                   STMusicLogicBaseViewC *newViewC) {
                                                                                                            
-    stCMusicViewC.recordChildLogicViewC = stMusicLogicViewC;                                                                                                    }];
+                                                                                                           stCMusicViewC.recordChildLogicViewC = stMusicLogicViewC;                                                                                                    }];
     //lodic delegate
     [stMusicLogicViewC setDelegate:stCMusicViewC];
     [ST_MUSIC_CENTER_MANAGER setDelegate:stMusicLogicViewC];
@@ -43,13 +45,13 @@
                                                                                                        complete:^(BOOL finished,
                                                                                                                   STMusicUIBaseViewC *newViewC) {
                                                                                                            
-                                                                                                                    }];
- 
+                                                                                                       }];
+    
     stCMusicViewC.recordChildLogicViewC = stCMusicUIViewC;
     //delegate
     stCMusicViewC.delegate = stCMusicUIViewC;
     [ST_MUSIC_PLAYER_CENTER_MANAGER setDelegate:stCMusicUIViewC];
-
+    
     //第一步：处理lrc，生成音乐model
     //拿到歌词str 转为数据源数组
     NSString *lrcFilePath = [[NSBundle mainBundle]pathForResource:@"10405520" ofType:@"lrc"];
@@ -67,15 +69,13 @@
     [ST_MUSIC_CENTER_MANAGER setMusicModel:stMusicModel];
     
     [ST_MUSIC_CENTER_MANAGER setMusicPlayerPlayingState:YES];
-//    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
-//    
-//    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
-//        NSLog(@"播放成功");
-//    }else{
-//          NSLog(@"播放失败");
-//    }
-    
-    
+    //    [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
+    //
+    //    if(ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState){
+    //        NSLog(@"播放成功");
+    //    }else{
+    //          NSLog(@"播放失败");
+    //    }
     
 }
 

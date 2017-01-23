@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,11 +28,25 @@
                                     <constraint firstAttribute="height" constant="216" id="k2N-m3-bmh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnC-Qm-oyc">
+                                <rect key="frame" x="100" y="107" width="174" height="30"/>
+                                <color key="backgroundColor" red="0.34883570913144268" green="1" blue="0.40830974429694844" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kB2-mV-m63"/>
+                                </constraints>
+                                <state key="normal" title="Show Test Music"/>
+                                <connections>
+                                    <action selector="showTestMusicClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBh-KJ-CGZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ibx-Sg-EpA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="2Mb-wr-Ydd"/>
+                            <constraint firstItem="ZnC-Qm-oyc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="Ia6-sX-m8H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZnC-Qm-oyc" secondAttribute="trailing" constant="85" id="Pba-Fk-cob"/>
                             <constraint firstItem="ibx-Sg-EpA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vcy-Dh-pdm"/>
+                            <constraint firstItem="ZnC-Qm-oyc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="gs0-oW-Rsj"/>
                             <constraint firstItem="ibx-Sg-EpA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iyZ-n9-9ny"/>
                         </constraints>
                     </view>

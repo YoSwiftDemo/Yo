@@ -25,14 +25,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 -(void)sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTMusicModel:(STMusicModel *)stMusicModel{
     //拿到了modle
     self.musicInfoShowLab.text =[NSString stringWithFormat:@"%@ %@",stMusicModel.musicNameStr,stMusicModel.musicSingerNameStr];
@@ -53,6 +53,7 @@
         });
     }else{
         dispatch_sync(dispatch_get_main_queue(), ^{
+            //剩余时间
             self.musicSurplusTimeShowLab.text = [surplusDuration st_timeTypeOfSToTimeTypeOfMS];
             if(self.musicLrcShowView.lrcTimePointDataMArray.count>0&& self.musicLrcShowView.lrcModelDataSoueceMArray .count>0)
                 [self.musicLrcShowView showMusicPlayerPlayingOfcurrentTime:musicCurrentDuration
@@ -60,7 +61,7 @@
                                                           andMusicProgress:musicProgress];
         });
     }
-  
+    
     
 }
 -(void)sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTSMusicState:(BOOL)stCMusicState{
@@ -72,9 +73,20 @@
  
  */
 - (IBAction)musicControlBtnShowStateClick:(UIButton *)sender {
-     ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState = !ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState;
+    ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState = !ST_MUSIC_CENTER_MANAGER.musicPlayerPlayingState;
+    
 }
+/*
+ 关闭音效界面
+ 
+ */
 
+- (IBAction)closeMusicClick:(UIButton *)sender {
+    //音乐要暂停
+     [ST_MUSIC_PLAYER_CENTER_MANAGER setRecordSTCMusicPlayerState:YES];
+    ST_MUSIC_CENTER_MANAGER.musicViewCShowControllerState = !ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState;
+   
+}
 
 
 @end

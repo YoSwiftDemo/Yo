@@ -11,4 +11,6 @@
 
 #import "NSString+Common.h"
 #import "UIView+Layout.h"
+#import "UIButton+Common.h"
+#import "UIView+Animation.h"
 #endif /* STCommonHeader_h */

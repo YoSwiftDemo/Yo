@@ -16,9 +16,9 @@
                           andMusicProgress:(CGFloat)msuicProgress{
     
     
-    NSLog(@"---------%f -----------------%f----------------------- %f ",musicCurrentTime,musicTotalTime,msuicProgress);
-    
-    NSLog(@"----%ld -----------%ld",_lrcTimePointDataMArray.count,_lrcModelDataSoueceMArray.count);
+//    NSLog(@"---------%f -----------------%f----------------------- %f ",musicCurrentTime,musicTotalTime,msuicProgress);
+//    
+//    NSLog(@"----%ld -----------%ld",_lrcTimePointDataMArray.count,_lrcModelDataSoueceMArray.count);
     
     
     //  least 10 lines lyrics

@@ -8,7 +8,7 @@
 
 #import "STCMusicViewC.h"
 
-@interface STCMusicViewC () 
+@interface STCMusicViewC ()
 
 @end
 
@@ -34,26 +34,26 @@
     }
     //UI的变化继续传下去吧
     
-//    self.stMusicModel = stMusicModel;
-//    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicFilePathStr = stMusicModel.musicFilePathStr;
-//    self.stCMusicUIViewC.musicLrcShowView.lrcModelDataSoueceMArray = stMusicModel.lrcModelDataSourceArray;
-//    self.stCMusicUIViewC.musicLrcShowView.lrcTimePointDataMArray = stMusicModel.lrcTimePointDataArray;
-//    self.stCMusicUIViewC.musicInfoShowLab.text = [NSString stringWithFormat:@"%@ %@",[stMusicModel.musicNameStr isEmpty]?@"":stMusicModel.musicNameStr,[stMusicModel.musicSingerNameStr isEmpty]?@"":stMusicModel.musicSingerNameStr];
+    //    self.stMusicModel = stMusicModel;
+    //    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicFilePathStr = stMusicModel.musicFilePathStr;
+    //    self.stCMusicUIViewC.musicLrcShowView.lrcModelDataSoueceMArray = stMusicModel.lrcModelDataSourceArray;
+    //    self.stCMusicUIViewC.musicLrcShowView.lrcTimePointDataMArray = stMusicModel.lrcTimePointDataArray;
+    //    self.stCMusicUIViewC.musicInfoShowLab.text = [NSString stringWithFormat:@"%@ %@",[stMusicModel.musicNameStr isEmpty]?@"":stMusicModel.musicNameStr,[stMusicModel.musicSingerNameStr isEmpty]?@"":stMusicModel.musicSingerNameStr];
     
     //player  play new music
-//    __weak typeof(self)weak_Self = self;
-//    ST_MUSIC_PLAYER_CENTER_MANAGER.stCMusicPlayerCenterManagerBlock = ^(CGFloat stCMusicPlyerOfTotalTime,
-//                                                                        CGFloat stCMusicPlyerOfCurrentTime,
-//                                                                        CGFloat stCMusicPlyerOfALLProgress){
-//        
-//        //surplus time
-//        weak_Self.stCMusicUIViewC.musicSurplusTimeValue = stCMusicPlyerOfTotalTime- stCMusicPlyerOfCurrentTime;
-//        [weak_Self.stCMusicUIViewC.musicLrcShowView showMusicPlayerPlayingOfcurrentTime:stCMusicPlyerOfCurrentTime
-//                                                                      andMusicTotalTime:stCMusicPlyerOfTotalTime
-//                                                                       andMusicProgress:stCMusicPlyerOfALLProgress];
-//    };
+    //    __weak typeof(self)weak_Self = self;
+    //    ST_MUSIC_PLAYER_CENTER_MANAGER.stCMusicPlayerCenterManagerBlock = ^(CGFloat stCMusicPlyerOfTotalTime,
+    //                                                                        CGFloat stCMusicPlyerOfCurrentTime,
+    //                                                                        CGFloat stCMusicPlyerOfALLProgress){
+    //
+    //        //surplus time
+    //        weak_Self.stCMusicUIViewC.musicSurplusTimeValue = stCMusicPlyerOfTotalTime- stCMusicPlyerOfCurrentTime;
+    //        [weak_Self.stCMusicUIViewC.musicLrcShowView showMusicPlayerPlayingOfcurrentTime:stCMusicPlyerOfCurrentTime
+    //                                                                      andMusicTotalTime:stCMusicPlyerOfTotalTime
+    //                                                                       andMusicProgress:stCMusicPlyerOfALLProgress];
+    //    };
     //test
-  
+    
 }
 #pragma mark -
 /**
@@ -77,89 +77,115 @@
         [_delegate sendDataFromSTCMusicViewCToSTCMusicUIViewCOfSTSMusicState:ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState ];
     }
     return ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState;
-
+    
 }
 
 // 加载和 退出 C++音乐 界面
 -(BOOL)sendDataForSTMusicViewCOfSTMusicViewCShowControllerState:(BOOL)stMusicViewCShowControllerState{
-    
+    //播放状态为 播放  进一步控制  外部走set方法
+    ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlayerState = stMusicViewCShowControllerState;
+    //yes  open self
+    if (stMusicViewCShowControllerState) {
+        //animate
+        self.view.layer.transform = CATransform3DMakeScale(1, 0.1, 1);
+        self.view.x = 0;
+        [UIView animateWithDuration:0.36
+                         animations:^{
+                             //                             self.view.x = 0;
+                             self.view.layer.transform = CATransform3DMakeScale(1, 1, 1);
+                         } completion:^(BOOL finished) {
+                             
+                         }];
+    }else{
+        //animate
+        [UIView animateWithDuration:0.36
+                         animations:^{
+                             //                             self.view.x = SCREEN_WIDTH;
+                             self.view.layer.transform = CATransform3DMakeScale(1, 0.01, 1);
+                         } completion:^(BOOL finished) {
+                             [self removeFromParentViewController];
+                             [self.view removeFromSuperview];
+                         }];
+    }
+    return stMusicViewCShowControllerState;
+
     
     
     return YES;
 }
 //音效调节显示和移除
 -(BOOL)sendDataForSTMusicViewCOfShowSTMusicSoundEffectViewCState:(BOOL)showSTMusicEffectViewCState{
-//    //open
-//    if (showSTMusicEffectViewCState) {
-//        [STCMusicSEViewC showSTCMusicSEViewCOnSuperViewC:self.recordSuperViewC
-//                                            andFrameRect:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
-//                                                complete:^(BOOL finished, STCMusicSEViewC *stCMusicSEViewC) {
-//                                                    //animate  load
-//                                                    stCMusicSEViewC.view.layer.transform = CATransform3DMakeScale(1, 0.001, 1);
-//                                                    [UIView animateWithDuration:0.36
-//                                                                     animations:^{
-//                                                                         stCMusicSEViewC.view.layer.transform = CATransform3DMakeScale(1, 1, 1);
-//                                                                     }
-//                                                                     completion:^(BOOL finished) {
-//                                                                         
-//                                                                     }];
-//                                                    //child  logic
-//                                                    stCMusicSEViewC.recordSTMusicSELogicViewC =  [STMusicSELogicViewC showSTMusicSELogicViewCOnSuperViewC:stCMusicSEViewC
-//                                                                                                                                             andFrameRect:stCMusicSEViewC.view.frame
-//                                                                                                                                                 complete:^(BOOL finished, STMusicSELogicViewC *stMusicSELogicViewC) {
-//                                                                                                                                                     //deleagte
-//                                                                                                                                                 }];
-//                                                    //delegate
-//                                                    [stCMusicSEViewC.recordSTMusicSELogicViewC setDelegate:stCMusicSEViewC];
-//                                                    
-//                                                    [ST_MUSIC_CENTER_MANAGER setSeDelegate:stCMusicSEViewC.recordSTMusicSELogicViewC];
-//                                                    
-//                                                    stCMusicSEViewC.recordSTCMusicSEUIViewC =  [STCMusicSEUIViewC showSTCMusicSEUIViewCOnSuperView:stCMusicSEViewC
-//                                                                                                                                       ofFrameRect:stCMusicSEViewC.view.frame
-//                                                                                                                                          complete:^(BOOL finished, STCMusicSEUIViewC *stCMusicSEUIViewC) {
-//                                                                                                                                              //音效数据初始化  并不需要走 SDK  只是走UI
-//                                                                                                                                              
-//                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.micSlider.value = ST_MUSIC_CENTER_MANAGER.recordSEMicValue;
-//                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.bgmSlider.value = ST_MUSIC_CENTER_MANAGER.recordSEBGMValue;
-//                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.micValueShowLab.text = [NSString stringWithFormat:@"人声%.f%%",100*ST_MUSIC_CENTER_MANAGER.recordSEMicValue];
-//                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.bgmValueShowLab.text = [NSString stringWithFormat:@"伴奏%.f%%",100*ST_MUSIC_CENTER_MANAGER.recordSEBGMValue];
-//                                                                                                                                              stCMusicSEUIViewC.stMusicSEPitchView.showPitchValueLab.text = [NSString stringWithFormat:@"%d",(int)ST_MUSIC_CENTER_MANAGER.recordSEPitchValue];
-//                                                                                                                                              for (UIButton *btn in   stCMusicSEUIViewC.stMusicSEEffectTypeView.effectBtnArray) {
-//                                                                                                                                                  if (btn.tag == (NSInteger)ST_MUSIC_CENTER_MANAGER.recordSEEffectTypeNum) {
-//                                                                                                                                                      btn.backgroundColor = [[UIColor  grayColor]colorWithAlphaComponent:0.2];
-//                                                                                                                                                  }else{
-//                                                                                                                                                      btn.backgroundColor = [UIColor whiteColor];
-//                                                                                                                                                  }
-//                                                                                                                                                  btn.layer.cornerRadius = btn.frame.size.width/2;
-//                                                                                                                                                  btn.layer.masksToBounds = YES;
-//                                                                                                                                              }
-//                                                                                                                                              
-//                                                                                                                                          }];
-//                                                    
-//                                                }];
-//        
-//        
-//    }
-//    //cloase
-//    else{
-//        for (UIViewController *oneViewC in self.recordSuperViewC.childViewControllers) {
-//            if ([oneViewC isKindOfClass:[STCMusicSEViewC class]]) {
-//                
-//                [UIView animateWithDuration:0.36
-//                                 animations:^{
-//                                     oneViewC.view.layer.transform = CATransform3DMakeScale(1, 0.001, 1);
-//                                 }
-//                                 completion:^(BOOL finished) {
-//                                     [oneViewC removeFromParentViewController];
-//                                     [oneViewC.view removeFromSuperview];
-//                                 }];
-//                
-//                
-//            }
-//        }
-//        
-//    }
-//    return showSTMusicEffectViewCState;
+    //    //open
+    //    if (showSTMusicEffectViewCState) {
+    //        [STCMusicSEViewC showSTCMusicSEViewCOnSuperViewC:self.recordSuperViewC
+    //                                            andFrameRect:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+    //                                                complete:^(BOOL finished, STCMusicSEViewC *stCMusicSEViewC) {
+    //                                                    //animate  load
+    //                                                    stCMusicSEViewC.view.layer.transform = CATransform3DMakeScale(1, 0.001, 1);
+    //                                                    [UIView animateWithDuration:0.36
+    //                                                                     animations:^{
+    //                                                                         stCMusicSEViewC.view.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    //                                                                     }
+    //                                                                     completion:^(BOOL finished) {
+    //
+    //                                                                     }];
+    //                                                    //child  logic
+    //                                                    stCMusicSEViewC.recordSTMusicSELogicViewC =  [STMusicSELogicViewC showSTMusicSELogicViewCOnSuperViewC:stCMusicSEViewC
+    //                                                                                                                                             andFrameRect:stCMusicSEViewC.view.frame
+    //                                                                                                                                                 complete:^(BOOL finished, STMusicSELogicViewC *stMusicSELogicViewC) {
+    //                                                                                                                                                     //deleagte
+    //                                                                                                                                                 }];
+    //                                                    //delegate
+    //                                                    [stCMusicSEViewC.recordSTMusicSELogicViewC setDelegate:stCMusicSEViewC];
+    //
+    //                                                    [ST_MUSIC_CENTER_MANAGER setSeDelegate:stCMusicSEViewC.recordSTMusicSELogicViewC];
+    //
+    //                                                    stCMusicSEViewC.recordSTCMusicSEUIViewC =  [STCMusicSEUIViewC showSTCMusicSEUIViewCOnSuperView:stCMusicSEViewC
+    //                                                                                                                                       ofFrameRect:stCMusicSEViewC.view.frame
+    //                                                                                                                                          complete:^(BOOL finished, STCMusicSEUIViewC *stCMusicSEUIViewC) {
+    //                                                                                                                                              //音效数据初始化  并不需要走 SDK  只是走UI
+    //
+    //                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.micSlider.value = ST_MUSIC_CENTER_MANAGER.recordSEMicValue;
+    //                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.bgmSlider.value = ST_MUSIC_CENTER_MANAGER.recordSEBGMValue;
+    //                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.micValueShowLab.text = [NSString stringWithFormat:@"人声%.f%%",100*ST_MUSIC_CENTER_MANAGER.recordSEMicValue];
+    //                                                                                                                                              stCMusicSEUIViewC.stMusicSESliderView.bgmValueShowLab.text = [NSString stringWithFormat:@"伴奏%.f%%",100*ST_MUSIC_CENTER_MANAGER.recordSEBGMValue];
+    //                                                                                                                                              stCMusicSEUIViewC.stMusicSEPitchView.showPitchValueLab.text = [NSString stringWithFormat:@"%d",(int)ST_MUSIC_CENTER_MANAGER.recordSEPitchValue];
+    //                                                                                                                                              for (UIButton *btn in   stCMusicSEUIViewC.stMusicSEEffectTypeView.effectBtnArray) {
+    //                                                                                                                                                  if (btn.tag == (NSInteger)ST_MUSIC_CENTER_MANAGER.recordSEEffectTypeNum) {
+    //                                                                                                                                                      btn.backgroundColor = [[UIColor  grayColor]colorWithAlphaComponent:0.2];
+    //                                                                                                                                                  }else{
+    //                                                                                                                                                      btn.backgroundColor = [UIColor whiteColor];
+    //                                                                                                                                                  }
+    //                                                                                                                                                  btn.layer.cornerRadius = btn.frame.size.width/2;
+    //                                                                                                                                                  btn.layer.masksToBounds = YES;
+    //                                                                                                                                              }
+    //
+    //                                                                                                                                          }];
+    //
+    //                                                }];
+    //
+    //
+    //    }
+    //    //cloase
+    //    else{
+    //        for (UIViewController *oneViewC in self.recordSuperViewC.childViewControllers) {
+    //            if ([oneViewC isKindOfClass:[STCMusicSEViewC class]]) {
+    //
+    //                [UIView animateWithDuration:0.36
+    //                                 animations:^{
+    //                                     oneViewC.view.layer.transform = CATransform3DMakeScale(1, 0.001, 1);
+    //                                 }
+    //                                 completion:^(BOOL finished) {
+    //                                     [oneViewC removeFromParentViewController];
+    //                                     [oneViewC.view removeFromSuperview];
+    //                                 }];
+    //
+    //
+    //            }
+    //        }
+    //
+    //    }
+    //    return showSTMusicEffectViewCState;
     
     
     
@@ -189,7 +215,7 @@
 }
 //音乐伴奏
 -(void)sendDataForSTMusicViewCOfRecordSEBGMValue:(CGFloat)recordSEBGMValue{
-   // ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlyerOfBGMValue = recordSEBGMValue;
+    // ST_MUSIC_PLAYER_CENTER_MANAGER.recordSTCMusicPlyerOfBGMValue = recordSEBGMValue;
     
 }
 //音调
@@ -222,13 +248,13 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

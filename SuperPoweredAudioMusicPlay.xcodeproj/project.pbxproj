@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4E6B178EFCA74F6336CDCEBD /* libPods-SuperPoweredAudioMusicPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCC1E6C9DA8D2915476719 /* libPods-SuperPoweredAudioMusicPlay.a */; };
+		9E06A6E11E35917E00D78468 /* UIButton+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E06A6E01E35917E00D78468 /* UIButton+Common.m */; };
 		9E1109D71E1A4B6B00D52F25 /* 王菲传奇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */; };
+		9E5B58901E35CD8600BCBDC4 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5B588F1E35CD8600BCBDC4 /* UIView+Animation.m */; };
 		9E733E581E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */; };
 		9E733E591E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E733E541E0D1C1E00783B06 /* SuperpoweredIOSAudioIO.mm */; };
 		9E733E5E1E0D43C100783B06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733E5D1E0D43C100783B06 /* CoreMedia.framework */; };
@@ -100,7 +102,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E06A6DF1E35917E00D78468 /* UIButton+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Common.h"; sourceTree = "<group>"; };
+		9E06A6E01E35917E00D78468 /* UIButton+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Common.m"; sourceTree = "<group>"; };
 		9E1109D61E1A4B6B00D52F25 /* 王菲传奇.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "王菲传奇.mp3"; path = "../王菲传奇.mp3"; sourceTree = "<group>"; };
+		9E5B588E1E35CD8600BCBDC4 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		9E5B588F1E35CD8600BCBDC4 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		9E733E4B1E0D1C1E00783B06 /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSuperpoweredAudioIOS.a; sourceTree = "<group>"; };
 		9E733E4C1E0D1C1E00783B06 /* Superpowered3BandEQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpowered3BandEQ.h; sourceTree = "<group>"; };
 		9E733E4D1E0D1C1E00783B06 /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
@@ -272,6 +278,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E06A6DE1E3590E600D78468 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9E06A6DF1E35917E00D78468 /* UIButton+Common.h */,
+				9E06A6E01E35917E00D78468 /* UIButton+Common.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
 		9E1109D81E1A4B7A00D52F25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +314,24 @@
 				9E733E571E0D1C1E00783B06 /* SuperpoweredSimple.h */,
 			);
 			path = "C++PlayerLib";
+			sourceTree = "<group>";
+		};
+		9E5B58861E35B54900BCBDC4 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				9EB8613A1E34EB230020CD41 /* UIView+Layout.h */,
+				9EB8613B1E34EB230020CD41 /* UIView+Layout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		9E5B58871E35B55E00BCBDC4 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				9E5B588E1E35CD8600BCBDC4 /* UIView+Animation.h */,
+				9E5B588F1E35CD8600BCBDC4 /* UIView+Animation.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 		9E69EA511E2FB7D500697891 /* STMusic */ = {
@@ -664,6 +697,7 @@
 			isa = PBXGroup;
 			children = (
 				9E881FC71E334ABC00852853 /* STCommonHeader.h */,
+				9E06A6DE1E3590E600D78468 /* Button */,
 				9EB861391E34EAD70020CD41 /* UIView */,
 				9E83F79C1E346C3A00D57E60 /* NSString */,
 			);
@@ -777,8 +811,8 @@
 		9EB861391E34EAD70020CD41 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				9EB8613A1E34EB230020CD41 /* UIView+Layout.h */,
-				9EB8613B1E34EB230020CD41 /* UIView+Layout.m */,
+				9E5B58871E35B55E00BCBDC4 /* Animation */,
+				9E5B58861E35B54900BCBDC4 /* Layout */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -1082,6 +1116,7 @@
 				9E8B07FD1E3115F9002BF095 /* STMusicSEBaseUIViewC.m in Sources */,
 				9E8B07B71E310D76002BF095 /* STMusicLrcModel.m in Sources */,
 				9E8B081C1E3118DB002BF095 /* STCMusicSEViewC.m in Sources */,
+				9E5B58901E35CD8600BCBDC4 /* UIView+Animation.m in Sources */,
 				9E8B07BB1E311062002BF095 /* STLrcLab.m in Sources */,
 				9E8B07F31E3114A4002BF095 /* STCMusicUIViewC.m in Sources */,
 				9E8B07D01E311289002BF095 /* STMusicBaseViewC.m in Sources */,
@@ -1091,6 +1126,7 @@
 				9E8B07E41E31141C002BF095 /* STMusicLogicViewC.m in Sources */,
 				9E8B08381E311B5D002BF095 /* STMusicSENavView.m in Sources */,
 				9E8B07A91E3103B3002BF095 /* STMusicCenterManager.m in Sources */,
+				9E06A6E11E35917E00D78468 /* UIButton+Common.m in Sources */,
 				9E8B08261E311ABD002BF095 /* STMusicSESliderView.m in Sources */,
 				9E8B07E91E311445002BF095 /* STMusicUIBaseViewC.m in Sources */,
 				9E8B07D51E3112BE002BF095 /* STCMusicViewC.m in Sources */,

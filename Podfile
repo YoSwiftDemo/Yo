@@ -1,11 +1,19 @@
-  
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
 
+target 'YoNavBarView' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
-platform :ios, '8.0'
-#use_frameworks!
-target 'SuperPoweredAudioMusicPlay' do
-  pod 'XMNetworking'
-   pod 'XXNibBridge', '~> 2.3.1'
- pod 'MJExtension', '~> 3.0.13'
+  # Pods for YoNavBarView
+
+  target 'YoNavBarViewTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'YoNavBarViewUITests' do
+    # Pods for testing
+  end
 
 end

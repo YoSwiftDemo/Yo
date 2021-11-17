@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B7401B885A9DB856020DE73 /* Pods_YoNavBarViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443752E5D78EE0D7FCAFEE8F /* Pods_YoNavBarViewTests.framework */; };
+		84393F722744EA34005FB5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393F712744EA34005FB5F1 /* AppDelegate.swift */; };
+		84393F742744EA34005FB5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393F732744EA34005FB5F1 /* SceneDelegate.swift */; };
+		84393F762744EA34005FB5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393F752744EA34005FB5F1 /* ViewController.swift */; };
+		84393F792744EA34005FB5F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84393F772744EA34005FB5F1 /* Main.storyboard */; };
+		84393F7B2744EA35005FB5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84393F7A2744EA35005FB5F1 /* Assets.xcassets */; };
+		84393F7E2744EA35005FB5F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84393F7C2744EA35005FB5F1 /* LaunchScreen.storyboard */; };
+		84393F892744EA35005FB5F1 /* YoNavBarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393F882744EA35005FB5F1 /* YoNavBarViewTests.swift */; };
+		84393F932744EA35005FB5F1 /* YoNavBarViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393F922744EA35005FB5F1 /* YoNavBarViewUITests.swift */; };
+		84393F952744EA35005FB5F1 /* YoNavBarViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84393F942744EA35005FB5F1 /* YoNavBarViewUITestsLaunchTests.swift */; };
+		8F0EAD898868A6E6A3460D25 /* Pods_YoNavBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105FD3B449308C90E985652 /* Pods_YoNavBarView.framework */; };
+		C6463DF3AD8C4948E7D7E029 /* Pods_YoNavBarView_YoNavBarViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB3796DF68202ADE83ADECB /* Pods_YoNavBarView_YoNavBarViewUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84393F852744EA35005FB5F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84393F662744EA34005FB5F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84393F6D2744EA34005FB5F1;
+			remoteInfo = YoNavBarView;
+		};
+		84393F8F2744EA35005FB5F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84393F662744EA34005FB5F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84393F6D2744EA34005FB5F1;
+			remoteInfo = YoNavBarView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B9BD018AA2D99FA5635CD0 /* Pods-YoNavBarView-YoNavBarViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoNavBarView-YoNavBarViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-YoNavBarView-YoNavBarViewUITests/Pods-YoNavBarView-YoNavBarViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		443752E5D78EE0D7FCAFEE8F /* Pods_YoNavBarViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoNavBarViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5105FD3B449308C90E985652 /* Pods_YoNavBarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoNavBarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB3796DF68202ADE83ADECB /* Pods_YoNavBarView_YoNavBarViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoNavBarView_YoNavBarViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C36C28876C414D0F4BB7711 /* Pods-YoNavBarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoNavBarView.release.xcconfig"; path = "Target Support Files/Pods-YoNavBarView/Pods-YoNavBarView.release.xcconfig"; sourceTree = "<group>"; };
+		84393F6E2744EA34005FB5F1 /* YoNavBarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoNavBarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84393F712744EA34005FB5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84393F732744EA34005FB5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84393F752744EA34005FB5F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84393F782744EA34005FB5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84393F7A2744EA35005FB5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84393F7D2744EA35005FB5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84393F7F2744EA35005FB5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84393F842744EA35005FB5F1 /* YoNavBarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoNavBarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84393F882744EA35005FB5F1 /* YoNavBarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoNavBarViewTests.swift; sourceTree = "<group>"; };
+		84393F8E2744EA35005FB5F1 /* YoNavBarViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoNavBarViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84393F922744EA35005FB5F1 /* YoNavBarViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoNavBarViewUITests.swift; sourceTree = "<group>"; };
+		84393F942744EA35005FB5F1 /* YoNavBarViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoNavBarViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86E71A4A83B82CE169EC75F1 /* Pods-YoNavBarView-YoNavBarViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoNavBarView-YoNavBarViewUITests.release.xcconfig"; path = "Target Support Files/Pods-YoNavBarView-YoNavBarViewUITests/Pods-YoNavBarView-YoNavBarViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B5EB85294B13DD71191408F /* Pods-YoNavBarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoNavBarView.debug.xcconfig"; path = "Target Support Files/Pods-YoNavBarView/Pods-YoNavBarView.debug.xcconfig"; sourceTree = "<group>"; };
+		AAE962D9B66A07E94B387C45 /* Pods-YoNavBarViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoNavBarViewTests.release.xcconfig"; path = "Target Support Files/Pods-YoNavBarViewTests/Pods-YoNavBarViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9DB8E88F21A04C840843867 /* Pods-YoNavBarViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoNavBarViewTests.debug.xcconfig"; path = "Target Support Files/Pods-YoNavBarViewTests/Pods-YoNavBarViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84393F6B2744EA34005FB5F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0EAD898868A6E6A3460D25 /* Pods_YoNavBarView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84393F812744EA35005FB5F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7401B885A9DB856020DE73 /* Pods_YoNavBarViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84393F8B2744EA35005FB5F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6463DF3AD8C4948E7D7E029 /* Pods_YoNavBarView_YoNavBarViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84393F652744EA34005FB5F1 = {
+			isa = PBXGroup;
+			children = (
+				84393F702744EA34005FB5F1 /* YoNavBarView */,
+				84393F872744EA35005FB5F1 /* YoNavBarViewTests */,
+				84393F912744EA35005FB5F1 /* YoNavBarViewUITests */,
+				84393F6F2744EA34005FB5F1 /* Products */,
+				ADF5FC3F04BCFE7F28AF3980 /* Pods */,
+				98C071B64400A3522727B016 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84393F6F2744EA34005FB5F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84393F6E2744EA34005FB5F1 /* YoNavBarView.app */,
+				84393F842744EA35005FB5F1 /* YoNavBarViewTests.xctest */,
+				84393F8E2744EA35005FB5F1 /* YoNavBarViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84393F702744EA34005FB5F1 /* YoNavBarView */ = {
+			isa = PBXGroup;
+			children = (
+				84393F712744EA34005FB5F1 /* AppDelegate.swift */,
+				84393F732744EA34005FB5F1 /* SceneDelegate.swift */,
+				84393F752744EA34005FB5F1 /* ViewController.swift */,
+				84393F772744EA34005FB5F1 /* Main.storyboard */,
+				84393F7A2744EA35005FB5F1 /* Assets.xcassets */,
+				84393F7C2744EA35005FB5F1 /* LaunchScreen.storyboard */,
+				84393F7F2744EA35005FB5F1 /* Info.plist */,
+			);
+			path = YoNavBarView;
+			sourceTree = "<group>";
+		};
+		84393F872744EA35005FB5F1 /* YoNavBarViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				84393F882744EA35005FB5F1 /* YoNavBarViewTests.swift */,
+			);
+			path = YoNavBarViewTests;
+			sourceTree = "<group>";
+		};
+		84393F912744EA35005FB5F1 /* YoNavBarViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84393F922744EA35005FB5F1 /* YoNavBarViewUITests.swift */,
+				84393F942744EA35005FB5F1 /* YoNavBarViewUITestsLaunchTests.swift */,
+			);
+			path = YoNavBarViewUITests;
+			sourceTree = "<group>";
+		};
+		98C071B64400A3522727B016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5105FD3B449308C90E985652 /* Pods_YoNavBarView.framework */,
+				6BB3796DF68202ADE83ADECB /* Pods_YoNavBarView_YoNavBarViewUITests.framework */,
+				443752E5D78EE0D7FCAFEE8F /* Pods_YoNavBarViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF5FC3F04BCFE7F28AF3980 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B5EB85294B13DD71191408F /* Pods-YoNavBarView.debug.xcconfig */,
+				6C36C28876C414D0F4BB7711 /* Pods-YoNavBarView.release.xcconfig */,
+				08B9BD018AA2D99FA5635CD0 /* Pods-YoNavBarView-YoNavBarViewUITests.debug.xcconfig */,
+				86E71A4A83B82CE169EC75F1 /* Pods-YoNavBarView-YoNavBarViewUITests.release.xcconfig */,
+				F9DB8E88F21A04C840843867 /* Pods-YoNavBarViewTests.debug.xcconfig */,
+				AAE962D9B66A07E94B387C45 /* Pods-YoNavBarViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84393F6D2744EA34005FB5F1 /* YoNavBarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84393F982744EA35005FB5F1 /* Build configuration list for PBXNativeTarget "YoNavBarView" */;
+			buildPhases = (
+				82CF21E9ABAE9D812BA25C19 /* [CP] Check Pods Manifest.lock */,
+				84393F6A2744EA34005FB5F1 /* Sources */,
+				84393F6B2744EA34005FB5F1 /* Frameworks */,
+				84393F6C2744EA34005FB5F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoNavBarView;
+			productName = YoNavBarView;
+			productReference = 84393F6E2744EA34005FB5F1 /* YoNavBarView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84393F832744EA35005FB5F1 /* YoNavBarViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84393F9B2744EA35005FB5F1 /* Build configuration list for PBXNativeTarget "YoNavBarViewTests" */;
+			buildPhases = (
+				D1FAE338E32070EDD423CF66 /* [CP] Check Pods Manifest.lock */,
+				84393F802744EA35005FB5F1 /* Sources */,
+				84393F812744EA35005FB5F1 /* Frameworks */,
+				84393F822744EA35005FB5F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84393F862744EA35005FB5F1 /* PBXTargetDependency */,
+			);
+			name = YoNavBarViewTests;
+			productName = YoNavBarViewTests;
+			productReference = 84393F842744EA35005FB5F1 /* YoNavBarViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84393F8D2744EA35005FB5F1 /* YoNavBarViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84393F9E2744EA35005FB5F1 /* Build configuration list for PBXNativeTarget "YoNavBarViewUITests" */;
+			buildPhases = (
+				4F34225DCF645F96A6B1FF1D /* [CP] Check Pods Manifest.lock */,
+				84393F8A2744EA35005FB5F1 /* Sources */,
+				84393F8B2744EA35005FB5F1 /* Frameworks */,
+				84393F8C2744EA35005FB5F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84393F902744EA35005FB5F1 /* PBXTargetDependency */,
+			);
+			name = YoNavBarViewUITests;
+			productName = YoNavBarViewUITests;
+			productReference = 84393F8E2744EA35005FB5F1 /* YoNavBarViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84393F662744EA34005FB5F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					84393F6D2744EA34005FB5F1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					84393F832744EA35005FB5F1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 84393F6D2744EA34005FB5F1;
+					};
+					84393F8D2744EA35005FB5F1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 84393F6D2744EA34005FB5F1;
+					};
+				};
+			};
+			buildConfigurationList = 84393F692744EA34005FB5F1 /* Build configuration list for PBXProject "YoNavBarView" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84393F652744EA34005FB5F1;
+			productRefGroup = 84393F6F2744EA34005FB5F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84393F6D2744EA34005FB5F1 /* YoNavBarView */,
+				84393F832744EA35005FB5F1 /* YoNavBarViewTests */,
+				84393F8D2744EA35005FB5F1 /* YoNavBarViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84393F6C2744EA34005FB5F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84393F7E2744EA35005FB5F1 /* LaunchScreen.storyboard in Resources */,
+				84393F7B2744EA35005FB5F1 /* Assets.xcassets in Resources */,
+				84393F792744EA34005FB5F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84393F822744EA35005FB5F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84393F8C2744EA35005FB5F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F34225DCF645F96A6B1FF1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoNavBarView-YoNavBarViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82CF21E9ABAE9D812BA25C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoNavBarView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1FAE338E32070EDD423CF66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoNavBarViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84393F6A2744EA34005FB5F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84393F762744EA34005FB5F1 /* ViewController.swift in Sources */,
+				84393F722744EA34005FB5F1 /* AppDelegate.swift in Sources */,
+				84393F742744EA34005FB5F1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84393F802744EA35005FB5F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84393F892744EA35005FB5F1 /* YoNavBarViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84393F8A2744EA35005FB5F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84393F932744EA35005FB5F1 /* YoNavBarViewUITests.swift in Sources */,
+				84393F952744EA35005FB5F1 /* YoNavBarViewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84393F862744EA35005FB5F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84393F6D2744EA34005FB5F1 /* YoNavBarView */;
+			targetProxy = 84393F852744EA35005FB5F1 /* PBXContainerItemProxy */;
+		};
+		84393F902744EA35005FB5F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84393F6D2744EA34005FB5F1 /* YoNavBarView */;
+			targetProxy = 84393F8F2744EA35005FB5F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84393F772744EA34005FB5F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84393F782744EA34005FB5F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84393F7C2744EA35005FB5F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84393F7D2744EA35005FB5F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84393F962744EA35005FB5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84393F972744EA35005FB5F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84393F992744EA35005FB5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5EB85294B13DD71191408F /* Pods-YoNavBarView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BKME25WU4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoNavBarView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yo.YoNavBarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84393F9A2744EA35005FB5F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C36C28876C414D0F4BB7711 /* Pods-YoNavBarView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BKME25WU4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoNavBarView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yo.YoNavBarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84393F9C2744EA35005FB5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DB8E88F21A04C840843867 /* Pods-YoNavBarViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BKME25WU4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yo.YoNavBarViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoNavBarView.app/YoNavBarView";
+			};
+			name = Debug;
+		};
+		84393F9D2744EA35005FB5F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE962D9B66A07E94B387C45 /* Pods-YoNavBarViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BKME25WU4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yo.YoNavBarViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoNavBarView.app/YoNavBarView";
+			};
+			name = Release;
+		};
+		84393F9F2744EA35005FB5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B9BD018AA2D99FA5635CD0 /* Pods-YoNavBarView-YoNavBarViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BKME25WU4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yo.YoNavBarViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YoNavBarView;
+			};
+			name = Debug;
+		};
+		84393FA02744EA35005FB5F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E71A4A83B82CE169EC75F1 /* Pods-YoNavBarView-YoNavBarViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BKME25WU4F;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yo.YoNavBarViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YoNavBarView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84393F692744EA34005FB5F1 /* Build configuration list for PBXProject "YoNavBarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84393F962744EA35005FB5F1 /* Debug */,
+				84393F972744EA35005FB5F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84393F982744EA35005FB5F1 /* Build configuration list for PBXNativeTarget "YoNavBarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84393F992744EA35005FB5F1 /* Debug */,
+				84393F9A2744EA35005FB5F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84393F9B2744EA35005FB5F1 /* Build configuration list for PBXNativeTarget "YoNavBarViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84393F9C2744EA35005FB5F1 /* Debug */,
+				84393F9D2744EA35005FB5F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84393F9E2744EA35005FB5F1 /* Build configuration list for PBXNativeTarget "YoNavBarViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84393F9F2744EA35005FB5F1 /* Debug */,
+				84393FA02744EA35005FB5F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84393F662744EA34005FB5F1 /* Project object */;
+}
